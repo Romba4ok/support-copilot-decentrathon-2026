@@ -1,0 +1,7 @@
+# Separate project-local virtualenv bootstrap; not installed in candidate venv.
+virtualenv==21.15.1
+distlib==0.4.4
+filelock==4.2.4
+packaging==26.3
+platformdirs==4.14.0
+python-discovery==1.6.7

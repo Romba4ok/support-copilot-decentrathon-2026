@@ -1,0 +1,549 @@
+{
+  "provenance": "authored_synthetic_independent_fresh_plan_control",
+  "human_reviewed": false,
+  "contract_version": "support-plan-v1",
+  "frozen_at_utc": "2026-10-30T11:35:05.312749Z",
+  "cases": [
+    {
+      "id": "v4-ru-01",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Здравствуйте, нужна ваша помощь. Пока не знаю, с чего начать."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "needs_human": false
+      }
+    },
+    {
+      "id": "v4-ru-02",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Можно ли сохранить черновик обращения на неделю и потом продолжить его в другом браузере? Сейчас у меня ничего не сломалось, спрашиваю заранее."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "provided_fields": [],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-ru-03",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Оплатил набор 29 октября 2026 года на 840 рублей, но он не появился. Номер операции TX-RU-8462. Сервер Берег-7. Чек у меня сохранён. Как передать это на проверку?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "provided_fields": [
+          "payment_date",
+          "amount",
+          "transaction_id",
+          "server",
+          "evidence"
+        ],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-ru-04",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Обжалую мой бан. Мой ник Lesnoy_Most, сервер Янтарь-4, наказание увидел 30 октября в 11:40 по времени сервера. Причину в уведомлении не вижу, скриншота нет. Прошу проверить решение."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time"
+        ],
+        "request_fields": [
+          "evidence"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-en-01",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Hi!"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "provided_fields": [],
+        "request_fields": [],
+        "needs_human": false
+      }
+    },
+    {
+      "id": "v4-en-02",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "If I close a support conversation, can I reopen it after two months? Nothing has happened to me; I am checking the procedure before using it."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "provided_fields": [],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-en-03",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "My account was taken over. My character is Cedar_Brook on Harbor-9. I last signed in successfully on 29 October at 21:15 server time; the password was changed afterward. I have no screenshot of the change. Can somebody check who owns it?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time"
+        ],
+        "request_fields": [
+          "evidence"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-en-04",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "The map freezes every time I open the garage menu at the northern depot. I use Windows 11. To reproduce: enter the depot, approach the garage door, press E, then select My vehicles. This happened today at 08:25 server time on Mesa-6. My first guess about a payment error was wrong; I did not make a purchase."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "provided_fields": [
+          "location",
+          "platform",
+          "reproduction_steps",
+          "event_time",
+          "server"
+        ],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-kk-01",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Сәлеметсіз бе, маған көмек керек. Әзірге мәселені түсіндірмедім."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "needs_human": false
+      }
+    },
+    {
+      "id": "v4-kk-02",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Өтінішке жауап келгенде хабарламаны тек ойыннан көремін бе, әлде электрондық поштаға да келеді ме? Менде қазір оқиға болған жоқ, тек тәртібін білгім келеді."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "provided_fields": [],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-kk-03",
+      "input": {
+        "kind": "complaint",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Менің кейіпкерім Qum_Bel, серверім Дала-8. Бүгін сервер уақытымен 14:10-да шығыс көпірде Arman_Sai деген ойыншы мені балағаттады. Скриншотым бар. Оның жазаланатынын уәде етпей, шағымымды тексеруге жіберіңізші."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "location",
+          "evidence"
+        ],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-kk-04",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Кеше 2026 жылғы 29 қазанда 2600 теңге төледім, бірақ сатып алған затым түспеді. Сервер Қыран-5. Төлем нөмірін қазір таба алмай отырмын. Чекті жоғалттым, қайта жүктей аламын ба, білмеймін."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "provided_fields": [
+          "payment_date",
+          "amount",
+          "server"
+        ],
+        "request_fields": [
+          "transaction_id"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-uz-01",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Salom, yordam bera olasizmi? Muammoni hali yozmadim."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "needs_human": false
+      }
+    },
+    {
+      "id": "v4-uz-02",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Yordam markazidagi murojaatni boshqa tilga keyinroq almashtirish mumkinmi? Hozir shikoyat qilmayapman, tartibni oldindan bilmoqchiman."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "provided_fields": [],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-uz-03",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Hisobimga kira olmayapman, parol men bilmagan holda o'zgargan. Qahramonim Chinor_Yol, server Sahro-3. Oxirgi marta qachon kirganimni aniq eslay olmayman. Hisob ochilganini ko'rsatadigan xat menda bor. Qanday qilib egasi ekanimni tekshirtiraman?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "provided_fields": [
+          "participant",
+          "server",
+          "evidence"
+        ],
+        "request_fields": [
+          "event_time"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-uz-04",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Menga qo'yilgan cheklov ustidan shikoyat qilaman. Qahramonim Oq_Tosh. Bugun server vaqti bilan 16:05 da cheklov xabari chiqdi. Avval bu boshqa o'yinchining hisobi deb yozdim, bu xato edi: aynan mening hisobim. Xabarning suratini saqlaganman."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "provided_fields": [
+          "participant",
+          "event_time",
+          "evidence"
+        ],
+        "request_fields": [
+          "server"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-es-01",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Buenas, necesito ayuda pero todavía no he contado qué necesito."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "needs_human": false
+      }
+    },
+    {
+      "id": "v4-es-02",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "¿Se pueden combinar dos consultas abiertas por la misma persona en una sola conversación? No estoy denunciando ningún incidente; quiero entender el procedimiento."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "provided_fields": [],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-es-03",
+      "input": {
+        "kind": "complaint",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Denuncio a un administrador por insultarme en el chat. Mi personaje es Brisa_Norte y el administrador se llama Faro_Alto. Fue en la estación oeste, a las 19:20 del 29 de octubre, hora del servidor Coral-2. Tengo una grabación. No pido un castigo automático, sino una revisión humana."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "provided_fields": [
+          "participant",
+          "location",
+          "event_time",
+          "server",
+          "evidence"
+        ],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-es-04",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "created_at": "2026-10-30T12:04:00Z",
+        "images_count": 2,
+        "messages": [
+          {
+            "role": "player",
+            "text": "Al abrir el inventario desaparece la interfaz. Juego en Android 14, servidor Pino-5. Ocurre al entrar al almacén sur, abrir la mochila y tocar Ordenar. No sé la hora exacta; no confundan la fecha de este mensaje con la del fallo. No grabé vídeo. ¿Pueden investigar el fallo?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "provided_fields": [
+          "platform",
+          "server",
+          "location",
+          "reproduction_steps"
+        ],
+        "request_fields": [
+          "event_time"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-pt-01",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Olá! Preciso de uma orientação, ainda não expliquei o assunto."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "needs_human": false
+      }
+    },
+    {
+      "id": "v4-pt-02",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Existe um prazo para editar o título de uma conversa já encerrada? É uma pergunta geral, não estou relatando perda de acesso nem punição."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "provided_fields": [],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-pt-03",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Paguei por um pacote e ainda não recebi. A operação é PT-7316, feita em 28 de outubro de 2026, no valor de 37 reais. Tenho o recibo salvo. Esqueci de dizer em qual servidor jogo; quero encaminhar o caso para conferência."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "provided_fields": [
+          "transaction_id",
+          "payment_date",
+          "amount",
+          "evidence"
+        ],
+        "request_fields": [
+          "server"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v4-pt-04",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Quero contestar a suspensão do meu personagem Pedra_Clara no servidor Lago-6. Vi o aviso hoje às 09:35, horário do servidor. Antes falei em cobrança, mas retiro isso: não houve pagamento, o problema é a suspensão. Anexei a captura do aviso. Como peço a revisão?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "evidence"
+        ],
+        "request_fields": [],
+        "needs_human": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "provenance": "authored_synthetic_independent_control",
+  "human_reviewed": false,
+  "created_at": "2026-10-30T08:55:41.1187258Z",
+  "method": "Agent-authored semantic retrieval control: 24 independently written fictional queries, four per language. Canonical targets were selected by reading the local source corpus through loadSources, the same rule-source loader used by baseline.sources(), and checking each target's full text. No private ticket text or rule passage is reproduced. Queries were authored without reading data/intents.json, model benchmark smoke queries, retrieval outputs or scores, and were frozen before model evaluation. Each target names a directly relevant rule; other relevant sources may exist. This is a small synthetic control, not expert gold labels or accuracy on real support traffic. Language quality has not been reviewed by a human. Do not revise queries or targets in response to evaluation misses.",
+  "cases": [
+    {
+      "id": "control-ru-01",
+      "lang": "ru",
+      "query": "Ехал один, с незнакомцем вообще не общался, а он подошёл и застрелил моего персонажа. Как называется нападение, у которого не было причины по сюжету?",
+      "expected_source_ids": ["43:DM"],
+      "rationale": "Unprovoked lethal attack without an in-character motive."
+    },
+    {
+      "id": "control-ru-02",
+      "lang": "ru",
+      "query": "Стрелок стоял за границей зелёной зоны и целился в меня, пока я оставался внутри. Он уверяет, что защита не действует, ведь сам он снаружи. Какой пункт это разбирает?",
+      "expected_source_ids": ["32:1.5"],
+      "rationale": "Cross-boundary attack on a protected player inside a green zone."
+    },
+    {
+      "id": "control-ru-03",
+      "lang": "ru",
+      "query": "Можно настроить отдельную программу, чтобы она сама нажимала кнопку рыбалки всю ночь, пока меня нет за компьютером? Это не меняет файлы игры.",
+      "expected_source_ids": ["30:5.2"],
+      "rationale": "Unattended button automation using external software."
+    },
+    {
+      "id": "control-ru-04",
+      "lang": "ru",
+      "query": "Хочу звать игроков через общий чат в свой неофициальный канал про эту игру. Ссылку не вставлю, только название и приглашение. Для таких объявлений есть ограничение?",
+      "expected_source_ids": ["30:2.3"],
+      "rationale": "Promotion of an unofficial community without a clickable link."
+    },
+    {
+      "id": "control-en-01",
+      "lang": "en",
+      "query": "Someone wants to buy my in-game sports car but pay me by bank transfer outside the game. Is a trade like that covered even if we have only discussed it?",
+      "expected_source_ids": ["30:4.4"],
+      "rationale": "Proposed exchange of virtual property for outside money."
+    },
+    {
+      "id": "control-en-02",
+      "lang": "en",
+      "query": "I have two characters on the same server. Could a friend hold the first character's cash and then pass it to my second character so they never trade directly?",
+      "expected_source_ids": ["30:4.6"],
+      "rationale": "Moving assets between one's own characters through an intermediary."
+    },
+    {
+      "id": "control-en-03",
+      "lang": "en",
+      "query": "After our game argument, this player sent my home street name and said they would come there to hurt me. Which rule deals with using offline details to frighten a player?",
+      "expected_source_ids": ["30:2.6"],
+      "rationale": "Offline intimidation using personal location information."
+    },
+    {
+      "id": "control-en-04",
+      "lang": "en",
+      "query": "My main character died during Family War at the abandoned port. May I log into my spare account and keep fighting in that same event?",
+      "expected_source_ids": ["36:1.6"],
+      "rationale": "Rejoining a family event on an alternate account after death."
+    },
+    {
+      "id": "control-kk-01",
+      "lang": "kk",
+      "query": "Көшеде кетіп бара жатқанда бір жүргізуші көлігін әдейі маған қарай бұрып, бірнеше рет қағып кетті. Екеуміздің арамызда ойын ішіндегі жанжал болған жоқ. Бұл әрекет қалай аталады?",
+      "expected_source_ids": ["43:DB"],
+      "rationale": "Deliberate vehicle assault without an in-character reason."
+    },
+    {
+      "id": "control-kk-02",
+      "lang": "kk",
+      "query": "Ойыншы чатта менімен емес, анам мен әкемді кемсітіп сөйлесті. Туыстарыма айтылған мұндай сөздерге қай ереже қатысты?",
+      "expected_source_ids": ["30:2.1"],
+      "rationale": "Chat insults directed at a player's relatives."
+    },
+    {
+      "id": "control-kk-03",
+      "lang": "kk",
+      "query": "Бір адам өзін жобаның қызметкерімін деп таныстырып, тексеріс үшін оған ойын ақшасын беруімді сұрады. Оның әкімші болып көрінуі туралы қай тармақтан оқи аламын?",
+      "expected_source_ids": ["30:1.2"],
+      "rationale": "Impersonating project staff to obtain virtual assets."
+    },
+    {
+      "id": "control-kk-04",
+      "lang": "kk",
+      "query": "Family War кезінде дәрі қобдишасын тасаның артында қолдана бастадым. Анимация бітпей жүгіріп шықсам бола ма, әлде емделу аяқталғанша сол жерде қалуым керек пе?",
+      "expected_source_ids": ["36:1.12"],
+      "rationale": "Whether healing must finish behind cover during Family War."
+    },
+    {
+      "id": "control-uz-01",
+      "lang": "uz",
+      "query": "Shikoyatga qo'shishdan oldin skrinshotning chetlarini kesib, ayrim yozuvlarini o'chirdim. Shunday o'zgartirilgan suratni dalil sifatida qabul qilishadimi?",
+      "expected_source_ids": ["31:1.2.2"],
+      "rationale": "Complaint evidence whose image content has been cropped and altered."
+    },
+    {
+      "id": "control-uz-02",
+      "lang": "uz",
+      "query": "Oilalar urushi, ya'ni Family War maydoniga mototsiklda darvozadan kirib, keyin uni qoldirsam bo'ladimi? Yoki hududga boshidanoq piyoda kirish kerakmi?",
+      "expected_source_ids": ["36:1.14"],
+      "rationale": "Entering the family battle area on a vehicle rather than on foot."
+    },
+    {
+      "id": "control-uz-03",
+      "lang": "uz",
+      "query": "Yashil zona ichida turganimda meni arqon bilan bog'lab, pulimni berishni talab qilishdi. U yerda odamni talashga oid qaysi band bor?",
+      "expected_source_ids": ["32:1.2"],
+      "rationale": "Restraint and robbery of a player who is inside a green zone."
+    },
+    {
+      "id": "control-uz-04",
+      "lang": "uz",
+      "query": "O'yindagi akkauntimni o'zim butunlay o'chirib yuborgan edim, endi fikrimdan qaytdim. Eski qahramonlarimni qaytarish mumkinligi haqida qayerda yozilgan?",
+      "expected_source_ids": ["30:1.7"],
+      "rationale": "Restoration question after intentionally deleting a game account."
+    },
+    {
+      "id": "control-es-01",
+      "lang": "es",
+      "query": "Le pagué con dinero del juego por un coche y desapareció sin entregármelo. No hubo dinero real. ¿Qué norma trata este engaño entre jugadores?",
+      "expected_source_ids": ["30:4.1"],
+      "rationale": "Deceptive player trade involving only virtual currency."
+    },
+    {
+      "id": "control-es-02",
+      "lang": "es",
+      "query": "En la batalla por la furgoneta quiero tapar la cara de mi personaje con una máscara. ¿Está permitido llevarla durante ese evento?",
+      "expected_source_ids": ["42:1.13"],
+      "rationale": "Wearing a face mask during the van battle."
+    },
+    {
+      "id": "control-es-03",
+      "lang": "es",
+      "query": "Vi en una conversación fuera del juego dónde se escondía otro personaje y usé ese dato para encontrarlo dentro de la historia. ¿Cómo se llama mezclar así lo que sé yo con lo que sabe mi personaje?",
+      "expected_source_ids": ["43:MG"],
+      "rationale": "Using knowledge from outside the fiction to guide a character."
+    },
+    {
+      "id": "control-es-04",
+      "lang": "es",
+      "query": "Cada vez que aparece mi personaje en su punto de reaparición, alguien que espera allí le dispara inmediatamente. ¿Qué término corresponde a atacar justo al reaparecer?",
+      "expected_source_ids": ["43:SK"],
+      "rationale": "Attacking a character at the moment and place of spawning."
+    },
+    {
+      "id": "control-pt-01",
+      "lang": "pt",
+      "query": "Na guerra de famílias, deixaram vários carros atravessados no acesso ao porto para ninguém conseguir entrar. Qual regra fala desse bloqueio com veículos?",
+      "expected_source_ids": ["36:1.3"],
+      "rationale": "Vehicle barricade obstructing entry to the family battle location."
+    },
+    {
+      "id": "control-pt-02",
+      "lang": "pt",
+      "query": "Um jogador mantém o microfone aberto transmitindo músicas e ruído tão alto que ninguém consegue conversar. Há uma regra específica para esse uso do áudio?",
+      "expected_source_ids": ["30:2.5"],
+      "rationale": "Disruptive music and noise broadcast through voice chat."
+    },
+    {
+      "id": "control-pt-03",
+      "lang": "pt",
+      "query": "Vou mudar de servidor e queria combinar uma troca para receber no novo servidor o valor dos bens que tenho no antigo. Isso é permitido mesmo sem envolver dinheiro de verdade?",
+      "expected_source_ids": ["30:4.7"],
+      "rationale": "Arranging a transfer of virtual wealth across different servers."
+    },
+    {
+      "id": "control-pt-04",
+      "lang": "pt",
+      "query": "Morri durante a disputa por um negócio entre organizações. Sem usar seguro de vida, posso voltar ao mesmo confronto depois de reaparecer?",
+      "expected_source_ids": ["41:2.1"],
+      "rationale": "Returning to a business battle after death, excluding the insurance exception."
+    }
+  ]
+}

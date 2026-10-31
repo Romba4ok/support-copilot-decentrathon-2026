@@ -1,0 +1,17 @@
+*
+!package.json
+!npm-shrinkwrap.json
+!Makefile
+!src/
+!src/**
+!public/
+!public/**
+!data/
+!data/knowledge.json
+!data/intents.json
+!data/focus-demonstrations-v7.json
+!data/routing-training-v8-alpha.json
+!data/routing-training-v8-beta.json
+!fixtures/
+!fixtures/demo-tickets.json
+!fixtures/control.json

@@ -1,0 +1,183 @@
+{
+  "provenance": "authored_synthetic_independent_fresh_plan_control",
+  "human_reviewed": false,
+  "contract_version": "support-plan-v1",
+  "frozen_at_utc": "2026-10-30T15:48:20Z",
+  "cases": [
+    {
+      "id": "fresh-v6-ru-01",
+      "input": {"kind": "complaint", "lang": "ru", "server": 18, "messages": [
+        {"role": "player", "text": "Здравствуйте. Я Лев Орлов на сервере 18. Купил набор с красным шлемом за 349 рублей, деньги списали 29 октября 2026 в 21:15, а шлем в инвентаре так и не появился. Номер платежа SYN-RU-48319."},
+        {"role": "player", "text": "Чек сохранить не удалось, в истории банка его сейчас тоже не могу открыть. Других подтверждений у меня нет."}
+      ]},
+      "expected": {"focus": "payment", "provided_fields": ["participant", "server", "payment_date", "amount", "transaction_id", "evidence", "problem_description"], "request_fields": [], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-ru-02",
+      "input": {"kind": "complaint", "lang": "ru", "messages": [
+        {"role": "player", "text": "Я Нина Ярова, сервер 6. Сегодня, 30 октября, около 14:20 оставила свой мотоцикл у гаража на Южной улице. Через пять минут в списке моей техники его уже не было, хотя я никому его не продавала и не передавала. Помогите проверить, куда он делся."}
+      ]},
+      "expected": {"focus": "account", "provided_fields": ["participant", "server", "event_time", "location", "problem_description"], "request_fields": ["evidence"], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-ru-03",
+      "input": {"kind": "question", "lang": "ru", "messages": [
+        {"role": "player", "text": "Привет, можно к вам за помощью?"}
+      ]},
+      "expected": {"focus": "clarification", "provided_fields": [], "request_fields": ["problem_description"], "needs_human": false}
+    },
+    {
+      "id": "fresh-v6-ru-04",
+      "input": {"kind": "question", "lang": "ru", "messages": [
+        {"role": "player", "text": "Объясните, пожалуйста, что в правилах ролевой игры называют метагеймингом. Хочу разобраться в термине до первой игры."}
+      ]},
+      "expected": {"focus": "question", "provided_fields": ["problem_description"], "request_fields": [], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-en-01",
+      "input": {"kind": "complaint", "lang": "en", "server": "Harbor", "platform": "Windows 11 desktop", "messages": [
+        {"role": "player", "text": "The game freezes whenever I open the city map on Harbor. This started on 30 October at about 09:40. I sign in, spawn normally, then press M; the map appears and the whole client stops responding. It happens after restarting the client too."}
+      ]},
+      "expected": {"focus": "technical", "provided_fields": ["server", "platform", "event_time", "reproduction_steps", "problem_description"], "request_fields": ["evidence"], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-en-02",
+      "input": {"kind": "complaint", "lang": "en", "messages": [
+        {"role": "player", "text": "Please review my own chat suspension. My character is Rowan Marsh on server 11. The notice appeared on 29 October 2026 at 18:05. I think the conversation was misunderstood."},
+        {"role": "player", "text": "I cannot recover a screenshot or a recording of that chat. Those are unavailable."}
+      ]},
+      "expected": {"focus": "appeal", "provided_fields": ["participant", "server", "event_time", "evidence", "problem_description"], "request_fields": [], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-en-03",
+      "input": {"kind": "complaint", "lang": "en", "messages": [
+        {"role": "player", "text": "I'd like to report Ellis Reed for repeatedly driving into my parked car outside the West Market on server 23. I'm Morgan Dale. It happened on 30 October at 16:10. I attached the recording showing all three collisions.", "attachments": 1}
+      ]},
+      "expected": {"focus": "complaint", "provided_fields": ["participant", "server", "event_time", "location", "evidence", "problem_description"], "request_fields": [], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-en-04",
+      "input": {"kind": "question", "lang": "en", "messages": [
+        {"role": "player", "text": "Where can I change the interface language? I'm only asking where that setting is; I haven't had an error."}
+      ]},
+      "expected": {"focus": "question", "provided_fields": ["problem_description"], "request_fields": [], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-kk-01",
+      "input": {"kind": "complaint", "lang": "kk", "messages": [
+        {"role": "player", "text": "Менің кейіпкерім — Аян Самат, серверім 9. 2026 жылғы 30 қазанда бір апталық жазылым алдым. Бағасы 990 теңге еді, бірақ картадан осы сома екі рет алынды. Төлем нөмірін білмеймін, оны таба алмадым."}
+      ]},
+      "expected": {"focus": "payment", "provided_fields": ["participant", "server", "payment_date", "amount", "transaction_id", "problem_description"], "request_fields": ["evidence"], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-kk-02",
+      "input": {"kind": "complaint", "lang": "kk", "messages": [
+        {"role": "player", "text": "Сәлеметсіздер ме. 4-сервердегі Дана Серік деген аккаунт менікі. Бүгін, 30 қазанда сағат 11:30 шамасында поштам ауыстырылғаны туралы хабарлама келді. Мен оны ауыстырмадым, енді өз аккаунтыма кіре алмаймын."},
+        {"role": "player", "text": "Хабарламаны өшіріп алдым. Скриншот та, басқа дәлел де сақталмаған."}
+      ]},
+      "expected": {"focus": "account", "provided_fields": ["participant", "server", "event_time", "evidence", "problem_description"], "request_fields": [], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-kk-03",
+      "input": {"kind": "complaint", "lang": "kk", "server": "Дала", "platform": "Android", "messages": [
+        {"role": "player", "text": "Кейіпкерімнің аяғы еденнің ішіне кіріп көрінеді, ал жүргенде денесі дірілдейді. Басқа ойыншылар қалыпты көрінеді. Осыны түзетуге көмектесіңізші."}
+      ]},
+      "expected": {"focus": "technical", "provided_fields": ["server", "platform", "problem_description"], "request_fields": ["reproduction_steps", "evidence"], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-kk-04",
+      "input": {"kind": "question", "lang": "kk", "messages": [
+        {"role": "player", "text": "Сәлем! Қолдау қызметі осында ма? Бір нәрсе сұрайын деп едім."}
+      ]},
+      "expected": {"focus": "clarification", "provided_fields": [], "request_fields": ["problem_description"], "needs_human": false}
+    },
+    {
+      "id": "fresh-v6-uz-01",
+      "input": {"kind": "complaint", "lang": "uz", "messages": [
+        {"role": "player", "text": "Salom. Men Jasur Anvarman, 15-serverda o'ynayman. Bugun, 30-oktabr soat 12:45 da markaziy shifoxona oldida administrator Otabek Nur meni umumiy chatda haqorat qildi. Shu harakatini ko'rib chiqishingizni so'rayman. Skrinshotni biriktirdim.", "attachments": 1}
+      ]},
+      "expected": {"focus": "complaint", "provided_fields": ["participant", "server", "event_time", "location", "evidence", "problem_description"], "request_fields": [], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-uz-02",
+      "input": {"kind": "complaint", "lang": "uz", "messages": [
+        {"role": "player", "text": "Mening chatga yozish huquqim cheklangan, shu jazoni qayta ko'rib chiqishingizni istayman. Ismim Madina Sobir, server 3. Cheklov 29-oktabr 2026 kuni soat 20:10 da berildi. Men yozgan gap reklama bo'lmagan deb o'ylayman."},
+        {"role": "player", "text": "O'sha chatning surati ham, videosi ham yo'q. Ularni tiklay olmayman."}
+      ]},
+      "expected": {"focus": "appeal", "provided_fields": ["participant", "server", "event_time", "evidence", "problem_description"], "request_fields": [], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-uz-03",
+      "input": {"kind": "question", "lang": "uz", "messages": [
+        {"role": "player", "text": "O'yindagi bank hisobvarag'i menyusida «aylanma» degan yozuv bor. Bu yozuv nimani anglatadi? Pulim joyida, shunchaki atamaning ma'nosini bilmoqchiman."}
+      ]},
+      "expected": {"focus": "question", "provided_fields": ["problem_description"], "request_fields": [], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-uz-04",
+      "input": {"kind": "complaint", "lang": "uz", "server": 21, "platform": "Windows 10", "messages": [
+        {"role": "player", "text": "30-oktabr soat 08:25 dan beri har kirganimda aloqa uzilyapti. Serverni tanlayman, yuklanish tugaydi, keyin «connection closed» chiqadi. Internetdagi boshqa dasturlar ishlayapti. Kompyuterni qayta yoqib ham tekshirdim."},
+        {"role": "player", "text": "Yozib olingan video yoki skrinshot yo'q, hozir ularni tayyorlay olmayman."}
+      ]},
+      "expected": {"focus": "technical", "provided_fields": ["server", "platform", "event_time", "reproduction_steps", "evidence", "problem_description"], "request_fields": [], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-es-01",
+      "input": {"kind": "complaint", "lang": "es", "messages": [
+        {"role": "player", "text": "Compré una chaqueta para mi personaje por 4,50 euros el 29 de octubre de 2026. Me cobraron, pero la chaqueta no llegó al inventario. No sé cuál es el identificador de la transacción y no he conseguido encontrarlo."}
+      ]},
+      "expected": {"focus": "payment", "provided_fields": ["payment_date", "amount", "transaction_id", "problem_description"], "request_fields": ["participant", "server", "evidence"], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-es-02",
+      "input": {"kind": "complaint", "lang": "es", "messages": [
+        {"role": "player", "text": "Soy Lucía Prado, del servidor 12. Mi apartamento de Calle del Faro 8 ya no figura como mío. Lo vi hoy, 30 de octubre, a las 10:15; ayer todavía era mío y no pedí ningún traspaso. Adjunto una captura antigua de la propiedad y otra de cómo aparece ahora.", "attachments": 2}
+      ]},
+      "expected": {"focus": "account", "provided_fields": ["participant", "server", "event_time", "location", "evidence", "problem_description"], "request_fields": [], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-es-03",
+      "input": {"kind": "question", "lang": "es", "messages": [
+        {"role": "player", "text": "Hola, ¿hay alguien de soporte disponible?"},
+        {"role": "player", "text": "Necesito ayuda, todavía no he explicado el asunto."}
+      ]},
+      "expected": {"focus": "clarification", "provided_fields": [], "request_fields": ["problem_description"], "needs_human": false}
+    },
+    {
+      "id": "fresh-v6-es-04",
+      "input": {"kind": "complaint", "lang": "es", "server": 27, "messages": [
+        {"role": "player", "text": "Soy Mateo Salas. Hoy, 30 de octubre, a las 17:05, otro jugador me escribió que iba a buscarme fuera del juego y hacerme daño. Fue por mensaje privado, mientras yo estaba en la estación de autobuses. Quiero denunciar esa amenaza; cerré el chat antes de apuntar su nombre."}
+      ]},
+      "expected": {"focus": "complaint", "provided_fields": ["server", "event_time", "location", "problem_description"], "request_fields": ["participant", "evidence"], "needs_human": true},
+      "rationale": "El denunciante está identificado, pero falta identificar a la persona denunciada; cerrar el chat no establece que recuperar pruebas sea imposible."
+    },
+    {
+      "id": "fresh-v6-pt-01",
+      "input": {"kind": "complaint", "lang": "pt", "server": 7, "platform": "Windows 11", "messages": [
+        {"role": "player", "text": "Quando mudo o jogo do modo de janela para tela cheia, os botões do inventário ficam fora da tela e não consigo clicar neles. Para repetir: abro o inventário na janela, entro nas configurações e ativo tela cheia. Voltar ao modo de janela faz os botões aparecerem de novo."}
+      ]},
+      "expected": {"focus": "technical", "provided_fields": ["server", "platform", "reproduction_steps", "problem_description"], "request_fields": ["evidence"], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-pt-02",
+      "input": {"kind": "complaint", "lang": "pt", "messages": [
+        {"role": "player", "text": "Meu personagem é Caio Farias. Quero recorrer do bloqueio que recebi em 28 de outubro de 2026 às 22:30. Acredito que confundiram meu personagem com outro. Não lembro o número nem o nome do servidor; essa informação eu realmente não tenho. Estou enviando a imagem do aviso de bloqueio.", "attachments": 1}
+      ]},
+      "expected": {"focus": "appeal", "provided_fields": ["participant", "server", "event_time", "evidence", "problem_description"], "request_fields": [], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-pt-03",
+      "input": {"kind": "question", "lang": "pt", "messages": [
+        {"role": "player", "text": "O que significa powergaming nas regras de interpretação? Vi a palavra num guia e queria entender antes de criar meu personagem."}
+      ]},
+      "expected": {"focus": "question", "provided_fields": ["problem_description"], "request_fields": [], "needs_human": true}
+    },
+    {
+      "id": "fresh-v6-pt-04",
+      "input": {"kind": "question", "lang": "pt", "messages": [
+        {"role": "player", "text": "Boa tarde! Posso tirar uma dúvida com vocês?"}
+      ]},
+      "expected": {"focus": "clarification", "provided_fields": [], "request_fields": ["problem_description"], "needs_human": false}
+    }
+  ]
+}

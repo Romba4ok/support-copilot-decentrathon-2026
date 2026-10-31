@@ -1,0 +1,20 @@
+{
+  "provenance": {"type":"authored_synthetic","human_reviewed":false,"contains_private_data":false,"purpose":"Demo labels for category codes already published in data/intents.json; not private handout content"},
+  "categories": [
+    {"code":"complaint.insult","label":"Демо: жалоба на оскорбление"},
+    {"code":"complaint.cheat","label":"Демо: жалоба на подозрение в нечестной игре"},
+    {"code":"complaint.dm","label":"Демо: жалоба на игровое нападение"},
+    {"code":"complaint.scam","label":"Демо: жалоба на обман"},
+    {"code":"complaint.rmt_ads","label":"Демо: жалоба на рекламу или внешнюю торговлю"},
+    {"code":"complaint.admin","label":"Демо: жалоба на администратора"},
+    {"code":"complaint.other","label":"Демо: другая жалоба"},
+    {"code":"complaint.invalid","label":"Демо: недостаточно сведений в жалобе"},
+    {"code":"report.question","label":"Демо: вопрос"},
+    {"code":"report.help","label":"Демо: техническая помощь"},
+    {"code":"report.complaint","label":"Демо: спор или апелляция"},
+    {"code":"report.account","label":"Демо: доступ к аккаунту"},
+    {"code":"report.payment","label":"Демо: платёж"},
+    {"code":"report.offtopic","label":"Демо: требуется уточнение"}
+  ],
+  "priorities":[{"code":"p0","label":"Критический"},{"code":"p1","label":"Высокий"},{"code":"p2","label":"Обычный"},{"code":"p3","label":"Низкий"}]
+}

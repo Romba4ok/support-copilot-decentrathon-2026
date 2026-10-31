@@ -1,0 +1,1345 @@
+{
+  "schema_version": "focus-demonstration-bank-v7",
+  "protocol_id": "focus-train126-seven-en-shortest-canonical-v7",
+  "provenance": "authored_synthetic_train_only",
+  "human_reviewed": false,
+  "real_gold": false,
+  "contains_private_data": false,
+  "selection": {
+    "language": "en",
+    "per_class": 1,
+    "class_order": [
+      "payment",
+      "account",
+      "appeal",
+      "complaint",
+      "technical",
+      "question",
+      "clarification"
+    ],
+    "measure": "Buffer.byteLength(canonical(player_payload),utf8)",
+    "tie_break": "original_id_code_unit_ascending"
+  },
+  "lineage": {
+    "notebook_sha256": "f4ff582201fc224120e52ff89d0352f7f7ebaa9a1f4972c796f351fb83e2f35d",
+    "bundle_sha256": "fe6f1ca67b32eef2568beee84091c0196372e91d6b4eb586e5367f7c9e44cc15",
+    "manifest_sha256": "d1599db986a777b7d5438d1ef09ab898c11b14084d07c91c019b36fcf3c1322c",
+    "train_jsonl_sha256": "651881d9307ee32d717a02b53710239ab8d1b41141f6a8dc3a6c1bc94323e188",
+    "author_source_sha256": "32a7aa4d59c71a029aaf55607737fbbc8b801f802f4675fbde3bb2d9a60f3ce2",
+    "original_factory_sha256": "6bc4d60353c0eaaabb4d70894aa15eb1b42602be0025211c4e97056cedbf721b",
+    "manifest_fingerprint": "eba0c985bd60c10d704aa14f8de42bc815f7b31698cdc4ab40c7f49e8b7640cf",
+    "count": 126,
+    "excluded_holdout_groups": [
+      "focus-payment-season-pass",
+      "focus-account-lost-recovery-contact",
+      "focus-appeal-my-login-ban",
+      "focus-complaint-other-player-blocking",
+      "focus-technical-visual-flicker",
+      "focus-question-support-process",
+      "focus-clarification-greet-team"
+    ],
+    "train_groups": [
+      "focus-account-credentials-changed",
+      "focus-account-missing-owned-item",
+      "focus-account-ownership-changed",
+      "focus-appeal-my-chat-mute",
+      "focus-appeal-my-suspension-length",
+      "focus-appeal-my-warning",
+      "focus-clarification-ask-presence",
+      "focus-clarification-help-unspecified",
+      "focus-clarification-open-conversation",
+      "focus-complaint-other-player-impersonation",
+      "focus-complaint-other-player-insults",
+      "focus-complaint-other-player-threat",
+      "focus-payment-double-charge",
+      "focus-payment-pending-topup",
+      "focus-payment-receipt-dispute",
+      "focus-question-event-timetable",
+      "focus-question-interface-term",
+      "focus-question-notification-location",
+      "focus-technical-client-closes",
+      "focus-technical-loading-stuck",
+      "focus-technical-settings-control"
+    ],
+    "train_rows_sha256": "5f6e087c51860127b89ca8a911b69668704f4d56eb50decbf6afb911c712e148"
+  },
+  "sources": {
+    "src/intelligence/focus-demonstrations.mjs": "7fe21c342adb516379eba5666b3b154aa60f718b39aa57e7ad643520c3ab6a2d",
+    "training/build-focus-demonstrations.mjs": "9fdde450651a2bea9368570ff7f36c6372a2052cfc551e106758987ce26f1f64",
+    "src/intelligence/production-closure.mjs": "f9e183caad38c17e483c4e3930a66e9ce5b149c619748e7d6ac5a3c1a9898576",
+    "src/intelligence/generation-contract.mjs": "665c60f6ad374da5ce214a873a8758b48f543d919150060a4e07b745adec340a"
+  },
+  "membership": [
+    {
+      "id": "focus-clarification-ask-presence-en",
+      "group_id": "focus-clarification-ask-presence",
+      "input_sha256": "6f2d9fa887aeacbd0c0a76fd160ddbccc73336af99c481e3c7ea6962ba9639a8",
+      "player_payload_sha256": "dc908ab4a05d69c7fa0054e554c84961cb57aac91955968ba5fccc2e24ba77c4",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "37b111e5c98033f4e9573df2f04c09e36c1e5d2f7320d95348bdd6d760adcf35"
+    },
+    {
+      "id": "focus-payment-pending-topup-ru",
+      "group_id": "focus-payment-pending-topup",
+      "input_sha256": "f55a81b4fa2817cd0ad5dd75c52c252ae0454097a4d2511fe496936cd8fd2f35",
+      "player_payload_sha256": "6dcdd124ef470422cb6815d3ed7c8b8528870a6a733b3170a1d2ed78e2476f66",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "22862ffc31c0b1f1cb56ecdf86b902e91ef923d72dfc7fac67fc6cb055cb24c0"
+    },
+    {
+      "id": "focus-complaint-other-player-threat-pt",
+      "group_id": "focus-complaint-other-player-threat",
+      "input_sha256": "f96b430792715b36bd7645ee6ac5b8a8ecd446eddc53b194947eb0fcad0345ce",
+      "player_payload_sha256": "82f37947d42cc06281519c85ea63713dcb5ea59c6ff6a3dd9cfa43ece3f9dfb3",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "d98b86c6ccda4c5a77277d7e34cb22b6de64ffaba66636d8a1ad04cc7262225a"
+    },
+    {
+      "id": "focus-complaint-other-player-threat-ru",
+      "group_id": "focus-complaint-other-player-threat",
+      "input_sha256": "9f1241052d403e303742d37553c2bae94785601a5b6421b1440493ac48726b23",
+      "player_payload_sha256": "fd1942a6c7022ad1ab952c374fa171f82acb6625e2d6dd975666db34fc1da07e",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "abaf8351e8e671336315c9645d2352701dbe8f47509b9baa02634f3a6f14aad2"
+    },
+    {
+      "id": "focus-account-credentials-changed-ru",
+      "group_id": "focus-account-credentials-changed",
+      "input_sha256": "4e0252d169f310a9c650bf22b92bbc981801e7fd603909aee3bf610bc869eb54",
+      "player_payload_sha256": "3e68e215df27c890b94a7838dd7821c2e97067f11eb2e03967e4da342602c638",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "c22bba6bfa4b6bc89703d3f22de4c58b552c3307e712ef03f87bfee3e78ae7d7"
+    },
+    {
+      "id": "focus-question-interface-term-ru",
+      "group_id": "focus-question-interface-term",
+      "input_sha256": "9dd4f62b677a6f1fd4757e53a0dbc5182e8e4a432bc91bcedad3b8aaa8065388",
+      "player_payload_sha256": "9bea47180f9be03118e6f9ed90d0da9f69f8e8b4a21c05676fb31be4b761962d",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "0560bb1e767323518a1ba44b39abe06698103def6467fcf76695d8544e23db52"
+    },
+    {
+      "id": "focus-account-ownership-changed-uz",
+      "group_id": "focus-account-ownership-changed",
+      "input_sha256": "25cad75c24fffdd0ad11871daa4974351f9948fd8281008b20411b7391ca205c",
+      "player_payload_sha256": "a06635ec92e187d1bb486a1b97054c3eacf8d57ba1999716d34c677eb52be35e",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "b26e48eaf96f3df290013c5bd0993c9d417ced4116c9182d2eca699ff956e67c"
+    },
+    {
+      "id": "focus-payment-double-charge-uz",
+      "group_id": "focus-payment-double-charge",
+      "input_sha256": "71b9c9c2d6b0494ed06ff026de64d31ad08f168d1b1423dff39ca46d661ee8ee",
+      "player_payload_sha256": "d19b3d4e23867b607a028ab3e412d0a5cf7b44a3a9cb718541616c00948a31da",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "810d4658bc506a75068fa8945affc640dd86b537051c4fcdfd47d2a6760a7620"
+    },
+    {
+      "id": "focus-account-ownership-changed-ru",
+      "group_id": "focus-account-ownership-changed",
+      "input_sha256": "90dc49dbcae7aa0ca184de48dc8aa653b9803ee50f04c7c867030872d5a7f9f1",
+      "player_payload_sha256": "e3db3384b54095073786f4035dc1b449d491ea2c5663b84c1a3c93e3c303b5d2",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "d86adaee43ad1e66ff5611b0e61d0f914b44799b17fb62b80b6e726c038198aa"
+    },
+    {
+      "id": "focus-account-credentials-changed-pt",
+      "group_id": "focus-account-credentials-changed",
+      "input_sha256": "f8e7180b91c798be262d9baaf0e3766087d856fde5b443635e4f238df47ccf3a",
+      "player_payload_sha256": "9a3eb91c5b6b5ee93f53a8b04c849dca6f0a24cd29c30b5acb6a4ad796bf3e18",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "ee0e95d9fdaf748c9e117b5c85bc25831fea970a452038fc87ae3a6e7cba651c"
+    },
+    {
+      "id": "focus-question-interface-term-es",
+      "group_id": "focus-question-interface-term",
+      "input_sha256": "a75b04343b192316318f0533b31fe948d06a24f6b1f3195563221dbc210599da",
+      "player_payload_sha256": "7faa99b15b95dd52898518eb7e8c88b996d9b48bdfb3d511d9d7203d39d596c5",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "15ca14d32a3628c9065eb1e009989b17913ed6024e1fa51c154b433445cf84c1"
+    },
+    {
+      "id": "focus-payment-receipt-dispute-en",
+      "group_id": "focus-payment-receipt-dispute",
+      "input_sha256": "bfe552faca913a94918b6ecde88d2e26737595bdf1e9e76c6141f1b5c84edd51",
+      "player_payload_sha256": "3b1cd1c82440822fe55e7c33840e1b2cbcade153feb6f2ec5df52fd8304eec75",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "b4a668a8a6c55d616decb0097dc31ff7c4ef96df4a459d1577f3599cb05588c7"
+    },
+    {
+      "id": "focus-payment-receipt-dispute-kk",
+      "group_id": "focus-payment-receipt-dispute",
+      "input_sha256": "8e51db5cf43be642451503502c24ddff39fb08fec1e001ca096cb47499f4fca3",
+      "player_payload_sha256": "57ae7cd85007940083c5e7a380a55ce555a5c3cbd6932bbb5cb372ee84840458",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "191d1df8f2bf85dae53e7bc0e73580a700aa4d75a18aa7320691194f14d64523"
+    },
+    {
+      "id": "focus-complaint-other-player-insults-pt",
+      "group_id": "focus-complaint-other-player-insults",
+      "input_sha256": "bd8810d333077eb5907bfd976b400fe9b6d73619fb46c14c42e96f844396fabc",
+      "player_payload_sha256": "6613c28e6d0b634cb9b2edbbd4224f44931d853cc58df6b8a86f518d295ad8a6",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "248b5ef5c101348adf236792b82f8f965cbb6f8c58670bc398ca7ca732f664db"
+    },
+    {
+      "id": "focus-technical-settings-control-es",
+      "group_id": "focus-technical-settings-control",
+      "input_sha256": "0997cf9e8ee3de44ffb42da11a78c5c495f9aae838d64275d9f089d8a83c7458",
+      "player_payload_sha256": "211ee7971bd372ad16dc6d57cde84a08ce099ace2f77b21f0eaf9823835aec95",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "8658772b7f5d7913884fda7af4c2398f8f1ef25b5c983af38465040a10781aac"
+    },
+    {
+      "id": "focus-account-credentials-changed-kk",
+      "group_id": "focus-account-credentials-changed",
+      "input_sha256": "511102b1be1289197d116bf0df2c2572cf11c7d7dd8fa14fa9f8ec809cc2a05a",
+      "player_payload_sha256": "0752a974000886d6954267e7e53781d02f6a63ef27624086a46892570f4cc227",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "924fa235a96f491c0b8d1f34e21e9a625bd77c1fc0ef92916c17f89280089ee6"
+    },
+    {
+      "id": "focus-appeal-my-suspension-length-es",
+      "group_id": "focus-appeal-my-suspension-length",
+      "input_sha256": "6ddb6d03d6f82582fff7597bad063fafeb91f68aa7b9618fb2490c4c2e589b6a",
+      "player_payload_sha256": "ec6b0107747ed5af28d90fd45092cb689716866ee94a8ba285832eed32621470",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "1c5d99ae2f22ad670455d9514fc885bc242f5a3d9ca373fec2564526c798e099"
+    },
+    {
+      "id": "focus-complaint-other-player-insults-uz",
+      "group_id": "focus-complaint-other-player-insults",
+      "input_sha256": "4ee7c65c8c15a53effb542a3ca2051456831037ca27b992f04b3c8395555fabf",
+      "player_payload_sha256": "f9f1848bab67fda2a5f7359ff532a342c08616e9f21c35e8088a2c9e4c9c7fea",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "e65246e0ef26326edec802ab8d8b209b0575d4b4b419241ebf2a826f7d7b2584"
+    },
+    {
+      "id": "focus-clarification-ask-presence-pt",
+      "group_id": "focus-clarification-ask-presence",
+      "input_sha256": "eb881ceed0f68052dae108375fd6251319a82376822cdb9458f85f3d8da0a4db",
+      "player_payload_sha256": "b548d687c9a28d2d1732cb389a78bdccfc5d25aa3b7c586895feed6f9d0c630b",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "c78db67957e6c583305dce89d42b62aa55f06e069334c202d0ff481b4d04d3e2"
+    },
+    {
+      "id": "focus-appeal-my-suspension-length-pt",
+      "group_id": "focus-appeal-my-suspension-length",
+      "input_sha256": "1d4110fa9a072d0ac0a3ca02e4e0b9c0c0c4b7334e63dafa49031a57c2e4fb54",
+      "player_payload_sha256": "b1bf4674a5f81d343a6e7de4615502f6e438091bc96203709a26543815aa4ee5",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "726d84055b517d51289843ef452e5e6e62c369c0cc2a1012910f503452b3d70c"
+    },
+    {
+      "id": "focus-appeal-my-suspension-length-ru",
+      "group_id": "focus-appeal-my-suspension-length",
+      "input_sha256": "7fa60cb5591be00cb2ad860c45ee3ccd1ca168e923a82776ccedeeb38af513f9",
+      "player_payload_sha256": "4e4b50ad76688ce36c498831ac65eafdda8fcda8c7ba00edf5a3f3188fc5b01a",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "817a4c380f6de27a8b1c531f3c1870797063696d86ecb9368b9292a2db32aff3"
+    },
+    {
+      "id": "focus-account-missing-owned-item-pt",
+      "group_id": "focus-account-missing-owned-item",
+      "input_sha256": "80a9a73ebf2582b13423f23446bd666ec6f49df1de84d89ff7bfc8931f4d6e4e",
+      "player_payload_sha256": "3394e7c8cf1784ed306584732f0151e97ec1a45b409492d2bdf9eb654f771904",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "9f043783ca476bfb6c6b1db8814d945d2e54c517505ce121e12ebbb35e6e1c5e"
+    },
+    {
+      "id": "focus-account-missing-owned-item-ru",
+      "group_id": "focus-account-missing-owned-item",
+      "input_sha256": "389ec78bad34a802720c26fa42564500459363b553f0c4eb4b221f36a4d41b4e",
+      "player_payload_sha256": "34dede79877be52c0bbada5652829da87dfd8315f90cdee0e59e34ae02adb100",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "1583f89479a3ac38b1a3c68264a2685f644a0fbacd5670e45774d054e40d19a4"
+    },
+    {
+      "id": "focus-account-credentials-changed-es",
+      "group_id": "focus-account-credentials-changed",
+      "input_sha256": "14a15a6f8b697edb8267c95dcb5bb7969e4e51e0698e97780198f92c063edece",
+      "player_payload_sha256": "77b3ff4159be481cc3f6cabc3538230611e874d44496b8194337b09217877129",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "de43b7ae7bc54210a89dc92094ed9eb8f22e9df17c38a5cbf625adf1c3aded57"
+    },
+    {
+      "id": "focus-technical-client-closes-en",
+      "group_id": "focus-technical-client-closes",
+      "input_sha256": "ae80844f58c43ffc3b20bbe244c9212bb5428d6133bc0d62ad246e13a913086b",
+      "player_payload_sha256": "314f7baa5edfdfc0c17fa27cd57d258ec87d192c37e53f1a2485ad61370a8fb6",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "c558c6e0e5f57d7fd6dc68cb8bfcecd1bb0060f9e77f5c943ef5ab00c3cd07f6"
+    },
+    {
+      "id": "focus-question-notification-location-kk",
+      "group_id": "focus-question-notification-location",
+      "input_sha256": "05a38dcd53dc625dbb3558451eebd1faa0411d5db855e0431bf284dffe79d4fc",
+      "player_payload_sha256": "f83d452371dee13ae71309ce27e497e604f6d58daef168691d3ce3777e8cce90",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "700821437ca5de1d6349a4c74e42e40ea84ac8f7ee77eadde31ff1a9b237ed25"
+    },
+    {
+      "id": "focus-question-event-timetable-pt",
+      "group_id": "focus-question-event-timetable",
+      "input_sha256": "6832e9974465ea5c26ab8b6118b68cbf4141c864e772ca7bf34d36358ba636c8",
+      "player_payload_sha256": "a4deb891c4edb7be788129186643120a9bacb3d72a963150f6d07e146e142c29",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "fa11f790fa09c7ba554610a4f42f3dd643b0edcef0f68a95bf2ac53546efe317"
+    },
+    {
+      "id": "focus-clarification-help-unspecified-uz",
+      "group_id": "focus-clarification-help-unspecified",
+      "input_sha256": "17ea01672845c5e01a382bdc86d9a7b7ae5a81a00d461c04397f621049edc93f",
+      "player_payload_sha256": "a68c1865a9c9e55a9e22c88875f4c56591a3017d4ae56255452eb175e5ac6fac",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "3a737562ac49428d422ed4e0d125ae70daf7cef4e7b299ee1cf0608a702f2f17"
+    },
+    {
+      "id": "focus-clarification-help-unspecified-kk",
+      "group_id": "focus-clarification-help-unspecified",
+      "input_sha256": "1978e9ee187450f965ef824368362157bb1446b945d84bd3b4915cb8483c9107",
+      "player_payload_sha256": "a7f0e626e150eb4d266e5d43410bb576d2730276fba0e4d6c63197986b99b73d",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "8697ff41f22afd358797e77133b0807fb49b390b500c5ecaa919a9b263067760"
+    },
+    {
+      "id": "focus-appeal-my-warning-kk",
+      "group_id": "focus-appeal-my-warning",
+      "input_sha256": "3dab265f661e716a9d24b905fd74489e717b9e6b75551421d0ffea60301bd597",
+      "player_payload_sha256": "0ec79b1354aa35be45e2853fe3d224496dc5b9fb938eb4eb0ba26a10cf248900",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "c9ea9bd79ffacbddb11367c967adfcb88ba79d05c2d42c91ac1f4b069a223fe7"
+    },
+    {
+      "id": "focus-clarification-ask-presence-uz",
+      "group_id": "focus-clarification-ask-presence",
+      "input_sha256": "e65c538d6f3cb01f09a909b0fe370ef8a879a26b50114a3273c5c55a89428826",
+      "player_payload_sha256": "ffe10c03afa29be3948747a0229d9c3900198ea128aad1161f92908953623a25",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "f9e40ccca972fb50ead3f957743a35f5101d20f84107e01d6884ee521371d88f"
+    },
+    {
+      "id": "focus-appeal-my-warning-pt",
+      "group_id": "focus-appeal-my-warning",
+      "input_sha256": "aa5b4d7f40c0d49f80ebde9a7ace690c63aab1a612de7e26e44f016ccd378048",
+      "player_payload_sha256": "6f8d9be9b686a0eb71ac3663d218ec33ac1f78049a6bdeaaf01310187fdade2f",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "15a22acecfbd68908da73e5da1fa21b9459dc1c58bc32074512677bb57649c5e"
+    },
+    {
+      "id": "focus-complaint-other-player-threat-kk",
+      "group_id": "focus-complaint-other-player-threat",
+      "input_sha256": "909c79a0092874ef99184594235c676dda43957c7e992ccdb34aec0316498ab7",
+      "player_payload_sha256": "50244092573c2c30fd48ab4f100ee2fc98347cb26391b6f1576dbade73fc1e14",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "9faadec9d851c6595f9d1e924302013f17ada7eedff971fa08e20fe8c69576d9"
+    },
+    {
+      "id": "focus-payment-pending-topup-uz",
+      "group_id": "focus-payment-pending-topup",
+      "input_sha256": "12d751de7c6d15538fa800dceeaf6445f7fe97b6cb6aea8cfa50e39c4915576d",
+      "player_payload_sha256": "b1345f16f9208a68f34c03713959d84f6375db84dd6988dcf51a11881467d973",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "638b6c466219f4f3a1a572de398cb428357fba06dc81d293e698f11acc1a56d4"
+    },
+    {
+      "id": "focus-account-credentials-changed-uz",
+      "group_id": "focus-account-credentials-changed",
+      "input_sha256": "ea880593328b37e88674ff0926e6776eccb7933e88fc59146d10c9fb8a3a5bed",
+      "player_payload_sha256": "4170dd962545012589b184637be883e53debcf6e8c941bd2ad465032bb2e1840",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "00f25939d1bd5974924e0fdcae3722a459afe772b254b3a53e62e09a30c9121b"
+    },
+    {
+      "id": "focus-appeal-my-warning-en",
+      "group_id": "focus-appeal-my-warning",
+      "input_sha256": "118de1b704a6f4d0961706e3eafb76a3032e27adfb57fcae29596ee15daa2315",
+      "player_payload_sha256": "0c83f4c3ed4f28bbabc2e63d08faa442e046a9617e0fccb48f31a50e6ec86e5d",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "c0eb30733ef508c87cd5d773e50930f66fe7d46256ac987b4025baaa4a2c50cd"
+    },
+    {
+      "id": "focus-complaint-other-player-threat-uz",
+      "group_id": "focus-complaint-other-player-threat",
+      "input_sha256": "e8ba581776d73519d5d7d1ed2741e4cf5b04f379f909dd67e9a775cb85c6222a",
+      "player_payload_sha256": "b3bd8892e42839457c929ed38b3be8da7515edfcff9017e886a8b8a8fed3a8f4",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "efac23cb3287d69ce95406d0970032d8f6bacc449a13e8b7f11472e6e1da3fb3"
+    },
+    {
+      "id": "focus-account-missing-owned-item-uz",
+      "group_id": "focus-account-missing-owned-item",
+      "input_sha256": "2d3d5434e79f929efe34af2e74e8c7dd125f8ebba69ad420b52645ca91d58724",
+      "player_payload_sha256": "006088f6444800293dd470a36bc195fcfdf0d572f902b21f953e6382be9b416d",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "d33ca256b855b61e78b32da1f2e5d6b7f7527cb1b646c98c5c4261834ab7ff0f"
+    },
+    {
+      "id": "focus-complaint-other-player-impersonation-pt",
+      "group_id": "focus-complaint-other-player-impersonation",
+      "input_sha256": "2d0f814b144ee46cd65479c958eb13fabe9e461eb5f847e5da97cb3dfb93f2b4",
+      "player_payload_sha256": "f6b490b0a271e130bdd6d0cc069c988b949560a996d3d06b5d13924cd111a69e",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "2749817707e890128d7f4e8b4b28f0f3213b89bbc317fea9db8a6c6d94fc1bc0"
+    },
+    {
+      "id": "focus-account-ownership-changed-pt",
+      "group_id": "focus-account-ownership-changed",
+      "input_sha256": "e9ffc3741889eaa07c8773463a968bed1cde36cdb4a4f1cdab9298aeb39d30fb",
+      "player_payload_sha256": "b1300ca0258b2616a47eccf571d5846e20bc14e9d4f341b72c8c44a667d69b8c",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "c7f9e5f2ec1a965304d0e2d1c224fbe7739d66990fd0c37730798a9d97424c76"
+    },
+    {
+      "id": "focus-clarification-ask-presence-kk",
+      "group_id": "focus-clarification-ask-presence",
+      "input_sha256": "1633bd81a7343b81770dbf0d4632eac9df78a9a67f1602665dcf4cc693927aa2",
+      "player_payload_sha256": "1d4d14d27888b516199e5d7840b33bf4542236436edc3aeb05ea6a2f34c0b4e9",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "dde307742f12a2cba891bc6bbb3b3f93de0982af82c9921ae8ff10666281981b"
+    },
+    {
+      "id": "focus-appeal-my-suspension-length-uz",
+      "group_id": "focus-appeal-my-suspension-length",
+      "input_sha256": "0bfb7bf788d65f7de5a19d66c94c39d922fc7f6f93769e8b19cdef5817a09e46",
+      "player_payload_sha256": "07ee47ef13250f85bb269f68e2012c04d30391d095d69d66d016db5d1694b9e4",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "8fb37a34e1f92fc73cc9b0412374edc4d6c22d002966c667a3614547e0438d57"
+    },
+    {
+      "id": "focus-technical-client-closes-kk",
+      "group_id": "focus-technical-client-closes",
+      "input_sha256": "5556a02423fd0d69e1d0f773f0a17c242f05f28e63814251e03f1c91b890a06d",
+      "player_payload_sha256": "0dcc1c057c5f7e95d84a3f4e15f54e90e53fd991c81da6571bb5f726cd51ecc1",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "3abcf292fe8c77081c06523ec3cc0df3891ef794c1f22876aec9620ccd17259c"
+    },
+    {
+      "id": "focus-complaint-other-player-insults-en",
+      "group_id": "focus-complaint-other-player-insults",
+      "input_sha256": "b36fc8eb168fdb86ef55a0b067262245139caad9b87608d9693712f38b1856cd",
+      "player_payload_sha256": "8989f3f3c355897355ab073f198976a54b84cdf226333bd6a6cf50cfeb9cf441",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "064185e75db1ac90ab2c64a92720bd43f2233434d24799dd2df182f24ee6059e"
+    },
+    {
+      "id": "focus-technical-settings-control-uz",
+      "group_id": "focus-technical-settings-control",
+      "input_sha256": "755f9ebd87b42fe09513268f735094a10ff472987b8790fdade9e7d9acb02aae",
+      "player_payload_sha256": "5ab0efe36831cad3755b63a152106eb96023bb68d0ae4aefee49bb06b696b1e8",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "de09b596945a25ae95a043c48017e8c450812c33fead0b4ea1323ee66f9ae415"
+    },
+    {
+      "id": "focus-technical-loading-stuck-kk",
+      "group_id": "focus-technical-loading-stuck",
+      "input_sha256": "8c58b9a9b0b4add64cffd3c55e37bd7ae6519e5285295ae0455ca2ff8c7a538e",
+      "player_payload_sha256": "b0f2025becbfd120dea645fb8090b3553dae7410406b775315120f3be00c2a65",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "d4fdac38aa702a94dce13ce214113f27364570a9034cf42173f624fe4ba87a0d"
+    },
+    {
+      "id": "focus-complaint-other-player-impersonation-en",
+      "group_id": "focus-complaint-other-player-impersonation",
+      "input_sha256": "693820cbe3c82b65a709d3b2c1ecbc15ec9bf11a2924f21f797bea31d26823b4",
+      "player_payload_sha256": "ad3a253100216d0c97b1845ffd7e5b491b49479886cd6db97519e561ee55f43c",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "13c6b641b755e2d74e79bc7e9f0011aa2bdad239534a14a336920ff90f87d4d7"
+    },
+    {
+      "id": "focus-appeal-my-suspension-length-kk",
+      "group_id": "focus-appeal-my-suspension-length",
+      "input_sha256": "4c0798ad7ebabc8e255004e6f313e495c2f6283e26ed241c19c0b44451cb10ee",
+      "player_payload_sha256": "1bcbc5d71f95ff393ecb56f41c8b27ddd1ee88e22457610324ac631c8a1c1edb",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "811c5c49e742d233d7c0a5eb74b4e98b4860ee809445afa5b17240e9e74c75c0"
+    },
+    {
+      "id": "focus-account-ownership-changed-es",
+      "group_id": "focus-account-ownership-changed",
+      "input_sha256": "2176632bfbee46e0980ba5667f22f8ca1c95b8221b2b6b55d317b2c142d86ea2",
+      "player_payload_sha256": "da8d9d2d62093456c8864e90cb3af9813bb5e917a5afb66b7bf173d6bb29b421",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "a78147aaedbff2cbfa1ebd056bfcd916326a4881843cf56defaea655508cde3d"
+    },
+    {
+      "id": "focus-complaint-other-player-insults-es",
+      "group_id": "focus-complaint-other-player-insults",
+      "input_sha256": "3651d438719c32085d8155c31043b090523471c6e07b38543760b60c8d4a966f",
+      "player_payload_sha256": "0a5657807476e6095ebd331c5efc5f105bddf3e62516dcd60ecf9dec096408b6",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "7e2bf31eb9c120cd619d8ec68c925a62eed5e4bdb015355234f6154d61dfe014"
+    },
+    {
+      "id": "focus-complaint-other-player-threat-es",
+      "group_id": "focus-complaint-other-player-threat",
+      "input_sha256": "f74fbeb2ea1e58865460fcf4c02a6dfecaaf9da90967822620ea795ba1ca89b9",
+      "player_payload_sha256": "a23ddfe99ad4548af5547d67ab2ac6b071cdb032d0f7e9ad19dc303a2cc5e179",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "16809388f436462229d586c9129a7a061798024c6f9c4faa7621ae57133e12f5"
+    },
+    {
+      "id": "focus-question-notification-location-uz",
+      "group_id": "focus-question-notification-location",
+      "input_sha256": "08bb907ded71a33208e9492ac0e7dd3b9ee1e72a8b6e8ddf10721157c5a8126d",
+      "player_payload_sha256": "15043214033a8dd5a72e817ca888859ec07d2aa8bd1cbbccba668dce8bdab087",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "0c2903715cc2824cbd74d00c7b947705a588b23e49b81b496ab0374bb338cb0a"
+    },
+    {
+      "id": "focus-payment-pending-topup-es",
+      "group_id": "focus-payment-pending-topup",
+      "input_sha256": "8a298e8e21d594c5b464a56ccc56fc19d2cbdcdafd0c4477b96e753fd55efa1f",
+      "player_payload_sha256": "12ac98388d284b1a6d7a393c38a252d7e34fb1f8ad87f4919595271e1c4afaad",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "93e39361172c3822f7fab2f5ec6fad5dc26df5954deda5c1d9c6f21001d64005"
+    },
+    {
+      "id": "focus-technical-settings-control-pt",
+      "group_id": "focus-technical-settings-control",
+      "input_sha256": "d7f0d5fe49dc1422bd6a9c664967e30afb080cee950a22a97f21e21dcb022ecd",
+      "player_payload_sha256": "179546858c59825ff2fd055eca207d84c08721cc1fe8f77a3adf820e4677c0a5",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "2aca69446daff5a4123fd177b91d5c0ca5020ccaa56dd5fc98b17b7b88e273e3"
+    },
+    {
+      "id": "focus-payment-pending-topup-en",
+      "group_id": "focus-payment-pending-topup",
+      "input_sha256": "ac73fcb9cab267cea56dcc794206c863937297ba0500f0532d7d04a20f91d93e",
+      "player_payload_sha256": "e708886bd0fcc27029d6d50458994b80302caf81d4ad6e7ac2facd842b5845d5",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "42c0c0ca89fc1a23670e33b583340d772a30a24287ca6660bfd3e8043bbcb521"
+    },
+    {
+      "id": "focus-account-missing-owned-item-en",
+      "group_id": "focus-account-missing-owned-item",
+      "input_sha256": "1cb5edf40716fc49f7b7f0b2ee46f6e72e8ed89b916e72c113b51e246529da1e",
+      "player_payload_sha256": "9384e43f68a500fb734f4d26151ca4d2f3446ea5cfa20dfcb1e122e9d3c754ca",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "7a3df38b1c18f56daa73808af7fbd68a5e47a0e94f4c128f5141f1c3cc3d77dd"
+    },
+    {
+      "id": "focus-technical-loading-stuck-es",
+      "group_id": "focus-technical-loading-stuck",
+      "input_sha256": "9d4373edb617dcec69229ae8d26a18bbd607a04344f5c721c3f51d1ad82a1f61",
+      "player_payload_sha256": "647d4782bbebf8bc5abceb183b21c059562024502ed4ccdb7b234519af29e568",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "63f0307b27b96855d2ad422481d159fff4a184cfe18c6e8fe8db34a480267ac6"
+    },
+    {
+      "id": "focus-technical-settings-control-en",
+      "group_id": "focus-technical-settings-control",
+      "input_sha256": "5ea4eb56270f8a4dff7548a22972c3c74e0aa68aa190450f28da798563eb5b80",
+      "player_payload_sha256": "07b9a972b14889efce44116f3bff74cd95f27940c604e9ce597e2783e0278e64",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "deb6f3a4fdca12ddf3121be70c98ab3baf8c132ac760fb25642c02f1f6af778e"
+    },
+    {
+      "id": "focus-appeal-my-chat-mute-ru",
+      "group_id": "focus-appeal-my-chat-mute",
+      "input_sha256": "b868e23382ac010c579632b25501ed1bd42313164eec4e9ddfa35428b914675d",
+      "player_payload_sha256": "7d527b09ffdc6e4f79edbc77ab0617536498bd847ef8d4aefa891ab6a051eea5",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "b59c07408f873aed32f919291d3c6f319a455cbd057a4e33be3391c32d85cccb"
+    },
+    {
+      "id": "focus-appeal-my-chat-mute-kk",
+      "group_id": "focus-appeal-my-chat-mute",
+      "input_sha256": "a87033ce12c89cb7a44bd68f635843330015179fbb4df031d66cafbc43885bd0",
+      "player_payload_sha256": "26e2cc43309f257b64ce06813e66354da7219932057c8e42a84b68de8db0bda0",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "d4628a9317bdd1d8bc6e78f7c4dcac95ade507c83569c710c052562e39845286"
+    },
+    {
+      "id": "focus-clarification-ask-presence-es",
+      "group_id": "focus-clarification-ask-presence",
+      "input_sha256": "dd70a27cb180340ce6fc5e2f1b13cc70d2de7928f5d4a669a25701f0bf0893ee",
+      "player_payload_sha256": "f53eafa013159addbf1feb31a60b3dcedf2048c88d9e958d809a3e62be7ee582",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "26d464a315c032b314cc8c5579fcf283e8f614fa63a625773bdacb352b92cee0"
+    },
+    {
+      "id": "focus-account-ownership-changed-en",
+      "group_id": "focus-account-ownership-changed",
+      "input_sha256": "f1a57ee9dedec4c011168076d6c1e3c92508d01f98dd8ccd5e9f4718b9876ec4",
+      "player_payload_sha256": "2520d66e8542fdd8322549914643f42f31564b2b6770720b0408ed095f1629e0",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "9fef27a0bb2b1c3c37694d70edca283c322bc944442543cb059c989b2195ae18"
+    },
+    {
+      "id": "focus-question-event-timetable-kk",
+      "group_id": "focus-question-event-timetable",
+      "input_sha256": "c047cf359115fbac1daffc2f98412e96bbe8a2505de25d957aa6ddfe6ed4ba3c",
+      "player_payload_sha256": "5ae721cd6705de879191c2542ce0726118bb2ac6ced2cfc3db1e148d55f9617a",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "57a62d22d8e2c40dab64b87dbca5839f18b4becd87f4453480805e63b065582b"
+    },
+    {
+      "id": "focus-technical-client-closes-ru",
+      "group_id": "focus-technical-client-closes",
+      "input_sha256": "db01d5f514c7bb63a45914cafad62a5bf2b659c8e1010a4705f4b01d83809756",
+      "player_payload_sha256": "a842a0ab0096bd5d97f025dde31d4c1a2d12b7497604e96cdf29673c8c07f352",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "e677c71e7f5c05fb368731f6dbff1de46cc11da2c5b1144556d7ec5e41cc77bd"
+    },
+    {
+      "id": "focus-complaint-other-player-threat-en",
+      "group_id": "focus-complaint-other-player-threat",
+      "input_sha256": "5a185c11a4d32e1916957d68c61eddf7495b3c8da24b94fc6c79d2adb7ddfea4",
+      "player_payload_sha256": "0340c2153264b57d1d91b949df9af49a3d4191dd0e9210fcf5127d71b975c144",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "6c66f9a2bf64fd6dfbb743a1e3a83dd51ccbd4a6599389caed61530571b59689"
+    },
+    {
+      "id": "focus-payment-double-charge-kk",
+      "group_id": "focus-payment-double-charge",
+      "input_sha256": "b448d7f4cc8e5033bb3f2fff214bb00774e823ba6470b650bf8125ec4d60fe98",
+      "player_payload_sha256": "e789cbb9c84956ff4e4a269594ebf49ebb7d4f066153947d6b1017a706be2dd3",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "16994259044e49fc75110666e19f7522c2c20dfbcd3cf6cd07d6c2f51da9fda7"
+    },
+    {
+      "id": "focus-clarification-open-conversation-en",
+      "group_id": "focus-clarification-open-conversation",
+      "input_sha256": "00b53cf95f779fe93934c01735b3ad1dd92dd3c0973865127368642cbb9564c6",
+      "player_payload_sha256": "3788ca35c2e18df05f9a46a9d9352381d9a413678c6fd7e77018ce087b9b6b82",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "4bc7bb4b859db8d8e7f3899f25f574933648a578d6982a0a36d36caa5fc9040d"
+    },
+    {
+      "id": "focus-payment-receipt-dispute-pt",
+      "group_id": "focus-payment-receipt-dispute",
+      "input_sha256": "8a51de6626b74f82ef646a977d19de8ec007f4231e1d272cb4861f0461a9869d",
+      "player_payload_sha256": "8324d45c00f4f63b09fa095825e15fb93bd99cd87f67023a3495469809f92f35",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "dcf80418341100fab17ede5282f273da1ca05ab8bbe8dda53feaa56e5571b875"
+    },
+    {
+      "id": "focus-clarification-help-unspecified-ru",
+      "group_id": "focus-clarification-help-unspecified",
+      "input_sha256": "685c9f2e2c83b0ffa7e976af4045a42dffc534bc52592af70131a8482ae558b4",
+      "player_payload_sha256": "7911745a94633268b739ad6e325e8a811ddbc288ef3b3e2684300bd0d40b9845",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "468720139ba57388876bedc6eada2d4e0e97c0e0643673cd95ccd4ae027f5fe3"
+    },
+    {
+      "id": "focus-clarification-open-conversation-es",
+      "group_id": "focus-clarification-open-conversation",
+      "input_sha256": "f8144aabcaf37c3f05c244825a6a55a73477929df218fa94bd2066632c63a118",
+      "player_payload_sha256": "3f3def6b242d39f753d1b5d8feb7dd0bf70057dd4bfaf9f0e6ef0e37ee178d86",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "5f97bec427ddcba1d9eac8f260994210a5b5eac1f4c08011552194ed9c3985aa"
+    },
+    {
+      "id": "focus-technical-client-closes-uz",
+      "group_id": "focus-technical-client-closes",
+      "input_sha256": "ab2951b2c037dffa948a5f820dd745d92c1baa56d8e480aa1b82a4dc1a1039e3",
+      "player_payload_sha256": "e32620ab6e3f792e273fcbe3ab29a0c2227a9bcea2fa4729b506f465d1ca862e",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "e8923e3ffc646276a5c42bc7d8624c1e1a5c1ebfb8d3260788557ff20d591551"
+    },
+    {
+      "id": "focus-appeal-my-chat-mute-uz",
+      "group_id": "focus-appeal-my-chat-mute",
+      "input_sha256": "895e1190c7c4498b952cc49da221ad0a9b502b50b783e95ea047cf339578300e",
+      "player_payload_sha256": "d1477b735f864fcf0c1e5e2bb411319b1974a73f1e49695893043d1596606d91",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "4a31b085a88fb31c70feab5cbae35a329772751e4ae4cf418da180b5a3ef7ed9"
+    },
+    {
+      "id": "focus-account-credentials-changed-en",
+      "group_id": "focus-account-credentials-changed",
+      "input_sha256": "1002bafe9dd91589e008aec55a84c8b9a136de13402d8d9adaac3fd129efc19e",
+      "player_payload_sha256": "814af19494476895ee83ff4789f9f081037812918be88f5059bbd09e6c263e85",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "0245cc2e31892a6ca0fb4f6e93e4147464e8953b7b24b9c6982a4c1103ce3fff"
+    },
+    {
+      "id": "focus-question-interface-term-en",
+      "group_id": "focus-question-interface-term",
+      "input_sha256": "1c79a05640ad72b7e80534c60999fd26b487e43898f52ecdec3fd3270a1eabdb",
+      "player_payload_sha256": "4e5662f038cca50005fa459f0a40fe40800b0aaad872b9f6c16c771f7653c3e8",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "29450e9ea15711408b9ca5722e1e5a35060f746361ba533536e59cdf8b1041c0"
+    },
+    {
+      "id": "focus-question-event-timetable-es",
+      "group_id": "focus-question-event-timetable",
+      "input_sha256": "67e819267ad7442f5226f248cf7e44d49a07cda40e5dd30804f845e86e6dde13",
+      "player_payload_sha256": "f69039c1fe17f791c48746cc287e4cda6fd67fc73f8292e0f92e1a7d7f71afe5",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "88902773d3f2864c4165a3c99c246461fcdf652b81e80d06515ececf71fbd28e"
+    },
+    {
+      "id": "focus-appeal-my-chat-mute-en",
+      "group_id": "focus-appeal-my-chat-mute",
+      "input_sha256": "1b225dff7602419a9ea2cc18ac04353209284faf7ec1886316ff95cf6a3b24a2",
+      "player_payload_sha256": "f7ac5f9e874c2315a17324bddad561d05d03422780e81fe0a84aa1a950bd902d",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "a014134725b7e3d446c3165cfe81e0ed96c2d8ca2fe8941bf3a58e2945fe0e06"
+    },
+    {
+      "id": "focus-clarification-ask-presence-ru",
+      "group_id": "focus-clarification-ask-presence",
+      "input_sha256": "a4820fa72e5bffa807a36845da2ec16f43989b3069e3c1787b540ecea1f88fad",
+      "player_payload_sha256": "365d0ae1026bc0e4b2b92263e60236761ee30f25187856338aed59af7e201946",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "29c650e5c18280752c8fc8fb47c8669f84ae5fc7a8ad0f75aeb29457a5868f24"
+    },
+    {
+      "id": "focus-payment-double-charge-es",
+      "group_id": "focus-payment-double-charge",
+      "input_sha256": "8b15f2e5c066695bdffcb72f72df8467a0095bb0d72a675ef801727d878e7855",
+      "player_payload_sha256": "cbaa284082c97d63494d9325b887f4af3f5401e70a1efedac2279e4f2410c91b",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "150e5029a7a79776fbe5ee77d6793cba971b9bcd83e50db2299114354a56b9bf"
+    },
+    {
+      "id": "focus-appeal-my-warning-uz",
+      "group_id": "focus-appeal-my-warning",
+      "input_sha256": "2bbfa158e453157fef248ac7f0f9849bf5be11d072620313dda00dac7d1307a9",
+      "player_payload_sha256": "226f4a49dabf90daba5584c3ebec552a43afdbb78e1873e7ea1bc9ebff613189",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "ab05df4d226d469c1e9930195594a049005cafd18910b50217334edb903a19b1"
+    },
+    {
+      "id": "focus-payment-pending-topup-kk",
+      "group_id": "focus-payment-pending-topup",
+      "input_sha256": "6fa4d5e51e8d5f20857738641a41d7aa327cefd333e5f207012622e1d06b37fb",
+      "player_payload_sha256": "a6584f027dac89ad8552a56ddad5d596affaf473fea1229cecb46a9c056ef36a",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "6a18047b119f1ea02e8d218a3663569e7e0e4359c612f3fc957eead44d0e4833"
+    },
+    {
+      "id": "focus-payment-double-charge-en",
+      "group_id": "focus-payment-double-charge",
+      "input_sha256": "e17c3370a2730510417f7df9fbbfce482ac86b9d572e9e33a1eedf1951e443ec",
+      "player_payload_sha256": "91be95831944cb992859015449afc8b586b7ba880c7ab67c7f1b3e7a9fdb7cb8",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "fee8e1531b6c094592639dc2c4d0e91c32cca328144f1df423d10fa233b7207a"
+    },
+    {
+      "id": "focus-clarification-help-unspecified-pt",
+      "group_id": "focus-clarification-help-unspecified",
+      "input_sha256": "cc785cb420a2f3f10737a1f88965ad85f485865765c6bb784837731ae4e64ba3",
+      "player_payload_sha256": "6e685d6b9468d39f28c985e79ed5cb8df5c77b6c6386bfae91cc57a476e8fc0e",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "286e82e1fcb8f918c41b56c69911d3c2c36d7cce7226ec35b5505d375affbcda"
+    },
+    {
+      "id": "focus-complaint-other-player-impersonation-uz",
+      "group_id": "focus-complaint-other-player-impersonation",
+      "input_sha256": "ea4541ad2bb2048946752776f399b7e9bdc7d4be2e4e830feb0281e6d96ec9ef",
+      "player_payload_sha256": "efe4389ce5966c62b47068672e88f7e5753cac21ad3311332ee157e9ef938250",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "e38c432dff315e31025a11010defba76770f15bbdd35470b1024c4f698e821b5"
+    },
+    {
+      "id": "focus-account-missing-owned-item-es",
+      "group_id": "focus-account-missing-owned-item",
+      "input_sha256": "cc1348b748f07354483f8b1c56ad4b0b2067a5470b528c92d37af240648a16f5",
+      "player_payload_sha256": "27ee2386fd06910c670d566e568f02ed7013aa4a74a16a12c617d5cc0f30d0d6",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "b1fe56b74caa5c5c7d3c0b6ba26a2f7167ad1ca561537c528bb82b25506bdf12"
+    },
+    {
+      "id": "focus-clarification-help-unspecified-es",
+      "group_id": "focus-clarification-help-unspecified",
+      "input_sha256": "00189b3654ee83ba4fb0ae4f7583adacbee3e789b6ab4c3ff7ec0f3cc7f72c67",
+      "player_payload_sha256": "5c52715ec7066e08bcb2bc3929dc01c388abcfcbe4b794a0de2e351dbfa1d06d",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "0d563312b7734d8377bf58e90ca74a96a7848252375c41b74196821673867eb4"
+    },
+    {
+      "id": "focus-payment-receipt-dispute-es",
+      "group_id": "focus-payment-receipt-dispute",
+      "input_sha256": "a712b9f45a6842e6ebe0abf7c0d5d3dcd7ec33505e44a957a8330ee5d1da6bfb",
+      "player_payload_sha256": "cbc26b3542c05059c28cb57e4f6f4ca9641435fe492e45fb5950a4ff4ab67a9a",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "84d1b5c56844ac9194ccf8dc9cce82cf94b6a4fb3b2285c04d9dadce6a1b993f"
+    },
+    {
+      "id": "focus-technical-settings-control-kk",
+      "group_id": "focus-technical-settings-control",
+      "input_sha256": "4ced517d078e61d37a2b0e9093e0dd544f24d40bc31fba6cbcfc43df79d59141",
+      "player_payload_sha256": "dc1dd8d1869d969288100dc635035a33bdb7fde89c4adde14472e40b8d792713",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "996381eb4f98a691f7bad8a2b31aee62befaccd042c453ed2e6b5c54f8a90302"
+    },
+    {
+      "id": "focus-complaint-other-player-impersonation-ru",
+      "group_id": "focus-complaint-other-player-impersonation",
+      "input_sha256": "95f5f35229f5dc711889da2755118226670935c0ce0d25e345145e76b3c083b5",
+      "player_payload_sha256": "1284e4d64e2f5f974d3c454d3c2214bbe4f4f9385c2fb8152950d2f5c77d72d0",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "7c4c0fabbd26f89bf6b35f20ca601214abc5339a53ea4b0fb4e1178dc1669119"
+    },
+    {
+      "id": "focus-complaint-other-player-insults-ru",
+      "group_id": "focus-complaint-other-player-insults",
+      "input_sha256": "4ff567a46595300b9dd0978d0eba93c017cfd21a8fad6c041bad5e1b420b276b",
+      "player_payload_sha256": "0ae0b84fdf5f9324c379c0b2f14658dbd5997711bfe03ef3024f8c0a00440484",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "c28635a09d18c5e2c6bed002051fbab7aa8c00cd4c10a93bd194f3de85028d3c"
+    },
+    {
+      "id": "focus-question-event-timetable-uz",
+      "group_id": "focus-question-event-timetable",
+      "input_sha256": "11d664c564ffe4d4a9ee85f681a7763c8a77341d6db775802a0cf5c91a2e86dc",
+      "player_payload_sha256": "d28a4c97a8ed19a2c346bdc1fe1335a45574d966da278bd0f6deac1de16652c2",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "4fe96da9dee9ad60e476d27724cda589aac9cdcca48187af824857c4cfe31e0b"
+    },
+    {
+      "id": "focus-appeal-my-chat-mute-es",
+      "group_id": "focus-appeal-my-chat-mute",
+      "input_sha256": "10e6b94d816afe87329377147e11098f9fcaf3e5417d05380cdb43b75d174d75",
+      "player_payload_sha256": "12e959580b7324808c27848bceb7eda1969f377948586ffa3283fecdbbe734de",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "357eb5125fb7d9f722f04c5268f1172b3d4ab8b54cf4e0496532a7dab5166a94"
+    },
+    {
+      "id": "focus-appeal-my-suspension-length-en",
+      "group_id": "focus-appeal-my-suspension-length",
+      "input_sha256": "10b0a06f6b863a6f5c664805a90261a966f1ee68e7f6fbd48cd53dcab7361a6b",
+      "player_payload_sha256": "7d0594a660037663ae4eea6f38b4401bf437acbc96bf6081e408b1b69bbfb3d4",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "8b4c897d668068661893162f455003be146c8552ad691061c8914e5a8aecdf17"
+    },
+    {
+      "id": "focus-question-notification-location-pt",
+      "group_id": "focus-question-notification-location",
+      "input_sha256": "0504545591cca55cfb805240e1d07a36de383fce799fcd2a3de8481da0fd40c3",
+      "player_payload_sha256": "a31e1ffe0ec779af7263014f892ea294f8bc7cbf6ad1186abe362ead6b2b4828",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "ec54a9a244887a8a69ea71e789283ed65e14cf8a6ad733e5e1842435170f8881"
+    },
+    {
+      "id": "focus-complaint-other-player-impersonation-es",
+      "group_id": "focus-complaint-other-player-impersonation",
+      "input_sha256": "aa3fa1b4877e7337f91a67672bc6b7c3715b652f2544b0009d667678797f49b2",
+      "player_payload_sha256": "81f58981900b86c0375d43ed0440589b6f56b5f51b41596371be05e399f7e78b",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "88e45f18e4d2b0c34c11bfadb280dd013a056153789c22520068323cef6623ed"
+    },
+    {
+      "id": "focus-technical-loading-stuck-uz",
+      "group_id": "focus-technical-loading-stuck",
+      "input_sha256": "d584ef2492d687cd643dadb761ca9bd75a7c3b984e54329847e56fedbd29a25b",
+      "player_payload_sha256": "e5210aa033bc5c5e0221fd7b83d85dfc2d0ef2b02add42a465ceff673037d461",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "c9fb805dc8cd4a4ce12f4bc83a2cbb86ec9af05e3b9bcbc2fd81bf98db94252c"
+    },
+    {
+      "id": "focus-payment-receipt-dispute-ru",
+      "group_id": "focus-payment-receipt-dispute",
+      "input_sha256": "5abbf0915846a2a34ee4fd94223f0fe9b2b11e6fbe3522a4231ddcfdc7312b6b",
+      "player_payload_sha256": "1c362f770c283ea5b66fa3985139b38b1db1b7976123ce991fd7eeffd5d8161f",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "3400d1c9dc8fd16c692a27f9f23aefec62c40120d3ca04a78ae55725870ff4bf"
+    },
+    {
+      "id": "focus-appeal-my-warning-ru",
+      "group_id": "focus-appeal-my-warning",
+      "input_sha256": "61bb440c554272f039d4c6756edd707aebc825e57726a74e8b121c1d90f86fb8",
+      "player_payload_sha256": "ccbd498eb796874f6a0383d6fdb4f9c6dd4aa3684247a035817fdd997fe567e6",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "604743040b79b25c4b1b2df8aa53bfa823616c3c1618438165ed3795a35ed057"
+    },
+    {
+      "id": "focus-payment-receipt-dispute-uz",
+      "group_id": "focus-payment-receipt-dispute",
+      "input_sha256": "3ebeb5d78238bbee81c4b2f9366f32a70572f93efa6e6b4d67dc5b1afe9c118f",
+      "player_payload_sha256": "ce6bb6bc35e894f5c2bf81fa9e3a011bdec165b395db9c55d921fc3a7538ac88",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "7292a5da1609a37b9e93a6874afec1a9503021aa7d2c76b00e36d3b1a328eccd"
+    },
+    {
+      "id": "focus-technical-client-closes-pt",
+      "group_id": "focus-technical-client-closes",
+      "input_sha256": "4432a2553d82c17747b407e761169a65347b01e47ebdcdaae3ec30f483c4cfab",
+      "player_payload_sha256": "df9e39782855d4993b19434a21a973666d3bc4f899ea7cb8e55e8be9ef695035",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "c77b81481b12a3444a2436e2b5fae3ccb7eda1b1c07873e655691f2e89870db6"
+    },
+    {
+      "id": "focus-technical-loading-stuck-pt",
+      "group_id": "focus-technical-loading-stuck",
+      "input_sha256": "dc266858b9fe1434081002157e5e2f7692a9b3358a641752f7922ae1ce45203c",
+      "player_payload_sha256": "f467157bcace9ba53721c31ab9ec57fd1f23d8578295cdec27f4c82dbdf18a27",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "ac552f55ce21a2a25711c45eb97cdf07710780d17803ca6481d7d7d4dc8250d6"
+    },
+    {
+      "id": "focus-clarification-open-conversation-uz",
+      "group_id": "focus-clarification-open-conversation",
+      "input_sha256": "c89868b0b9af40cd7376686b47ccb1765f518c998f09829dcf0c575ba2911b17",
+      "player_payload_sha256": "4552b7c5de6b49288fee22bddc511549053cc5a28ff3e3dc0bf7d1fcfd71926e",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "9bef043c4b258e6f808e8a5eb035f2248562e1de25be154056ccd009994d51ac"
+    },
+    {
+      "id": "focus-complaint-other-player-insults-kk",
+      "group_id": "focus-complaint-other-player-insults",
+      "input_sha256": "5a52976e1f0203eb94f3a43760b7df61479645fba8b22e28f3fcca6bd752089a",
+      "player_payload_sha256": "00f52c2c07634015c8589494666a8d5cb0bd90e0839ad86aac6725030eac5255",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "f5c1cb79231fd00a12d062014c8be2681cc8321f2898edbcb34f0299d899ab27"
+    },
+    {
+      "id": "focus-appeal-my-chat-mute-pt",
+      "group_id": "focus-appeal-my-chat-mute",
+      "input_sha256": "3a0153879c17e89ffb86ae616a3418aca19cc7fd7f92f681ead74a75d2cefec3",
+      "player_payload_sha256": "034e5775e9213b91f673f5968a65308d63dfae9c1d4efcee9f1dd5579f48ed26",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "51bb88c28ef66e43ad3e92b9af875d957e535f6449f90fdadad788c8792a6324"
+    },
+    {
+      "id": "focus-technical-loading-stuck-en",
+      "group_id": "focus-technical-loading-stuck",
+      "input_sha256": "a9d34f7297bece4a45f0ca4396a4f610a5665d2c49a82b1c764f706675c4d2da",
+      "player_payload_sha256": "714c96eeff571c0ef2dacc59b581d9c4ce0805a4ab44eb5dc8e540f1b6f28dc2",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "fcf3c3a6ed1cd955f63e8ec71cb421deff4f2ac18f31896bed840f6864950309"
+    },
+    {
+      "id": "focus-question-notification-location-en",
+      "group_id": "focus-question-notification-location",
+      "input_sha256": "c0bf45c2d54835e96b71de7adddf7fd4342edf6eebd91d2f19ef4069bd7c79f7",
+      "player_payload_sha256": "c6df833d54534cf26d45197cfa33cd59de48266777a1318db03caa20cebff32e",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "8ba042047d70c9ecf6a4ec68302bfcf712aedaec20c6517233c81e2fb0c58a06"
+    },
+    {
+      "id": "focus-clarification-open-conversation-pt",
+      "group_id": "focus-clarification-open-conversation",
+      "input_sha256": "fd477bcec65c59a20330c45d0a2fbe4d3e7ff71d506d841d9b3231e2cb42f4ab",
+      "player_payload_sha256": "24fe762e2d6d229b9c02a19e4899361e536f930b9b9a4269a99cb02b967a0d9f",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "45ee8e043955a70db2f4888915cdcceff2af2601507f590c7bffcb9b28c19101"
+    },
+    {
+      "id": "focus-question-notification-location-es",
+      "group_id": "focus-question-notification-location",
+      "input_sha256": "a4fefbc50b86f2a969dc76d78fdea49103458a3e0fdc512e218758f32cf20c74",
+      "player_payload_sha256": "72ac25c28a17123f287921b5a2b2a5cbb1230d87358d0007183cd9aa93f1ebb3",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "9a39511aa68237c5430e4792e78f5079b1e4fa8af03473c2f1f731919c69486e"
+    },
+    {
+      "id": "focus-technical-loading-stuck-ru",
+      "group_id": "focus-technical-loading-stuck",
+      "input_sha256": "f9b901e8fce6919b9dd2fe811799f02e1bddcaef13e31a468795e6c235084bb7",
+      "player_payload_sha256": "7a481c4e46d4633f0ecee913004d6a6f5558c00d4225f03cacb23b797c72473c",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "81da7b1d16353eaa93512aa2ad1f0aa66ebdacb3772f51879871c9cabc3c4044"
+    },
+    {
+      "id": "focus-technical-settings-control-ru",
+      "group_id": "focus-technical-settings-control",
+      "input_sha256": "f4ac457defb77a76ec6960558af9916aa3bb268a0b299a625ac141dff922ab52",
+      "player_payload_sha256": "3f6833623eed0a2fd70670cd98a2e4443efa93834d4e72c3dc90cfc29c892383",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "fad7ec6bc0b35042032b5509d7919042f6d75d98460f479928e9322e2a77286a"
+    },
+    {
+      "id": "focus-clarification-help-unspecified-en",
+      "group_id": "focus-clarification-help-unspecified",
+      "input_sha256": "6d82a338f81f8640d0741b5aa7656fe1dc8cd1dcda664f901f132b13bb058349",
+      "player_payload_sha256": "a7cce3d3eab4163f910ecbd0a5f9814db2dbacc640176b6c48021e5c3576b9aa",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "cd60b2500db1bc5c5dce054d1545c373dbc4bf91350e538d414392febf235d2a"
+    },
+    {
+      "id": "focus-question-interface-term-uz",
+      "group_id": "focus-question-interface-term",
+      "input_sha256": "906efafb66813d331fb9e46fdb0e97254c5ef3e89b33c984c9ae66d57527ae47",
+      "player_payload_sha256": "c5bcc9c224db1d75be2d7c476511ecaaf4f4621398db59a46a1c0fe1d39bdc22",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "8226c5df6efce88cead62a95081b94d38cd1c3a3079abdec4206fb79e5d37354"
+    },
+    {
+      "id": "focus-question-event-timetable-ru",
+      "group_id": "focus-question-event-timetable",
+      "input_sha256": "22005d09093f37a2dc4effdaee68cc08be1fa6335ebbd7568a607fafb3e0a1c4",
+      "player_payload_sha256": "0894896de64e830c10a0528a437a3ae7e4a12ba0f2ff5e5ee0543ac640670925",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "53d58a45cf801f230da9a4a1781f54574115b8df9872a04963456999c13cb043"
+    },
+    {
+      "id": "focus-payment-double-charge-ru",
+      "group_id": "focus-payment-double-charge",
+      "input_sha256": "66924a1d1cf82002e046baf22b64f877fb1bb5446d2b545d13514ac722c45683",
+      "player_payload_sha256": "f43f0a44410ee50eef74cc070c2bf1a9db5d790f2094e4059f29509b85ba24ac",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "b4772d93712d1a28673c11a5116ca41d517a58895802a0298690d2d686c301ee"
+    },
+    {
+      "id": "focus-account-missing-owned-item-kk",
+      "group_id": "focus-account-missing-owned-item",
+      "input_sha256": "af05b2fb400bfadec2755c83080e56c90e4f09147896bcfa25cb150cb6831d9b",
+      "player_payload_sha256": "e7deabb3900b35d1adbc98fa303d80abf22aa7cc925235a70d76cf7825dfb76c",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "a5edb60e3ae3fde6a6aede22188e1ed4a06d0945ac9e8f9f9d64a603aa4de5d8"
+    },
+    {
+      "id": "focus-appeal-my-warning-es",
+      "group_id": "focus-appeal-my-warning",
+      "input_sha256": "1a3e79667832660c72d17b0f58437ab8824f34d201d36d4d5463626868bbe701",
+      "player_payload_sha256": "b2360c04a0419e0d09a23756003c05c6f96f9676bcab879c5085d356c1fdae88",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964",
+      "original_row_sha256": "ef0ce930dc14c4ae4574cc50923bdd8919267d3e94bef06bed1ec862ca7f8cdf"
+    },
+    {
+      "id": "focus-technical-client-closes-es",
+      "group_id": "focus-technical-client-closes",
+      "input_sha256": "01993874518b5c6293c5b0240af222adbbc9ae74b5c237bf3c71fb70886addb3",
+      "player_payload_sha256": "2cd95acbcc0cd2246fde91a70427600dae39cf48fd5de2b86f10c92644882d5f",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d",
+      "original_row_sha256": "4f2beeb42387408d6db0c36348c7b4d7126364e490560aabebd128b1943e9015"
+    },
+    {
+      "id": "focus-question-notification-location-ru",
+      "group_id": "focus-question-notification-location",
+      "input_sha256": "82ea8c8782e6341bad52e8282e26427a4ee54220b385f8a3bd09660ce4aeecd3",
+      "player_payload_sha256": "578e1e2cfd9b671681674c38cb22f4370cc4a39471ff078d6a25e3cc333a7130",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "e3a54cee0acca6ab1277dde7a9883e96d8a8b2d2017240447c41f606573a91e7"
+    },
+    {
+      "id": "focus-payment-pending-topup-pt",
+      "group_id": "focus-payment-pending-topup",
+      "input_sha256": "d4d758013ee4b1f74c00f0c515569738ce990c318f7b70b8f1141894a89bffb2",
+      "player_payload_sha256": "dd0462a5bc38bbeb31bf4dffc85eafba54b0de0622b1305024b6c91c901d4c5d",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "ed765b82d8f9a4f28fce2ac3099b8363f8e05e23caed452ead1c99b8074c71d9"
+    },
+    {
+      "id": "focus-question-event-timetable-en",
+      "group_id": "focus-question-event-timetable",
+      "input_sha256": "c9c7d4d81751e4c0ab50e8e8aed2fe09683c051def5030659a02bc3afa00aa03",
+      "player_payload_sha256": "49c3cc727332078c75ad6ec2e6096a2d0ebd18444ca18aadecc848ff3d5a4151",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "1ff8d66a85217639cb8ca72f86b85024614719a5b38a5444926a8550d8e95471"
+    },
+    {
+      "id": "focus-question-interface-term-kk",
+      "group_id": "focus-question-interface-term",
+      "input_sha256": "207332850369eeeb95468130db11a0d385a8f1ae06d78801a76ae592b863201d",
+      "player_payload_sha256": "339a61435dfa2a8f5dac5ccbbf469341f67c177dff7720bab34e571efc679882",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "2be5c11f86fdb6f2846a84e39dd387d81ab43c69c134b0cbbd69519084d009aa"
+    },
+    {
+      "id": "focus-clarification-open-conversation-ru",
+      "group_id": "focus-clarification-open-conversation",
+      "input_sha256": "06baefbb4c8e3e85cf87574f7d597fa1b1e7f4c038a836eba4ac18a7f759d5c3",
+      "player_payload_sha256": "14cf16fbfcf49a66d55371eb2ea08128bb70dd8b251979f8d2e9dde8f4a99370",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "2fb443eec48dfdb4891403ad5ff38535c566328db43f29d5cc96312863257b2d"
+    },
+    {
+      "id": "focus-payment-double-charge-pt",
+      "group_id": "focus-payment-double-charge",
+      "input_sha256": "6a96d8f8244590392a13bd26bdd66f7f631c81465f58ff6c251c5e13ac527b7e",
+      "player_payload_sha256": "822e7c5efb2271d0653982762a2f16942b3a611c9a8d3f34d49e8814039e5d0f",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c",
+      "original_row_sha256": "72d23936d4f90cd7024794063811aeffa6c735f08dc69b757b0b66ceceaaf0cd"
+    },
+    {
+      "id": "focus-question-interface-term-pt",
+      "group_id": "focus-question-interface-term",
+      "input_sha256": "5b954337fc6a1ee5a7be25d88a85f6d8f6048eb66da19dc7fdc08eb1592f8dc3",
+      "player_payload_sha256": "115c474ccb36084ac97edd784190f24df8a397f1cddaa4677ecbb5b2481b77fa",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33",
+      "original_row_sha256": "aa9e7054f21a7f5e41df8032479f51867c55d9317c30edd6fea0917e6f04f970"
+    },
+    {
+      "id": "focus-clarification-open-conversation-kk",
+      "group_id": "focus-clarification-open-conversation",
+      "input_sha256": "0236609337ab5c0499cb87e52e4d1196d49f1a6bc07b92c07a7638db1c3774b5",
+      "player_payload_sha256": "122ab0515230ecf10a9ff4cb23e0bf1cc79ad80d4c2cce8a4265bb7cd18af418",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8",
+      "original_row_sha256": "b6aa4c66aa4c6df086b162619b544df1728f20a482b3cce624321cf30adc87c2"
+    },
+    {
+      "id": "focus-account-ownership-changed-kk",
+      "group_id": "focus-account-ownership-changed",
+      "input_sha256": "02ff2414b68272fd138da4bc98b99ccc533ba75e4ec3ba4d89b75747683663cf",
+      "player_payload_sha256": "1e5955cfff1824547337ba43e6e0d6a236b7190d49580a9254514b990f3cbe44",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74",
+      "original_row_sha256": "4eab7af0290e472910d5b9abb32eb54e5b2af21e21a68682087a434ec91cceb7"
+    },
+    {
+      "id": "focus-complaint-other-player-impersonation-kk",
+      "group_id": "focus-complaint-other-player-impersonation",
+      "input_sha256": "f493795424946a9ec25819a7eed91deb265edec8fe2093fe84787bde96e43e7b",
+      "player_payload_sha256": "9e4397fce0210955a8383798bb3ff92ab68e7bd9a3f00c57c55de09adda826aa",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f",
+      "original_row_sha256": "5e1a8916732432b47e19ba060a5b2d5156d7d04d8dc3e65238164f5a4373191c"
+    }
+  ],
+  "records": [
+    {
+      "id": "focus-payment-double-charge-en",
+      "group_id": "focus-payment-double-charge",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "My bank statement shows two charges for one coin purchase. I pressed pay only once in the game."
+          }
+        ]
+      },
+      "payload": {
+        "language": "en",
+        "player_messages": [
+          "My bank statement shows two charges for one coin purchase. I pressed pay only once in the game."
+        ]
+      },
+      "target": {
+        "focus": "payment"
+      },
+      "original_row_sha256": "fee8e1531b6c094592639dc2c4d0e91c32cca328144f1df423d10fa233b7207a",
+      "provenance": {
+        "type": "authored_synthetic",
+        "author": "Support Copilot project, newly authored with AI assistance",
+        "human_reviewed": false,
+        "contains_private_data": false,
+        "cloud_eligible": true
+      },
+      "canonical_player_payload_bytes": 135,
+      "input_sha256": "e17c3370a2730510417f7df9fbbfce482ac86b9d572e9e33a1eedf1951e443ec",
+      "player_payload_sha256": "91be95831944cb992859015449afc8b586b7ba880c7ab67c7f1b3e7a9fdb7cb8",
+      "target_sha256": "83642f7b8b52d0006f383a6f79d3d9edef06d7fd8049201ae9de81c85d7dd18c"
+    },
+    {
+      "id": "focus-account-credentials-changed-en",
+      "group_id": "focus-account-credentials-changed",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Someone changed my profile password without my permission."
+          },
+          {
+            "role": "player",
+            "text": "I cannot sign in now, and I was not banned."
+          }
+        ]
+      },
+      "payload": {
+        "language": "en",
+        "player_messages": [
+          "Someone changed my profile password without my permission.",
+          "I cannot sign in now, and I was not banned."
+        ]
+      },
+      "target": {
+        "focus": "account"
+      },
+      "original_row_sha256": "0245cc2e31892a6ca0fb4f6e93e4147464e8953b7b24b9c6982a4c1103ce3fff",
+      "provenance": {
+        "type": "authored_synthetic",
+        "author": "Support Copilot project, newly authored with AI assistance",
+        "human_reviewed": false,
+        "contains_private_data": false,
+        "cloud_eligible": true
+      },
+      "canonical_player_payload_bytes": 144,
+      "input_sha256": "1002bafe9dd91589e008aec55a84c8b9a136de13402d8d9adaac3fd129efc19e",
+      "player_payload_sha256": "814af19494476895ee83ff4789f9f081037812918be88f5059bbd09e6c263e85",
+      "target_sha256": "cb79a16fc3e113f55d4f8b19a437d269ebaa40b2ec30badfea39cde5e7df2b74"
+    },
+    {
+      "id": "focus-appeal-my-chat-mute-en",
+      "group_id": "focus-appeal-my-chat-mute",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "I received a chat mute for a message. I disagree with the decision and want my own penalty reviewed."
+          }
+        ]
+      },
+      "payload": {
+        "language": "en",
+        "player_messages": [
+          "I received a chat mute for a message. I disagree with the decision and want my own penalty reviewed."
+        ]
+      },
+      "target": {
+        "focus": "appeal"
+      },
+      "original_row_sha256": "a014134725b7e3d446c3165cfe81e0ed96c2d8ca2fe8941bf3a58e2945fe0e06",
+      "provenance": {
+        "type": "authored_synthetic",
+        "author": "Support Copilot project, newly authored with AI assistance",
+        "human_reviewed": false,
+        "contains_private_data": false,
+        "cloud_eligible": true
+      },
+      "canonical_player_payload_bytes": 140,
+      "input_sha256": "1b225dff7602419a9ea2cc18ac04353209284faf7ec1886316ff95cf6a3b24a2",
+      "player_payload_sha256": "f7ac5f9e874c2315a17324bddad561d05d03422780e81fe0a84aa1a950bd902d",
+      "target_sha256": "7be047c0b4e0d2ec20dd7bd12f4c8e13550d5099d6e143453432ae68fcdff964"
+    },
+    {
+      "id": "focus-complaint-other-player-impersonation-en",
+      "group_id": "focus-complaint-other-player-impersonation",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "An unfamiliar player pretended to be support staff and demanded my items."
+          },
+          {
+            "role": "player",
+            "text": "I am reporting that person."
+          }
+        ]
+      },
+      "payload": {
+        "language": "en",
+        "player_messages": [
+          "An unfamiliar player pretended to be support staff and demanded my items.",
+          "I am reporting that person."
+        ]
+      },
+      "target": {
+        "focus": "complaint"
+      },
+      "original_row_sha256": "13c6b641b755e2d74e79bc7e9f0011aa2bdad239534a14a336920ff90f87d4d7",
+      "provenance": {
+        "type": "authored_synthetic",
+        "author": "Support Copilot project, newly authored with AI assistance",
+        "human_reviewed": false,
+        "contains_private_data": false,
+        "cloud_eligible": true
+      },
+      "canonical_player_payload_bytes": 143,
+      "input_sha256": "693820cbe3c82b65a709d3b2c1ecbc15ec9bf11a2924f21f797bea31d26823b4",
+      "player_payload_sha256": "ad3a253100216d0c97b1845ffd7e5b491b49479886cd6db97519e561ee55f43c",
+      "target_sha256": "9fa320a1f996099dae496eb7d15998b37897a36b8fd1b5056a9cb84f94008b0f"
+    },
+    {
+      "id": "focus-technical-client-closes-en",
+      "group_id": "focus-technical-client-closes",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "The app closes by itself just after I select a character. It used to launch normally on this device."
+          }
+        ]
+      },
+      "payload": {
+        "language": "en",
+        "player_messages": [
+          "The app closes by itself just after I select a character. It used to launch normally on this device."
+        ]
+      },
+      "target": {
+        "focus": "technical"
+      },
+      "original_row_sha256": "c558c6e0e5f57d7fd6dc68cb8bfcecd1bb0060f9e77f5c943ef5ab00c3cd07f6",
+      "provenance": {
+        "type": "authored_synthetic",
+        "author": "Support Copilot project, newly authored with AI assistance",
+        "human_reviewed": false,
+        "contains_private_data": false,
+        "cloud_eligible": true
+      },
+      "canonical_player_payload_bytes": 140,
+      "input_sha256": "ae80844f58c43ffc3b20bbe244c9212bb5428d6133bc0d62ad246e13a913086b",
+      "player_payload_sha256": "314f7baa5edfdfc0c17fa27cd57d258ec87d192c37e53f1a2485ad61370a8fb6",
+      "target_sha256": "b524aa025bdac17b22abbc0d5e237ea86acd6c48c932f0a8ec13f5b72656f56d"
+    },
+    {
+      "id": "focus-question-interface-term-en",
+      "group_id": "focus-question-interface-term",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "I saw the word “profile” in the menu description."
+          },
+          {
+            "role": "player",
+            "text": "What does it mean in this app?"
+          }
+        ]
+      },
+      "payload": {
+        "language": "en",
+        "player_messages": [
+          "I saw the word “profile” in the menu description.",
+          "What does it mean in this app?"
+        ]
+      },
+      "target": {
+        "focus": "question"
+      },
+      "original_row_sha256": "29450e9ea15711408b9ca5722e1e5a35060f746361ba533536e59cdf8b1041c0",
+      "provenance": {
+        "type": "authored_synthetic",
+        "author": "Support Copilot project, newly authored with AI assistance",
+        "human_reviewed": false,
+        "contains_private_data": false,
+        "cloud_eligible": true
+      },
+      "canonical_player_payload_bytes": 132,
+      "input_sha256": "1c79a05640ad72b7e80534c60999fd26b487e43898f52ecdec3fd3270a1eabdb",
+      "player_payload_sha256": "4e5662f038cca50005fa459f0a40fe40800b0aaad872b9f6c16c771f7653c3e8",
+      "target_sha256": "ea81721de225983f68b936bbd68ce6a00cf1d4afe63e2432c837cc61d77bde33"
+    },
+    {
+      "id": "focus-clarification-help-unspecified-en",
+      "group_id": "focus-clarification-help-unspecified",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "I need your help, please. I have not described what I want to ask yet."
+          }
+        ]
+      },
+      "payload": {
+        "language": "en",
+        "player_messages": [
+          "I need your help, please. I have not described what I want to ask yet."
+        ]
+      },
+      "target": {
+        "focus": "clarification"
+      },
+      "original_row_sha256": "cd60b2500db1bc5c5dce054d1545c373dbc4bf91350e538d414392febf235d2a",
+      "provenance": {
+        "type": "authored_synthetic",
+        "author": "Support Copilot project, newly authored with AI assistance",
+        "human_reviewed": false,
+        "contains_private_data": false,
+        "cloud_eligible": true
+      },
+      "canonical_player_payload_bytes": 110,
+      "input_sha256": "6d82a338f81f8640d0741b5aa7656fe1dc8cd1dcda664f901f132b13bb058349",
+      "player_payload_sha256": "a7cce3d3eab4163f910ecbd0a5f9814db2dbacc640176b6c48021e5c3576b9aa",
+      "target_sha256": "c891075bb5abc4c7b9a7fecd62d67a8956e4d3772e6bcc356ca8a8cec679d0a8"
+    }
+  ],
+  "records_sha256": "7545cfd680f6b4eb0c20df89981c433316dd6423b498d0872e8c5a381d95b835"
+}

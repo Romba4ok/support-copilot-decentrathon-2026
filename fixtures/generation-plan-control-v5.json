@@ -1,0 +1,611 @@
+{
+  "provenance": "authored_synthetic_independent_fresh_plan_control",
+  "human_reviewed": false,
+  "contract_version": "support-plan-v1",
+  "frozen_at_utc": "2026-10-30T12:38:14Z",
+  "cases": [
+    {
+      "id": "v5-ru-01",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Добрый вечер. Я первый раз сюда пишу, подскажите, с чего начать обращение?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "needs_human": false
+      }
+    },
+    {
+      "id": "v5-ru-02",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Я Сева_Лис, играю на Северном. 30 октября 2026 оплатил премиум за 599 рублей, банк списание подтвердил, а в игре премиум так и не появился. Номер операции GM-8031947. Чек пока приложить не могу, скрина тоже нет."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "provided_fields": [
+          "participant",
+          "server",
+          "payment_date",
+          "amount",
+          "transaction_id",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-ru-03",
+      "input": {
+        "kind": "complaint",
+        "lang": "ru",
+        "reported_nick": "Арсен_Речной",
+        "images_count": 2,
+        "messages": [
+          {
+            "role": "player",
+            "text": "Мой ник Полина_Свет, сервер Янтарный. Сегодня, 30.10.2026, в 14:12 у парковки возле больницы Арсен_Речной несколько раз стрелял по моей машине, пока я стояла в очереди. Прошу проверить его действия. Прикрепила два скриншота."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "location",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-ru-04",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "На планшете с Android 14 после открытия инвентаря пропадают кнопки «использовать» и «выбросить». Если закрыть инвентарь и открыть снова, предметы видны, а кнопок по-прежнему нет. Перезаход помогает только до следующего открытия. Это началось вчера, 29 октября, примерно в 22:00."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "provided_fields": [
+          "platform",
+          "reproduction_steps",
+          "event_time",
+          "problem_description"
+        ],
+        "request_fields": [
+          "server",
+          "evidence"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-en-01",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Hi, is somebody here? I could use a hand when you have a minute."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "needs_human": false
+      }
+    },
+    {
+      "id": "v5-en-02",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Could you review my chat mute? I'm Morgan_Reed on Harbor. The mute appeared on 29 October 2026 at about 19:40 after an argument in the taxi chat. I think my last message was misunderstood. I didn't save any screenshots or recordings."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "location",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-en-03",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Before I choose a server, can a character be moved to a different one later, including its garage? I haven't started playing yet and couldn't find an explanation in the menu."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "provided_fields": [
+          "problem_description"
+        ],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-en-04",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "images_count": 1,
+        "messages": [
+          {
+            "role": "player",
+            "text": "My car has disappeared from my garage. Character: Ellis_Ward, server: Cedar. It was parked in the garage at my house on Oak Street when I last logged out. Now that slot is empty and I didn't sell the car. I've attached a picture of the garage as it looks now."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "provided_fields": [
+          "participant",
+          "server",
+          "location",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [
+          "event_time"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-kk-01",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Сәлеметсіз бе! Көмек керек еді, өтінішімді осы жерге жазсам бола ма?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "needs_human": false
+      }
+    },
+    {
+      "id": "v5-kk-02",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "30.10.2026 күні дүкеннен монета алдым, картамнан 2490 теңге алынды. Бірақ ойынға қайта кірсем де баланс өзгермеді. Төлемді қайдан тексеруге болады?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "provided_fields": [
+          "payment_date",
+          "amount",
+          "reproduction_steps",
+          "problem_description"
+        ],
+        "request_fields": [
+          "participant",
+          "server",
+          "transaction_id",
+          "evidence"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-kk-03",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "server": "Алатау",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Кейіпкерім Ерлан_Самал. 30 қазанда сағат 09:25 шамасында ауруханадан шыққан соң баспалдақтың астында тұрып қалдым. Алға да, артқа да жүрмейді. Карта ашылады, бірақ орнымнан қозғала алмаймын."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "location",
+          "problem_description"
+        ],
+        "request_fields": [
+          "platform",
+          "reproduction_steps"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-kk-04",
+      "input": {
+        "kind": "complaint",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Менің никім Айша_Таң, Арман серверіндемін. Жалпы чатта Данияр_Болат маған және отбасым туралы балағат сөздер жазды. Оның жазғанын тексерулеріңізді сұраймын. Скриншот та, бейнежазба да сақталмады."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "provided_fields": [
+          "participant",
+          "server",
+          "location",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [
+          "event_time"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-uz-01",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Assalomu alaykum. Menga yordam kerak, qaysi bo'limga yozishni bilmay turibman."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "needs_human": false
+      }
+    },
+    {
+      "id": "v5-uz-02",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Akkauntimga kira olmayapman. Nikim Sardor_Yulduz, server Navro'z. Parolni tiklashni bossam, kod men tanimaydigan pochtaga yuborilishini ko'rsatyapti. Bu pochtani o'zim almashtirmaganman. Hozircha rasm yoki video yo'q."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "provided_fields": [
+          "participant",
+          "server",
+          "reproduction_steps",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [
+          "event_time",
+          "platform"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-uz-03",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "images_count": 1,
+        "messages": [
+          {
+            "role": "player",
+            "text": "Mening nikim Dilshod_Sahil, Zarafshon serverida o'ynayman. 2026-yil 28-oktabr soat 21:15 da kirganimda uch kunlik blok chiqdi. Taqiqlangan dastur ishlatmaganman deb hisoblayman, iltimos qarorni qayta ko'rib chiqing. Blok oynasining rasmini qo'shdim."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-uz-04",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "O'yinda ism-familiyani keyinroq o'zgartirish mumkinmi? Hali yangi personaj ochmoqchiman. Buning uchun qanday talablar borligini bilmoqchiman."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "provided_fields": [
+          "problem_description"
+        ],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-es-01",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Buenas, acabo de encontrar este formulario. ¿Hay alguien de soporte disponible para orientarme?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "needs_human": false
+      }
+    },
+    {
+      "id": "v5-es-02",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Soy Lucia_Mar en el servidor Costa. Compré un paquete de dinero el 27 de octubre de 2026 por 4,99 euros. El cargo está en mi cuenta bancaria, pero el dinero del paquete no llegó al personaje. Ya esperé dos días y sigo con el mismo saldo."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "provided_fields": [
+          "participant",
+          "server",
+          "payment_date",
+          "amount",
+          "problem_description"
+        ],
+        "request_fields": [
+          "transaction_id",
+          "evidence"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-es-03",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Desde esta mañana, 30/10/2026, el juego se cierra antes de mostrar la lista de servidores. Uso un iPhone 12 con iOS 18. Abro la aplicación, aparece el logo durante unos segundos y vuelvo al inicio del teléfono. Reinicié el móvil y pasa lo mismo. No tengo capturas porque se cierra muy rápido."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "provided_fields": [
+          "event_time",
+          "platform",
+          "reproduction_steps",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-es-04",
+      "input": {
+        "kind": "complaint",
+        "lang": "es",
+        "reported_nick": "Bruno_Paz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Quiero denunciar a Bruno_Paz. Yo juego como Mateo_Rios en Sierra. El 29 de octubre a las 18:50, delante del concesionario del centro, me bloqueó la salida con su camioneta y volvió a hacerlo cada vez que intentaba salir. Tengo una grabación guardada en el teléfono, pero todavía no la he adjuntado."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "location",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-pt-01",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Oi! Posso falar com o atendimento por aqui? Ainda estou tentando entender como explicar o que preciso."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "needs_human": false
+      }
+    },
+    {
+      "id": "v5-pt-02",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Meu personagem é Caio_Vale no servidor Aurora. Na noite de 28/10/2026 saí do jogo com um apartamento e hoje, às 08h10 de 30/10, ele não aparece mais entre as minhas propriedades. Não fiz venda nem transferência. O apartamento fica perto da estação rodoviária."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "location",
+          "problem_description"
+        ],
+        "request_fields": [
+          "evidence"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-pt-03",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Recebi uma suspensão da minha conta e gostaria que revisassem. Uso o nome Nina_Flores no servidor Horizonte. A tela diz que foi por uma negociação, mas acredito que houve confusão com outra pessoa. Não tenho imagem da negociação nem da suspensão."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "provided_fields": [
+          "participant",
+          "server",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [
+          "event_time"
+        ],
+        "needs_human": true
+      }
+    },
+    {
+      "id": "v5-pt-04",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Quando tento aceitar uma corrida de táxi, o botão fica cinza e nada acontece. Sou Leo_Brisa, servidor Litoral, Android 13. Entro em serviço, abro a lista de chamadas e toco numa corrida disponível; já testei com três chamadas diferentes. Começou em 30 de outubro, por volta das 11h. Tenho um vídeo disso."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "provided_fields": [
+          "participant",
+          "server",
+          "platform",
+          "reproduction_steps",
+          "event_time",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "needs_human": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,612 @@
+{
+  "provenance": "authored_synthetic independent-plan-v11",
+  "human_reviewed": false,
+  "contract_version": "support-plan-v1",
+  "cases": [
+    {
+      "id": "indplan11-01-ru",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "На сервере «Берёзовая гавань» оплатил 31 октября 2026 года билет на вечернюю гонку за 240 игровых рублей. Покупка прошла под номером DEMO-R17, но билет в разделе пропусков не появился. Хочу проверить доставку покупки."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "payment_date",
+          "amount",
+          "transaction_id",
+          "problem_description"
+        ],
+        "request_fields": [
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-02-ru",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Не узнаю новый резервный адрес почты в своём профиле на сервере «Медный берег». Я его не менял. Когда именно адрес сменили, не знаю; заметил это сегодня утром. Открываю профиль через клиент для Windows. Помогите защитить мой аккаунт."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "platform",
+          "problem_description"
+        ],
+        "request_fields": [
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-03-ru",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "В клиенте для Linux на сервере «Сосновый мост» открыл список избранных мест, выбрал «Добавить» и ввёл название. После нажатия «Готово» список остался пустым. Я повторил эти шаги два раза. Хочу, чтобы добавление работало."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "needs_human": false,
+        "provided_fields": [
+          "platform",
+          "server",
+          "reproduction_steps",
+          "problem_description"
+        ],
+        "request_fields": [
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-04-ru",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Можно ли заранее посмотреть внешний вид доступных значков команды и где находится этот каталог? Пока просто выбираю оформление, ничего не покупал."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "needs_human": false,
+        "provided_fields": [
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-05-en",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Please review the race-entry restriction on my own account, alias CedarPilot, on the fictional Orchard server. The race in question took place on 30 October 2026 at 18:20 server time. I think my driving was mistaken for deliberate obstruction. I do not have a recording of that race."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-06-en",
+      "input": {
+        "kind": "complaint",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "I want to report another player, alias TinSparrow, for repeatedly shoving my parked vehicle off the loading bay at the fictional Salt Quay on the Pebble server. It happened on 31 October 2026 at 14:10 server time. I saved a short video of the pushing."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "location",
+          "server",
+          "event_time",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-07-en",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Hello, I could use some assistance. I have not put the details into words yet."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "needs_human": false,
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-08-en",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Using the macOS client, I entered a text label in the photo album, clicked Rename and returned to the album. The old label was still there. I tried the same sequence with another photo and got the same result. I have no screenshot or screen recording."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "needs_human": false,
+        "provided_fields": [
+          "platform",
+          "reproduction_steps",
+          "problem_description"
+        ],
+        "request_fields": [
+          "server"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-09-kk",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "«Самал» серверінде жүк көлігіне арналған сәндік жалаушаны сатып алдым. Төлем 2026 жылғы 30 қазанда жасалды, сомасы 950 теңге. Ақша есептен шықты, ал жалауша қоймаға түскен жоқ. Түбіртектің суреті бар, бірақ төлем нөмірін таба алмадым."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "payment_date",
+          "amount",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-10-kk",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "«Ақбұлақ» серверіндегі өз аккаунтыма кіргенде, байланыстырылған телефон нөмірі өзгергенін көрдім. Оны мен ауыстырған жоқпын. Нөмірдің қашан өзгергенін білмеймін. Аккаунтымды қорғауға көмектесіңізші."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "problem_description"
+        ],
+        "request_fields": [
+          "platform",
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-11-kk",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Жаңадан құрылған топқа атау таңдағанда оның алдын ала көрінісін қай мәзірден көруге болады? Әзірге тек мүмкіндікті білгім келеді."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "needs_human": false,
+        "provided_fields": [
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-12-kk",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Сәлем! Қолдау қызметінің көмегі керек еді. Не туралы екенін келесі хабарламада түсіндіремін."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "needs_human": false,
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-13-uz",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "«Ko‘hna bog‘» serverida o‘zimning savdo qilish huquqim cheklangan. Cheklov men qilgan velosiped almashuviga tegishli ekan. Uni qayta ko‘rib chiqishingizni so‘rayman. Almashuvning aniq vaqtini bilmayman, lekin uning videosi menda bor."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [
+          "participant"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-14-uz",
+      "input": {
+        "kind": "complaint",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Boshqa o‘yinchi — xayoliy laqabi QorKema — «Yashil vodiy» serveridagi bekatda yo‘lovchilarni ataylab mashinasi bilan urdi. Hodisa 2026-yil 31-oktabr kuni server vaqti bilan 12:40 da bo‘ldi. Uning ustidan shikoyat qilmoqchiman. Video yoki suratim yo‘q."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "location",
+          "event_time",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-15-uz",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Android mijozida xabarlar oynasini ochdim, matn yozdim va jo‘natish tugmasini bosdim. Tugma kulrang bo‘lib qoladi, matn esa jo‘natilmaydi. Dasturni qayta ochib ayni qadamlarni bajardim, yana shunday bo‘ldi. Telefonimda shu muammo chiqyapti."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "needs_human": false,
+        "provided_fields": [
+          "platform",
+          "reproduction_steps",
+          "problem_description"
+        ],
+        "request_fields": [
+          "server",
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-16-uz",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Umumiy xaritada piyoda yurish yo‘llari bilan avtomobil yo‘llarini alohida ko‘rsatish mumkinmi? Sayohat rejalashtirishdan oldin bu imkoniyat haqida bilmoqchiman."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "needs_human": false,
+        "provided_fields": [
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-17-es",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Compré una casilla adicional para guardar diseños en el servidor ficticio Loma Clara. Pagué 3,50 euros el 31 de octubre de 2026; el pago se cobró, pero sigo teniendo el mismo número de casillas. Uso el cliente de Windows y conservo la captura del recibo. No encuentro el identificador de la transacción."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "amount",
+          "payment_date",
+          "platform",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-18-es",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Quiero proteger mi propia cuenta, con el alias ficticio NubeDeCobre. Recibí un aviso de acceso desde un dispositivo que no reconozco y yo no inicié esa sesión. No sé a qué hora se produjo el acceso; el aviso lo vi hoy a las diez. Conservo una captura del aviso."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [
+          "server",
+          "platform"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-19-es",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Solicito que revisen la restricción de voz de mi cuenta en el servidor ficticio Prado Azul. Se refiere a una conversación en el taller norte el 30 de octubre de 2026 a las 21:05, hora del servidor. Creo que confundieron mi voz con la de otra persona. No dispongo de una grabación."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "location",
+          "event_time",
+          "problem_description"
+        ],
+        "request_fields": [
+          "participant"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-20-es",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Hola, vengo a pedir orientación. Aún no he explicado sobre qué necesito ayuda."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "needs_human": false,
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-21-pt",
+      "input": {
+        "kind": "complaint",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Quero reclamar de outro jogador, de apelido fictício BarcoDePapel. Ele estacionou repetidamente atravessado na entrada do depósito oeste para impedir a passagem no servidor fictício Vale Sereno. Isso ocorreu em 31 de outubro de 2026, às 16h15 no relógio do servidor. Tenho um vídeo dessas manobras."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "location",
+          "server",
+          "event_time",
+          "evidence",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-22-pt",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "No cliente para Windows, entrei no menu de atalhos, troquei a tecla da buzina e salvei. Ao entrar no carro, tanto a tecla antiga quanto a nova ficaram sem efeito. Repeti o procedimento depois de reiniciar e o problema continuou. Estou no servidor fictício Pedra Alta e gravei a tela."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "needs_human": false,
+        "provided_fields": [
+          "platform",
+          "reproduction_steps",
+          "problem_description",
+          "server",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-23-pt",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Onde posso consultar as categorias de veículos aceitas em uma corrida criada pelos próprios jogadores? Quero entender as opções antes de organizar uma."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "needs_human": false,
+        "provided_fields": [
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "indplan11-24-pt",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Paguei por um pacote de molduras para o álbum no servidor fictício Brisa Sul, mas nenhuma moldura apareceu. A compra foi feita em 30 de outubro de 2026 e custou 12 reais. O código do comprovante sintético é DEMO-P82. Ainda consigo abrir o comprovante."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "problem_description",
+          "payment_date",
+          "amount",
+          "transaction_id",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    }
+  ]
+}

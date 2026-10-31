@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#202326">
+  <title>Support Copilot · GRAND MOBILE</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+  <script src="/intelligence.js" defer></script>
+  <script src="/reply-policy.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">К рабочей области</a>
+  <aside class="sidebar" aria-label="Навигация">
+    <div class="brand"><span class="brand-symbol" aria-hidden="true">G</span><div>GRAND<span>MOBILE</span></div></div>
+    <div class="product-label">ПОДДЕРЖКА ИГРОКОВ</div>
+    <nav class="navigation">
+      <button class="nav-item active" data-view="queue" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM4 13h5l2 3h2l2-3h5M8 9h8"/></svg>Обращения<span id="nav-count" class="nav-count">—</span></button>
+      <button class="nav-item" data-view="rules"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7l1 2 1-2h7v15h-7l-1 2-1-2H4zM12 6v15"/></svg>База знаний</button>
+      <button class="nav-item" data-view="feedback"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v13H9l-4 4zM9 8h6M9 12h4"/></svg>Правки оператора</button>
+      <button class="nav-item" data-view="radar"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="m12 12 7-7"/></svg>Радар проблем</button>
+      <button class="nav-item" data-view="quality"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V9m7 11V4m7 16v-7M3 20h18"/></svg>Качество</button>
+      <button class="nav-item" data-view="templates"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 12h7M9 16h5"/></svg>Шаблоны</button>
+    </nav>
+    <div class="sidebar-note"><span class="status-dot"></span>Локальное рабочее место<p>Ответы и решения сохраняются на этом устройстве.</p></div>
+    <div class="operator"><span class="avatar">OP</span><div>Оператор поддержки<small id="operator-mode-label">Проверка человеком</small></div></div>
+  </aside>
+
+  <main id="workspace" class="workspace">
+    <header class="topbar"><div class="breadcrumb">Поддержка игроков</div><div class="header-utilities"><div id="connection" class="connection" role="status">Подключение…</div><button id="open-response-policy" class="button button-secondary response-mode-button" aria-haspopup="dialog" aria-controls="response-policy-dialog">Режим ответа</button><button id="open-system-tools" class="button button-secondary" aria-controls="system-tools" aria-expanded="false">Инструменты</button></div></header>
+    <section class="page-heading"><div><div class="eyebrow">РАБОЧЕЕ ПРОСТРАНСТВО</div><h1 id="page-title">Обращения</h1><p id="page-description">Выберите обращение, проверьте факты и подготовьте ответ.</p></div><button id="new-ticket" class="button button-primary"><span aria-hidden="true">+</span> Новое обращение</button></section>
+    <div id="global-error" class="error-banner" role="alert" hidden></div>
+
+    <section id="jobs-panel" class="jobs-panel" hidden aria-label="Фоновые задания"><div class="panel-title"><h2>Фоновые задания</h2><button id="jobs-refresh" class="text-button">Обновить</button></div><div id="jobs-list" aria-live="polite"></div></section>
+
+
+    <section id="queue-view" class="queue-layout" aria-label="Работа с обращениями">
+      <section class="inbox"><div id="status-tabs" class="status-tabs" role="group" aria-label="Статус обращений"></div><div class="queue-toolbar"><span>Рабочая очередь</span><button id="refresh" class="text-button">Обновить очередь</button></div><div class="queue-filters"><label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="ticket-search" type="search" aria-label="Поиск обращений" placeholder="Поиск по тексту или номеру"></label><details class="advanced-filters"><summary>Фильтры</summary><div class="advanced-filter-fields"><div class="filter-row"><select id="priority-filter" aria-label="Фильтр приоритета"><option value="">Приоритет: все</option><option value="p0">p0 · Критический</option><option value="p1">p1 · Высокий</option><option value="p2">p2 · Обычный</option><option value="p3">p3 · Низкий</option></select><select id="language-filter" aria-label="Фильтр языка"><option value="">Все языки</option><option value="ru">Русский</option><option value="kk">Қазақша</option><option value="uz">O‘zbekcha</option><option value="en">English</option><option value="es">Español</option><option value="pt">Português</option><option value="und">Не определён</option></select></div><select hidden id="status-filter" aria-label="Фильтр статуса"><option value="">Все статусы</option><option value="open">Ожидают проверки</option><option value="human">Нужен человек</option><option value="reviewed">Подтверждены</option><option value="escalated">Эскалированы</option></select></div></details><label class="sort-field"><span>Порядок</span><select id="queue-sort" aria-label="Порядок обращений"><option value="priority">Сначала срочные</option><option value="newest">Сначала новые</option></select></label></div><div class="list-caption"><span id="list-count">Загрузка обращений…</span><span>Сначала срочные</span></div><div class="ticket-table-heading" aria-hidden="true"><span>Номер и время</span><span>Обращение игрока</span><span>Приоритет и проверка</span></div><div id="ticket-list" class="ticket-list" aria-live="polite"><div class="loading-state">Загружаем очередь…</div></div><nav id="queue-pagination" class="queue-pagination" aria-label="Страницы очереди"></nav></section>
+      <div id="ticket-detail" class="ticket-detail"><div class="empty-state"><span class="empty-mark" aria-hidden="true">↗</span><h2>Выберите обращение</h2><p>Здесь появятся сообщения игрока, найденные факты и черновик ответа.</p></div></div>
+    </section>
+    <section id="rules-view" class="secondary-view" hidden><div class="panel-title"><div><h2>База знаний и правила</h2><p>Точный источник всегда важнее предположения.</p></div></div><label class="search-field source-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="source-search" type="search" placeholder="Найти пункт или текст правила" aria-label="Поиск правил"></label><div id="rules-list" class="source-list"></div></section>
+    <section id="feedback-view" class="secondary-view" hidden><div class="panel-title"><div><h2>Правки оператора</h2><p>История локальных решений и исправлений.</p></div><button id="feedback-refresh" class="text-button">Обновить</button></div><div id="feedback-list"></div></section>
+    <section id="radar-view" class="secondary-view" hidden><div class="panel-title"><div><h2>Радар повторяющихся проблем</h2><p>Тематическая близость помогает найти общую проблему. Кластер не подтверждает дубликат или инцидент.</p></div><button id="radar-rebuild" class="button button-secondary">Пересобрать радар</button></div><div id="radar-stats" class="view-note"></div><div id="radar-list" class="radar-grid"></div></section>
+    <section id="quality-view" class="secondary-view" hidden><div class="panel-title"><div><h2>Лаборатория качества</h2><p>Сравнение baseline v1 и v2 по явно сохранённой разметке. Метки не передаются на вход модели.</p></div><button id="quality-compare" class="button button-secondary">Сравнить v1 и v2</button></div><div class="quality-layout"><div><div id="quality-metrics"></div><div id="quality-comparisons"></div></div><div id="quality-form-host"></div></div></section>
+    <section id="templates-view" class="secondary-view" hidden><div class="panel-title"><div><h2>Библиотека шаблонов</h2><p>Предложения из обращений проходят явное одобрение оператора. Шаблон не заменяет правила.</p></div><button id="templates-refresh" class="text-button">Обновить</button></div><div class="templates-layout"><div id="templates-list"></div><div id="template-form-host"></div></div></section>
+    <details id="system-tools" class="system-tools"><summary>Состояние AI и инструменты <span>Поиск, задания, импорт</span></summary><section class="intelligence-strip" aria-label="Локальный интеллект"><div><span class="eyebrow">ЛОКАЛЬНЫЙ ПОМОЩНИК</span><p id="intelligence-status" role="status">Проверяем модель и индекс…</p></div><div class="compact-actions"><button id="initialize-intelligence" class="button button-secondary">Подготовить поиск</button><button id="toggle-jobs" class="text-button" aria-expanded="false" aria-controls="jobs-panel">Задания</button><button id="open-import" class="text-button">Импорт JSONL</button></div></section></details>
+    <footer class="workspace-footer"><span>Локальный интеллект · демо-примеры синтетические</span><span>Спорные обращения — сотруднику · ответы сохраняются локально</span></footer>
+  </main>
+
+
+  <dialog id="response-policy-dialog" class="response-policy-dialog" aria-labelledby="response-policy-title" aria-describedby="response-policy-description">
+    <form id="response-policy-form">
+      <div class="dialog-header"><div><div class="eyebrow">ОБРАБОТКА ОБРАЩЕНИЙ</div><h2 id="response-policy-title">Кто подтверждает ответ?</h2></div><button type="button" id="close-response-policy" class="icon-button" aria-label="Закрыть выбор режима">×</button></div>
+      <p id="response-policy-description" class="form-intro">Выберите режим для новых обращений. Текущие ответы и ручные правки сохранятся.</p>
+      <fieldset id="response-policy-options" class="response-policy-options"><legend class="sr-only">Режим ответа</legend>
+        <label class="response-mode-option"><input type="radio" name="reply_mode" value="review"><span><strong>С подтверждением сотрудника</strong><small>Помощник готовит черновик. Вы проверяете и подтверждаете ответ.</small></span></label>
+        <label class="response-mode-option"><input type="radio" name="reply_mode" value="auto"><span><strong>Автоответ</strong><small>Без подтверждения только после успешных проверок. Спорные обращения и ошибки модели — сотруднику.</small></span></label>
+      </fieldset>
+      <p class="response-delivery-note"><strong>Сейчас ответы сохраняются в этом рабочем месте.</strong> Отправка сообщений непосредственно в игру не подключена.</p>
+      <p id="response-policy-status" class="view-note" role="status"></p><div id="response-policy-error" class="form-error" role="alert" hidden></div>
+      <div class="dialog-footer"><button type="button" id="retry-response-policy" class="text-button" hidden>Повторить загрузку</button><button type="button" id="cancel-response-policy" class="button button-secondary">Отмена</button><button type="submit" id="save-response-policy" class="button button-primary">Сохранить режим</button></div>
+    </form>
+  </dialog>
+  <dialog id="create-dialog" aria-labelledby="create-dialog-title"><form id="create-form"><div class="dialog-header"><div><div class="eyebrow">НОВОЕ ОБРАЩЕНИЕ</div><h2 id="create-dialog-title">Разберём ситуацию</h2></div><button type="button" id="close-dialog" class="icon-button" aria-label="Закрыть">×</button></div><p class="form-intro">Добавьте сообщение игрока. Copilot предложит категорию, приоритет и безопасный черновик.</p><div class="form-grid"><label>Канал<select name="kind"><option value="report">Внутриигровой репорт</option><option value="complaint">Жалоба на игрока</option></select></label><label>Подсказка языка<select name="lang"><option value="">Определить по тексту</option><option value="ru">Русский</option><option value="kk">Қазақша</option><option value="uz">O‘zbekcha</option><option value="en">English</option><option value="es">Español</option><option value="pt">Português</option></select></label></div><label>Сообщение игрока<textarea name="text" rows="5" required maxlength="12000" placeholder="Опишите проблему или вставьте текст обращения"></textarea></label><div class="form-grid"><label>ID автора <span class="optional">необязательно</span><input name="reporter_hash" maxlength="128" placeholder="Для поиска повторов"></label><label>Количество вложений<input name="attachments" type="number" value="0" min="0" max="100"></label></div><p class="field-hint">Изображения не загружаются и не анализируются. Указывается только их количество.</p><div id="form-error" class="form-error" role="alert" hidden></div><div class="dialog-footer"><button type="button" id="cancel-create" class="button button-secondary">Отмена</button><button type="submit" class="button button-primary">Добавить и разобрать <span aria-hidden="true">→</span></button></div></form></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <dialog id="import-dialog" aria-labelledby="import-dialog-title"><form id="import-form"><div class="dialog-header"><h2 id="import-dialog-title">Импорт обращений</h2><button type="button" id="close-import" class="icon-button" aria-label="Закрыть импорт">×</button></div><p class="form-intro">Файл читается в браузере и передаётся локальному сервису. До 2 МБ и 1000 строк JSONL за один импорт.</p><label>Файл JSONL<input id="import-file" type="file" accept=".jsonl,.ndjson,application/x-ndjson,application/json"></label><label>Содержимое JSONL<textarea id="import-jsonl" rows="7" placeholder="Один JSON-объект обращения в каждой строке"></textarea></label><div id="import-error" class="form-error" role="alert" hidden></div><div class="dialog-footer"><button type="submit" class="button button-primary">Импортировать локально</button></div></form></dialog>
+</body>
+</html>

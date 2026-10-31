@@ -1,0 +1,620 @@
+{
+  "schema_version": "independently-authored-plan-control-v10",
+  "provenance": "authored_synthetic independent-plan-v10",
+  "human_reviewed": false,
+  "contract_version": "support-plan-v1",
+  "cases": [
+    {
+      "id": "plan10-ru-01",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "30 октября я заплатил 350 рублей за дополнительную ячейку для транспорта, но ячейка не появилась. Идентификатор платёжной транзакции — SYN-RU-701; скриншот списания у меня есть."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "problem_description",
+          "payment_date",
+          "amount",
+          "transaction_id",
+          "evidence"
+        ],
+        "request_fields": [
+          "server"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-ru-02",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Мой ник — ТихийМаяк, сервер «Берег». Сегодня в 07:40 я обнаружил, что принадлежащий мне катер пропал из списка имущества; я его не продавал. Сам момент исчезновения мне неизвестен."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "problem_description"
+        ],
+        "request_fields": [
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-ru-03",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Прошу пересмотреть мой запрет на участие в торгах на сервере «Роща», мой ник — КедровыйЛис. В уведомлении написано, что причина — обход очереди, но я просто ждал у стойки; когда произошло предполагаемое нарушение, там не указано."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "problem_description",
+          "server",
+          "participant"
+        ],
+        "request_fields": [
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-ru-04",
+      "input": {
+        "kind": "complaint",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Игрок с ником СинийКовш вчера в 21:15 перекрыл въезд в пожарную часть на сервере «Янтарь» и требовал плату за проезд. Это было у главных ворот части, у меня есть видеозапись. Прошу проверить его действия."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "event_time",
+          "server",
+          "location",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-en-01",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "On my Windows laptop, opening the recipe book and selecting the soup tab makes the client close. I tried those two actions again after restarting and got the same crash."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "needs_human": false,
+        "provided_fields": [
+          "platform",
+          "problem_description",
+          "reproduction_steps"
+        ],
+        "request_fields": [
+          "server",
+          "event_time"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-en-02",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "I am planning a small delivery company with friends. Can the company owner give another member permission to manage the vehicle list?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "needs_human": false,
+        "provided_fields": [
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-en-03",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Hi, I need some help from support, but I do not know which form to choose."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "needs_human": false,
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-en-04",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "I paid 8 euros on 29 October for the extra character slot, and the slot is still locked. My receipt has order reference DEMO-ORDER-52, but I do not have a payment transaction ID. This is on the Meadow server."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "amount",
+          "payment_date",
+          "problem_description",
+          "server"
+        ],
+        "request_fields": [
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-kk-01",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Менің лақап атым — АқТерек, «Самал» серверінде ойнаймын. Өз аккаунтыма кіре алмаймын: құпиясөзді қалпына келтіру коды маған тиесілі емес поштаға жіберіліп жатыр."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "problem_description"
+        ],
+        "request_fields": [
+          "event_time",
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-kk-02",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "«Бұлақ» серверіндегі КөкТұлпар деген кейіпкеріме қойылған чат шектеуін қайта қарауды сұраймын. Мен хабарландыруды бір рет қана жаздым деп ойлаймын; сол сәттің скриншоты бар."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "participant",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [
+          "event_time"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-kk-03",
+      "input": {
+        "kind": "complaint",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Кеше сағат 18:20-да шығыс автобекеттің кассасы алдында бір ойыншы кезекте тұрғандарды әдейі итерді. Оның лақап атын көрмедім, бірақ бейнежазбам бар. «Қайнар» серверінде болған осы әрекетті тексеруді сұраймын."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "needs_human": true,
+        "provided_fields": [
+          "event_time",
+          "location",
+          "problem_description",
+          "evidence",
+          "server"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-kk-04",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Android планшетінде автобус бағытын таңдаған соң «Бастау» батырмасын бассам, жүктеу тоқтамай тұрады. Сол әрекетті екі рет қайталадым, нәтиже өзгермеді; бұл «Дала» серверінде болып жатыр."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "needs_human": false,
+        "provided_fields": [
+          "platform",
+          "problem_description",
+          "reproduction_steps",
+          "server"
+        ],
+        "request_fields": [
+          "event_time"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-uz-01",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Do‘stlar bilan keyingi oy kichik kafe ochmoqchimiz. Oshpaz bo‘lib ishlashni boshlash uchun avval alohida o‘quv topshirig‘ini bajarish kerakmi?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "needs_human": false,
+        "provided_fields": [
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-uz-02",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Salom, yordam xizmatiga murojaat qilmoqchiman. Nimadan boshlashimni aytib bera olasizmi?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "needs_human": false,
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-uz-03",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "28-oktabr kuni o‘yin do‘konidagi bezak to‘plamiga 24000 so‘m to‘ladim, ammo to‘plam berilmadi. To‘lov tranzaksiyasi identifikatori SYN-UZ-318, «Vodiy» serverida o‘ynayman."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "payment_date",
+          "amount",
+          "problem_description",
+          "transaction_id",
+          "server"
+        ],
+        "request_fields": [
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-uz-04",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Mening taxallusim QumQaldirg‘och, «Chinor» serveridaman. O‘z hisobimga kecha soat 22:10 da kirganimda men ruxsat bermagan faol seansni ko‘rdim; u qachon ochilganini bilmayman. Seanslar ro‘yxatining skrinshoti bor."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-es-01",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Solicito que revisen la suspensión de mi personaje, BrisaDeCobre, en el servidor Olivo. Se me acusa de abandonar una entrega a propósito, pero el vehículo se quedó atascado; no guardé capturas y no sé la hora del incidente."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "problem_description"
+        ],
+        "request_fields": [
+          "location"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-es-02",
+      "input": {
+        "kind": "complaint",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Denuncio al jugador NubeDeHojalata: hoy a las 16:05 estuvo cerrando la puerta del taller del puerto para impedirnos salir. Fue en el servidor Faro y tengo una grabación de lo ocurrido."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "event_time",
+          "location",
+          "problem_description",
+          "server",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-es-03",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Juego en un ordenador con Linux y el cliente muestra las letras del inventario como cuadrados. Entré en el juego, abrí la mochila y cambié el idioma al español, pero las letras siguieron igual."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "needs_human": false,
+        "provided_fields": [
+          "platform",
+          "problem_description",
+          "reproduction_steps"
+        ],
+        "request_fields": [
+          "server",
+          "event_time"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-es-04",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Antes de comprar una vivienda me gustaría saber si puedo compartir las llaves con un compañero. ¿Se pueden retirar esos permisos más adelante?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "needs_human": false,
+        "provided_fields": [
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-pt-01",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Oi, estou tentando falar com o suporte. Podem me orientar sobre como começar?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "needs_human": false,
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-pt-02",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "No dia 27 de outubro paguei 12 reais para renovar o passe de entregas, mas a validade não mudou. Jogo no servidor Cedro e tenho o comprovante; ele não mostra um identificador de transação legível."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "payment_date",
+          "amount",
+          "problem_description",
+          "server",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-pt-03",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Meu personagem se chama VentoDeLata no servidor Aurora. Não consigo acessar a minha conta porque perdi o aparelho que recebia o código de confirmação; percebi isso hoje às 09:00, mas não sei a hora em que perdi o aparelho."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "problem_description"
+        ],
+        "request_fields": [
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan10-pt-04",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Quero pedir a revisão da minha restrição de dirigir no servidor Estrela; meu apelido é RioDePapel. O incidente foi ontem às 20:30 na saída do estacionamento do mercado, quando meu carro deslizou na rampa e atingiu outro veículo. Tenho um vídeo desse momento."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "participant",
+          "problem_description",
+          "event_time",
+          "location",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    }
+  ]
+}

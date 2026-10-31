@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: support-copilot-demo
+    runtime: node
+    plan: free
+    autoDeploy: false
+    buildCommand: npm ci --no-audit --no-fund
+    startCommand: node scripts/start-hosted.mjs
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: 22.21.0
+      - key: SUPPORT_ADMIN_USER
+        value: admin
+      - key: SUPPORT_ADMIN_PASSWORD
+        generateValue: true

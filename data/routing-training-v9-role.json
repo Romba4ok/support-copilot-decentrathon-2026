@@ -1,0 +1,343 @@
+{
+  "schema_version": "authored-routing-TRAIN-v8-part",
+  "author": "role-training-v9",
+  "provenance": {"type": "authored_synthetic", "human_reviewed": false, "contains_private_data": false},
+  "scenarios": [
+    {
+      "group_id": "role9_payment_double_charge",
+      "focus": "payment",
+      "texts": {
+        "ru": "За один набор монет с меня списали деньги два раза, а набор выдали один. Помогите разобраться с лишним списанием.",
+        "en": "I bought one coin bundle, but two charges went through and only one bundle arrived. Please look into the extra charge.",
+        "kk": "Бір монета жиынтығын сатып алдым, бірақ ақшасы екі рет алынды. Жиынтық бір рет қана келді, артық төлемді тексеріңізші.",
+        "uz": "Bitta tanga to‘plamini oldim, lekin pul ikki marta yechildi. To‘plam esa bir marta keldi, ortiqcha yechimni tekshirib bering.",
+        "es": "Compré un solo paquete de monedas, pero me cobraron dos veces y recibí uno. Necesito ayuda con el cobro adicional.",
+        "pt": "Comprei um pacote de moedas, mas houve duas cobranças e recebi apenas um. Podem verificar a cobrança extra?"
+      }
+    },
+    {
+      "group_id": "role9_payment_missing_gift",
+      "focus": "payment",
+      "texts": {
+        "ru": "Вчера оплатил другу подарочный пропуск. Покупка отмечена как завершённая, но подарок ему до сих пор не пришёл.",
+        "en": "Yesterday I paid for a gift pass for a friend. The order says completed, but my friend still has not received the gift.",
+        "kk": "Кеше досыма сыйлық ретінде маусымдық рұқсат сатып алдым. Тапсырыс аяқталған деп тұр, бірақ сыйлық досыма әлі жеткен жоқ.",
+        "uz": "Kecha do‘stimga sovg‘a uchun mavsumiy yo‘llanma sotib oldim. Buyurtma bajarilgan deb turibdi, ammo sovg‘a unga hali kelmadi.",
+        "es": "Ayer pagué un pase de regalo para un amigo. El pedido figura como completado, pero él todavía no ha recibido nada.",
+        "pt": "Ontem paguei um passe de presente para uma amiga. O pedido aparece como concluído, mas ela ainda não recebeu o presente."
+      }
+    },
+    {
+      "group_id": "role9_payment_cancelled_renewal",
+      "focus": "payment",
+      "texts": {
+        "ru": "Автопродление подписки я отключила на прошлой неделе. Сегодня всё равно сняли плату за следующий месяц, прошу проверить это списание.",
+        "en": "I turned off subscription renewal last week. Today I was still billed for next month, so I would like that payment checked.",
+        "kk": "Өткен аптада жазылымның автоматты ұзартылуын өшірдім. Соған қарамастан бүгін келесі айдың ақысы алынды, осы төлемді тексеруді сұраймын.",
+        "uz": "O‘tgan hafta obunaning avtomatik uzayishini o‘chirgan edim. Shunga qaramay, bugun keyingi oy uchun pul yechildi, shu to‘lovni tekshiring.",
+        "es": "Desactivé la renovación de la suscripción la semana pasada. Hoy me han cobrado el mes siguiente de todas formas; quiero que revisen ese cargo.",
+        "pt": "Desativei a renovação automática na semana passada. Mesmo assim, hoje cobraram o próximo mês; preciso que confiram esse pagamento."
+      }
+    },
+    {
+      "group_id": "role9_payment_price_mismatch",
+      "focus": "payment",
+      "texts": {
+        "ru": "На витрине за костюм показывалась скидочная цена, а в завершённой покупке списана полная. Костюм на месте, вопрос именно в сумме оплаты.",
+        "en": "The outfit was advertised at a sale price, but my completed purchase was charged at full price. I received the outfit; the amount billed is the issue.",
+        "kk": "Дүкенде киімнің жеңілдік бағасы көрсетілді, ал сатып алған кезде толық құны алынды. Киім келді, мәселе төленген сомада.",
+        "uz": "Do‘konda kiyim chegirmali narxda ko‘rsatilgan edi, ammo xarid uchun to‘liq narx yechildi. Kiyim keldi, muammo to‘lov miqdorida.",
+        "es": "El traje aparecía rebajado en la tienda, pero la compra terminada se cobró al precio completo. El traje sí llegó; el problema es el importe.",
+        "pt": "A roupa estava anunciada com desconto, mas a compra concluída foi cobrada pelo preço cheio. A roupa chegou, só preciso resolver o valor cobrado."
+      }
+    },
+    {
+      "group_id": "role9_account_recovery_changed",
+      "focus": "account",
+      "texts": {
+        "ru": "В моём профиле кто-то заменил адрес восстановления, и теперь я не могу войти. Я этих изменений не делал, помогите вернуть доступ.",
+        "en": "Someone replaced the recovery address on my profile, and I can no longer sign in. I did not make that change and need to regain access.",
+        "kk": "Менің профилімдегі қалпына келтіру мекенжайын біреу ауыстырған, енді кіре алмаймын. Бұл өзгерісті мен жасамадым, қолжетімділікті қайтаруға көмектесіңізші.",
+        "uz": "Profilimdagi tiklash manzilini kimdir almashtirgan, endi kira olmayapman. Bu o‘zgarishni men qilmaganman, kirish huquqimni tiklashga yordam bering.",
+        "es": "Alguien cambió la dirección de recuperación de mi perfil y ahora no puedo entrar. No hice ese cambio y necesito recuperar el acceso.",
+        "pt": "Alguém trocou o endereço de recuperação do meu perfil e agora não consigo entrar. Não fui eu que fiz a alteração; preciso recuperar o acesso."
+      }
+    },
+    {
+      "group_id": "role9_account_unauthorized_inventory",
+      "focus": "account",
+      "texts": {
+        "ru": "После входа с незнакомого устройства из моего хранилища исчезли сохранённые вещи. Я ничего не передавала; хочу защитить свой профиль и разобраться с пропажей.",
+        "en": "After a login from an unfamiliar device, items disappeared from my storage. I did not transfer them and need help securing my profile and investigating the loss.",
+        "kk": "Бейтаныс құрылғыдан кіру болғаннан кейін қоймамдағы заттар жоғалды. Мен оларды ешкімге берген жоқпын, профилімді қорғап, жоғалған заттарды анықтауға көмек керек.",
+        "uz": "Begona qurilmadan kirilgandan keyin omborimdagi buyumlar yo‘qoldi. Men ularni hech kimga bermaganman, profilimni himoyalash va yo‘qolgan buyumlarni aniqlashda yordam kerak.",
+        "es": "Después de un acceso desde un dispositivo desconocido, desaparecieron objetos de mi almacén. Yo no los transferí; necesito proteger mi perfil y aclarar la pérdida.",
+        "pt": "Depois de um acesso por um aparelho desconhecido, sumiram itens do meu depósito. Eu não os transferi e preciso de ajuda para proteger o perfil e investigar a perda."
+      }
+    },
+    {
+      "group_id": "role9_account_expired_reset",
+      "focus": "account",
+      "texts": {
+        "ru": "Не помню пароль от своего старого персонажа. Письмо для восстановления приходит, но ссылка сразу сообщает, что срок истёк, поэтому зайти так и не получилось.",
+        "en": "I cannot remember the password for my old character. Recovery emails arrive, but each link says it has already expired, so I am still locked out.",
+        "kk": "Ескі кейіпкерімнің құпиясөзі есімде жоқ. Қалпына келтіру хаты келеді, бірақ сілтемені ашсам, мерзімі біткен дейді, сондықтан әлі кіре алмадым.",
+        "uz": "Eski qahramonimning paroli esimda yo‘q. Tiklash xati keladi, ammo havola darhol muddati tugaganini aytadi, shu sababli hanuz kira olmadim.",
+        "es": "No recuerdo la contraseña de mi personaje antiguo. Los correos de recuperación llegan, pero cada enlace dice que ya caducó y sigo sin poder entrar.",
+        "pt": "Não lembro a senha do meu personagem antigo. Os e-mails de recuperação chegam, mas os links já aparecem como expirados e continuo sem conseguir entrar."
+      }
+    },
+    {
+      "group_id": "role9_account_lost_authenticator",
+      "focus": "account",
+      "texts": {
+        "ru": "Телефон с приложением подтверждения сломался, и в собственный аккаунт меня больше не пускает. Завтра у команды игра, мне нужна помощь с восстановлением входа.",
+        "en": "My phone with the authenticator broke, and I cannot get into my own account anymore. My team plays tomorrow, so I need help restoring access.",
+        "kk": "Растау қолданбасы орнатылған телефоным бұзылды, енді өз аккаунтыма кіре алмаймын. Ертең командаммен ойнауым керек, кіруді қалпына келтіруге көмектесіңізші.",
+        "uz": "Tasdiqlash ilovasi o‘rnatilgan telefonim buzildi va o‘z akkauntimga kira olmay qoldim. Ertaga jamoamiz o‘ynaydi, kirishni tiklashda yordam kerak.",
+        "es": "Se rompió mi teléfono con la aplicación de autenticación y ya no puedo entrar en mi propia cuenta. Mi equipo juega mañana y necesito recuperar el acceso.",
+        "pt": "Meu celular com o autenticador quebrou e não consigo mais entrar na minha conta. Minha equipe joga amanhã, então preciso recuperar o acesso."
+      }
+    },
+    {
+      "group_id": "role9_appeal_suspension_duration",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Мне назначили двухнедельное отстранение после вчерашнего матча. Я считаю срок несоразмерным и прошу пересмотреть именно моё наказание.",
+        "en": "I received a two-week suspension after yesterday's match. I believe the duration is disproportionate and would like my penalty reviewed.",
+        "kk": "Кешегі матчтан кейін маған екі апталық шектеу қойылды. Мерзімі тым ұзақ деп санаймын және өзіме берілген жазаны қайта қарауды сұраймын.",
+        "uz": "Kechagi o‘yindan keyin menga ikki haftalik cheklov berildi. Muddatni haddan tashqari uzun deb hisoblayman va o‘zimga berilgan jazoni qayta ko‘rib chiqishni so‘rayman.",
+        "es": "Me suspendieron dos semanas después de la partida de ayer. Considero que la duración es desproporcionada y pido que revisen mi sanción.",
+        "pt": "Recebi uma suspensão de duas semanas depois da partida de ontem. Acho o prazo desproporcional e peço uma revisão da minha punição."
+      }
+    },
+    {
+      "group_id": "role9_appeal_quoted_message",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Мне ограничили чат за оскорбление, хотя я цитировал чужую фразу при описании ситуации. Прошу посмотреть контекст и пересмотреть ограничение на моём профиле.",
+        "en": "My chat was restricted for an insult, but I was quoting someone else's words to explain what happened. Please examine the context and reconsider the restriction on my profile.",
+        "kk": "Жағдайды түсіндіргенде басқа адамның сөзін дәйексөз ретінде жазғаным үшін чатыма шектеу қойылды. Мәтіннің мәнмәтінін қарап, маған қойылған шектеуді қайта қараңызшы.",
+        "uz": "Vaziyatni tushuntirish uchun boshqa odamning gapini keltirganimda, haqorat sabab chatim cheklandi. Iltimos, kontekstni tekshirib, profilimdagi cheklovni qayta ko‘rib chiqing.",
+        "es": "Me restringieron el chat por un insulto, pero estaba citando palabras ajenas para explicar lo sucedido. Pido que revisen el contexto y reconsideren mi restricción.",
+        "pt": "Restringiram meu chat por uma ofensa, mas eu estava citando a fala de outra pessoa para explicar a situação. Peço que analisem o contexto e revejam a restrição do meu perfil."
+      }
+    },
+    {
+      "group_id": "role9_appeal_scheduled_restriction",
+      "focus": "appeal",
+      "texts": {
+        "ru": "В уведомлении сказано, что завтра для меня начнётся запрет на торговлю. Сделки из уведомления я не совершала, поэтому уже сейчас прошу пересмотреть это решение.",
+        "en": "A notice says my trading restriction starts tomorrow. I did not make the trades listed there, so I am requesting a review of that decision now.",
+        "kk": "Хабарламада маған сауда жасауға тыйым ертеңнен бастап күшіне енетіні жазылған. Онда аталған мәмілелерді мен жасамадым, сондықтан шешімді қазір қайта қарауды сұраймын.",
+        "uz": "Bildirishnomada menga savdo taqiqi ertadan boshlanishi yozilgan. Undagi bitimlarni men qilmaganman, shu qarorni hozirdanoq qayta ko‘rib chiqishingizni so‘rayman.",
+        "es": "El aviso dice que mi prohibición de comerciar empieza mañana. No realicé las operaciones que aparecen allí y solicito que revisen esa decisión desde ahora.",
+        "pt": "O aviso diz que minha restrição de trocas começa amanhã. Não fiz as transações citadas e já estou pedindo uma revisão dessa decisão."
+      }
+    },
+    {
+      "group_id": "role9_appeal_past_record",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Моя блокировка уже закончилась, но запись о нарушении осталась. Я по-прежнему оспариваю основание и хочу, чтобы старое решение в отношении меня пересмотрели.",
+        "en": "My suspension has ended, but the violation is still on my record. I still dispute its basis and want the earlier decision about me reconsidered.",
+        "kk": "Аккаунтымның бұғаттау мерзімі бітті, бірақ ереже бұзушылық туралы жазба қалды. Мен оның негізімен әлі келіспеймін, өзіме қатысты бұрынғы шешімді қайта қарауды сұраймын.",
+        "uz": "Bloklanish muddatim tugagan, lekin qoidabuzarlik yozuvi saqlanib qolgan. Uning asosiga hali ham e’tirozim bor, menga nisbatan oldingi qarorni qayta ko‘rib chiqishingizni istayman.",
+        "es": "Mi suspensión ya terminó, pero la infracción sigue en mi historial. Sigo cuestionando el motivo y quiero que reconsideren aquella decisión sobre mí.",
+        "pt": "Minha suspensão já terminou, mas a infração continua no histórico. Ainda contesto o motivo e quero que revejam aquela decisão sobre mim."
+      }
+    },
+    {
+      "group_id": "role9_complaint_trade_deception",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Другой игрок забрал оговорённые материалы и вышел, не отдав свою часть обмена. Прошу проверить его действия и применить к нему меры, если обман подтвердится.",
+        "en": "Another player took the agreed materials and left without giving their side of the trade. Please investigate that player's conduct and take action if the deception is confirmed.",
+        "kk": "Басқа ойыншы келісілген материалдарды алып, айырбасқа беруге тиіс заттарын бермей шығып кетті. Оның әрекетін тексеріп, алдау расталса, соған шара қолдануды сұраймын.",
+        "uz": "Boshqa o‘yinchi kelishilgan materiallarni oldi-yu, almashuvdagi o‘z ulushini bermay chiqib ketdi. Uning harakatlarini tekshirib, aldov tasdiqlansa, unga chora ko‘rishingizni so‘rayman.",
+        "es": "Otro jugador se llevó los materiales acordados y se fue sin entregar su parte del intercambio. Pido que investiguen su conducta y actúen si se confirma el engaño.",
+        "pt": "Outro jogador pegou os materiais combinados e saiu sem entregar a parte dele na troca. Peço que investiguem a conduta dele e tomem medidas se a fraude for confirmada."
+      }
+    },
+    {
+      "group_id": "role9_complaint_threatening_opponent",
+      "focus": "complaint",
+      "texts": {
+        "ru": "В матче у меня пропадал звук, но обращаюсь из-за соперника: после игры он прислал мне угрозы. Хочу подать жалобу на его сообщения.",
+        "en": "My sound cut out during the match, but I am writing about my opponent: they sent me threats afterward. I want to report their messages.",
+        "kk": "Матч кезінде дыбысым жоғалып тұрды, бірақ жазып отырған себебім қарсыласым: ойыннан кейін ол маған қоқан-лоқы жіберді. Оның хабарламаларына шағым бергім келеді.",
+        "uz": "O‘yin paytida ovozim uzilib turdi, ammo murojaatim raqibim haqida: u keyin menga tahdidli xabarlar yubordi. Uning xabarlari ustidan shikoyat qilmoqchiman.",
+        "es": "Durante la partida se me cortaba el sonido, pero escribo por mi rival: después me envió amenazas. Quiero denunciar sus mensajes.",
+        "pt": "O som falhou durante a partida, mas estou escrevendo por causa do adversário: depois ele me mandou ameaças. Quero denunciar as mensagens dele."
+      }
+    },
+    {
+      "group_id": "role9_complaint_repeat_exploit",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Участник нашей лиги вчера проходил сквозь закрытые ворота с помощью бага и обещает повторить это в финале. Прошу проверить именно этого игрока за использование ошибки.",
+        "en": "A player in our league used a glitch to pass through locked gates yesterday and says they will do it again in the final. Please investigate that player for exploiting the bug.",
+        "kk": "Лигамыздағы бір ойыншы кеше қателікті пайдаланып, жабық қақпалардан өтіп жүрді және финалда да қайталайтынын айтты. Осы ойыншының қатені әдейі пайдалануын тексеруді сұраймын.",
+        "uz": "Ligamizdagi bir o‘yinchi kecha xatolikdan foydalanib yopiq darvozalardan o‘tdi va finalda ham shunday qilishini aytdi. Aynan shu o‘yinchining xatolikdan foydalanishini tekshiring.",
+        "es": "Un participante de nuestra liga atravesó puertas cerradas aprovechando un fallo ayer y dice que lo repetirá en la final. Pido que investiguen a ese jugador por abusar del error.",
+        "pt": "Um participante da nossa liga usou uma falha para atravessar portões fechados ontem e disse que repetirá isso na final. Peço que investiguem esse jogador pelo abuso da falha."
+      }
+    },
+    {
+      "group_id": "role9_complaint_staff_impersonation",
+      "focus": "complaint",
+      "texts": {
+        "ru": "В общем чате человек выдаёт себя за сотрудника поддержки и собирает оплату за снятие чужих блокировок. Я ему не платила; прошу проверить его и пресечь такие действия.",
+        "en": "Someone in public chat is posing as support staff and asking people to pay to remove their suspensions. I have not paid them; please investigate and address their behavior.",
+        "kk": "Жалпы чатта бір адам өзін қолдау қызметкері деп таныстырып, басқалардың бұғаттауын алып тастау үшін ақша жинап жүр. Мен оған төлемедім, оның әрекетін тексеріп, тоқтатуды сұраймын.",
+        "uz": "Umumiy chatda bir kishi o‘zini yordam xodimi deb tanishtirib, boshqalarning blokini olib tashlash uchun pul yig‘moqda. Men unga pul bermadim, uning harakatlarini tekshirib, to‘xtatishingizni so‘rayman.",
+        "es": "Alguien en el chat público se hace pasar por personal de soporte y pide dinero para quitar bloqueos ajenos. No le he pagado; solicito que investiguen y frenen esa conducta.",
+        "pt": "Uma pessoa no chat público está se passando pelo suporte e cobrando para retirar bloqueios de outras pessoas. Não paguei a ela; peço que investiguem e interrompam essa conduta."
+      }
+    },
+    {
+      "group_id": "role9_technical_store_crash",
+      "focus": "technical",
+      "texts": {
+        "ru": "При открытии страницы покупки клиент сразу закрывается. До оплаты я не дохожу и списаний нет; помогите устранить этот вылет.",
+        "en": "The client closes as soon as I open the purchase page. I never reach payment and nothing has been charged; I need help fixing the crash.",
+        "kk": "Сатып алу бетін ашсам, клиент бірден жабылады. Төлемге дейін жетпеймін, ақша да алынған жоқ; осы істен шығуды түзетуге көмектесіңізші.",
+        "uz": "Xarid sahifasini ochishim bilan mijoz dasturi yopilib qoladi. To‘lovgacha yetib bormayman va pul yechilmagan; shu nosozlikni tuzatishga yordam bering.",
+        "es": "El cliente se cierra en cuanto abro la página de compra. No llego al pago ni se ha cobrado nada; necesito solucionar ese cierre inesperado.",
+        "pt": "O cliente fecha assim que abro a página de compra. Nem chego ao pagamento e não houve cobrança; preciso resolver esse travamento."
+      }
+    },
+    {
+      "group_id": "role9_technical_gate_loading",
+      "focus": "technical",
+      "texts": {
+        "ru": "Перехожу через портал на новую карту и каждый раз остаюсь на экране загрузки. Войти в профиль могу, но продолжить игру после перехода невозможно.",
+        "en": "Whenever I use the portal to the next map, the loading screen stays forever. I can sign in, but the game will not continue after the transition.",
+        "kk": "Портал арқылы жаңа картаға өткен сайын жүктеу экраны тоқтамай тұра береді. Профильге кіре аламын, бірақ ауысқаннан кейін ойынды жалғастыру мүмкін емес.",
+        "uz": "Portal orqali yangi xaritaga o‘tganimda yuklanish oynasi ketmay qoladi. Profilga kira olaman, lekin o‘tishdan keyin o‘yinni davom ettirib bo‘lmaydi.",
+        "es": "Cada vez que uso el portal al siguiente mapa, la pantalla de carga se queda indefinidamente. Puedo iniciar sesión, pero no continuar el juego tras el cambio.",
+        "pt": "Sempre que uso o portal para o próximo mapa, a tela de carregamento fica presa. Consigo entrar no perfil, mas não continuar o jogo depois da passagem."
+      }
+    },
+    {
+      "group_id": "role9_technical_controls_freeze",
+      "focus": "technical",
+      "texts": {
+        "ru": "После сегодняшнего обновления персонаж перестаёт реагировать на клавиши примерно через минуту игры. Чат при этом работает, а движение возвращается только после перезапуска клиента.",
+        "en": "Since today's update, my character stops responding to movement keys after about a minute. Chat still works, and movement only returns after restarting the client.",
+        "kk": "Бүгінгі жаңартудан кейін шамамен бір минут ойнаған соң кейіпкер қозғалыс пернелеріне жауап бермейді. Чат жұмыс істейді, ал қозғалыс клиентті қайта қосқанда ғана қалпына келеді.",
+        "uz": "Bugungi yangilanishdan keyin taxminan bir daqiqa o‘ynasam, qahramon harakat tugmalariga javob bermay qoladi. Chat ishlaydi, harakat esa dasturni qayta ishga tushirgandagina tiklanadi.",
+        "es": "Desde la actualización de hoy, mi personaje deja de responder a las teclas de movimiento al cabo de un minuto. El chat funciona y solo recupero el movimiento al reiniciar el cliente.",
+        "pt": "Depois da atualização de hoje, meu personagem para de responder às teclas de movimento em cerca de um minuto. O chat continua funcionando, e o movimento só volta ao reiniciar o cliente."
+      }
+    },
+    {
+      "group_id": "role9_technical_scoreboard_display",
+      "focus": "technical",
+      "texts": {
+        "ru": "Во всех вчерашних матчах таблица результатов рисовалась поверх меню и закрывала кнопку выхода. Пришлось завершать клиент через систему; прошу исправить отображение.",
+        "en": "In every match yesterday, the results panel drew over the menu and covered the exit button. I had to close the client through the operating system; please fix the display issue.",
+        "kk": "Кешегі барлық матчта нәтижелер кестесі мәзірдің үстіне шығып, шығу батырмасын жауып тұрды. Клиентті жүйе арқылы жабуға тура келді, көрсетілім қатесін түзетіңізші.",
+        "uz": "Kechagi barcha o‘yinlarda natijalar jadvali menyu ustiga chiqib, chiqish tugmasini yopib qo‘ydi. Dasturni tizim orqali yopishga majbur bo‘ldim, ko‘rinishdagi xatoni tuzating.",
+        "es": "En todas las partidas de ayer, el panel de resultados se superpuso al menú y tapó el botón de salir. Tuve que cerrar el cliente desde el sistema; pido que corrijan la visualización.",
+        "pt": "Em todas as partidas de ontem, o painel de resultados ficou sobre o menu e cobriu o botão de sair. Precisei fechar o cliente pelo sistema; peço que corrijam a exibição."
+      }
+    },
+    {
+      "group_id": "role9_question_future_receipt",
+      "focus": "question",
+      "texts": {
+        "ru": "Планирую купить набор на следующей неделе. Где после покупки обычно можно найти чек и список оплаченных товаров?",
+        "en": "I am planning to buy a bundle next week. Where would I normally find the receipt and the list of purchased items afterward?",
+        "kk": "Келесі аптада жиынтық сатып алуды жоспарлап отырмын. Сатып алғаннан кейін түбіртек пен төленген заттардың тізімін әдетте қайдан табуға болады?",
+        "uz": "Keyingi hafta to‘plam sotib olmoqchiman. Xariddan keyin chek va sotib olingan buyumlar ro‘yxatini odatda qayerdan topsam bo‘ladi?",
+        "es": "Pienso comprar un paquete la semana que viene. ¿Dónde se suele consultar después el recibo y la lista de artículos comprados?",
+        "pt": "Pretendo comprar um pacote na próxima semana. Onde normalmente encontro o recibo e a lista dos itens comprados depois?"
+      }
+    },
+    {
+      "group_id": "role9_question_account_sharing",
+      "focus": "question",
+      "texts": {
+        "ru": "Можно ли по правилам давать родственнику поиграть на своём аккаунте? Пока доступ никому не передавал, хочу заранее понять условия.",
+        "en": "Do the rules allow a relative to play on my account? I have not shared access with anyone; I want to understand the conditions first.",
+        "kk": "Ереже бойынша туысыма өз аккаунтымда ойнауға рұқсат беруге бола ма? Әзірше ешкімге қолжетімділік берген жоқпын, шарттарын алдын ала білгім келеді.",
+        "uz": "Qoidalarga ko‘ra qarindoshimga o‘z akkauntimda o‘ynashga ruxsat bersam bo‘ladimi? Hali hech kimga kirish imkonini bermadim, avval shartlarini bilmoqchiman.",
+        "es": "¿Las normas permiten que un familiar juegue con mi cuenta? Todavía no he compartido el acceso; quiero conocer las condiciones antes.",
+        "pt": "As regras permitem que um parente jogue na minha conta? Ainda não compartilhei o acesso com ninguém e quero entender as condições antes."
+      }
+    },
+    {
+      "group_id": "role9_question_appeal_procedure",
+      "focus": "question",
+      "texts": {
+        "ru": "Пишу памятку для новичков: каким способом обычно подают просьбу о пересмотре наказания? У меня сейчас никаких ограничений нет, нужен общий порядок.",
+        "en": "I am writing a guide for newcomers: how does someone normally request a review of a penalty? I have no current restrictions and only need the general procedure.",
+        "kk": "Жаңадан келгендерге нұсқаулық жазып жатырмын: жазаны қайта қарауды әдетте қалай сұрайды? Қазір маған ешқандай шектеу қойылмаған, жалпы тәртібін білгім келеді.",
+        "uz": "Yangi kelganlar uchun eslatma yozyapman: jazoni qayta ko‘rib chiqishni odatda qanday so‘rashadi? Hozir menda hech qanday cheklov yo‘q, umumiy tartib kerak.",
+        "es": "Estoy preparando una guía para principiantes: ¿cómo se suele solicitar la revisión de una sanción? No tengo restricciones ahora; solo necesito el procedimiento general.",
+        "pt": "Estou escrevendo um guia para iniciantes: como se pede normalmente uma revisão de punição? Não tenho nenhuma restrição agora, só preciso saber o procedimento geral."
+      }
+    },
+    {
+      "group_id": "role9_question_report_evidence",
+      "focus": "question",
+      "texts": {
+        "ru": "Если в будущей игре встречу нарушителя, какие сведения лучше сохранять для обращения? Сейчас никого не обвиняю, просто хочу знать, достаточно ли записи матча.",
+        "en": "If I encounter misconduct in a future game, what information should I save for a report? I am not accusing anyone now; I just want to know whether a match recording is enough.",
+        "kk": "Алдағы ойында ереже бұзған адамды кездестірсем, шағым үшін қандай мәліметтерді сақтаған дұрыс? Қазір ешкімді айыптап отырған жоқпын, матч жазбасы жеткілікті ме деп білгім келеді.",
+        "uz": "Kelajakdagi o‘yinda qoidabuzarni uchratsam, murojaat uchun qaysi ma’lumotlarni saqlaganim yaxshi? Hozir hech kimni ayblamayapman, o‘yin yozuvi yetarlimi, shuni bilmoqchiman.",
+        "es": "Si encuentro una infracción en una partida futura, ¿qué información conviene guardar para denunciarla? Ahora no acuso a nadie; solo quiero saber si basta una grabación de la partida.",
+        "pt": "Se eu encontrar uma infração numa partida futura, quais informações devo guardar para denunciar? Não estou acusando ninguém agora, só quero saber se a gravação da partida basta."
+      }
+    },
+    {
+      "group_id": "role9_clarification_unspecified_game",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Помогите, пожалуйста, с игрой. Не понимаю, с чего начать объяснение, но очень нужна поддержка.",
+        "en": "Please help me with the game. I do not know where to start explaining, but I really need support.",
+        "kk": "Ойын бойынша көмектесіңізші. Түсіндіруді неден бастарымды білмеймін, бірақ қолдау керек болып тұр.",
+        "uz": "Iltimos, o‘yin bo‘yicha yordam bering. Tushuntirishni nimadan boshlashni bilmayapman, ammo yordam juda kerak.",
+        "es": "Necesito ayuda con el juego, por favor. No sé por dónde empezar a explicarlo, pero necesito hablar con soporte.",
+        "pt": "Preciso de ajuda com o jogo, por favor. Não sei por onde começar a explicar, mas preciso falar com o suporte."
+      }
+    },
+    {
+      "group_id": "role9_clarification_yesterday_unspecified",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Вчера у нас кое-что произошло, и я теперь не знаю, как быть. Можете помочь разобраться? Подробности ещё не описал.",
+        "en": "Something happened to us yesterday, and now I do not know what to do. Could you help me sort it out? I have not explained the details yet.",
+        "kk": "Кеше бізде бір жағдай болды, енді не істерімді білмей отырмын. Түсінуге көмектесе аласыз ба? Әзірше мән-жайын жазған жоқпын.",
+        "uz": "Kecha bizda bir holat bo‘ldi, endi nima qilishni bilmayapman. Tushunib olishga yordam bera olasizmi? Tafsilotlarini hali yozmadim.",
+        "es": "Ayer nos pasó algo y ahora no sé qué hacer. ¿Pueden ayudarme a aclararlo? Todavía no he contado los detalles.",
+        "pt": "Aconteceu uma coisa com a gente ontem e agora não sei o que fazer. Podem me ajudar a entender? Ainda não contei os detalhes."
+      }
+    },
+    {
+      "group_id": "role9_clarification_tomorrow_unspecified",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Завтра мне понадобится ваша помощь по одной ситуации в игре. Сейчас могу только оставить сообщение: тема пока без подробностей.",
+        "en": "I will need your help tomorrow with a situation in the game. For now I can only leave this message; I have not provided the details yet.",
+        "kk": "Ертең ойындағы бір жағдай бойынша көмектеріңіз керек болады. Қазір тек хабарлама қалдыра аламын, егжей-тегжейін әлі жазбадым.",
+        "uz": "Ertaga o‘yindagi bir vaziyat bo‘yicha yordamingiz kerak bo‘ladi. Hozircha faqat xabar qoldira olaman, tafsilotlarini hali bermadim.",
+        "es": "Mañana necesitaré ayuda con una situación del juego. Por ahora solo puedo dejar este mensaje; todavía no he dado los detalles.",
+        "pt": "Amanhã vou precisar de ajuda com uma situação no jogo. Por enquanto só posso deixar esta mensagem, ainda sem os detalhes."
+      }
+    },
+    {
+      "group_id": "role9_clarification_missing_attachment_context",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Хотел показать вам скриншот, но пока ничего не прикрепил. Подскажите, что делать с моей ситуацией; словами её ещё не объяснил.",
+        "en": "I meant to show you a screenshot, but I have not attached anything yet. Please tell me what to do about my situation; I have not described it in words either.",
+        "kk": "Сіздерге скриншот көрсеткім келген, бірақ әзірше ештеңе тіркемедім. Жағдайымда не істеу керегін айтыңызшы, оны сөзбен де әлі түсіндірмедім.",
+        "uz": "Sizga skrinshot ko‘rsatmoqchi edim, lekin hali hech narsa biriktirmadim. Vaziyatimda nima qilishni ayting, uni so‘z bilan ham hali tushuntirmadim.",
+        "es": "Quería mostrarles una captura, pero todavía no he adjuntado nada. Díganme qué hacer con mi situación; tampoco la he explicado por escrito aún.",
+        "pt": "Queria mostrar uma captura de tela, mas ainda não anexei nada. Digam o que fazer nessa situação; também não a expliquei por escrito ainda."
+      }
+    }
+  ]
+}

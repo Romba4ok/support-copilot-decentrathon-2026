@@ -1,0 +1,608 @@
+{
+  "provenance": "authored_synthetic independent-plan-v12",
+  "human_reviewed": false,
+  "contract_version": "support-plan-v1",
+  "cases": [
+    {
+      "id": "independent-plan-v12-001",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "На сервере «Гавань» оплатил 180 рублей за дополнительную ячейку склада 28 октября 2026 года через Android. Списание есть, новая ячейка не открылась. Идентификатор платёжной транзакции могу найти в банковском приложении."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "payment_date",
+          "amount",
+          "platform",
+          "problem_description"
+        ],
+        "request_fields": [
+          "transaction_id"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-002",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Мой ник ТихийБуксир, сервер «Северный порт». Вчера, 30 октября в 18:40, посторонний вошёл в мой аккаунт и сменил пароль. Теперь войти не могу. Уведомление о входе сохранил, могу приложить его скриншот."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-003",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Играю на Windows, сервер «Листва». Зашёл в мастерскую, выбрал перекраску велосипеда, нажал на зелёный цвет. Предпросмотр завис, кнопки больше не нажимаются. После перезапуска повторил эти шаги, всё зависло снова."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "needs_human": false,
+        "provided_fields": [
+          "platform",
+          "server",
+          "reproduction_steps",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-004",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "На сервере «Янтарный» можно ли передавать другим игрокам выращенные саженцы через обычный обмен? Хочу узнать, предусмотрена ли такая возможность."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "needs_human": false,
+        "provided_fields": [
+          "server"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-005",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "My character is LarchCompass on the Harbor Bell server. My driving restriction began on 29 October 2026 at 16:10. I am asking for a review because the vehicle was already stopped when the incident happened. I have the full recording available."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-006",
+      "input": {
+        "kind": "complaint",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "I want to report ReedSpoke on the Sand Quay server. On 30 October at 21:25 they repeatedly rammed my taxi at the south airport exit. I have a video available showing the collisions."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "location",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-007",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Hi support, can you assist me? I have not given you the details of my issue yet."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "needs_human": false,
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-008",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "I paid 650 game coins for the violet boat paint on the Bay Lantern server, but the paint was never added. The payment transaction ID is PAY-LANTERN-4826. I made the payment on 27 October 2026 using the Windows client."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "amount",
+          "server",
+          "problem_description",
+          "transaction_id",
+          "payment_date",
+          "platform"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-009",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Менің никім — QumQanat, серверім — «Ақжелкен». Өз аккаунтымнан шығарып жіберді, енді құпиясөзім қабылданбайды. Электрондық поштамдағы қалпына келтіру хаты да маған келмейді. Аккаунтыма кіруге көмектесіңізші."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-010",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Android телефонында ойнап отырмын. Пошта терезесін аштым, келген хатты таңдап, «Алу» батырмасын бастым. Терезе қатып қалды. Ойынға қайта кіріп, осы әрекеттерді қайталадым, тағы қатып қалды."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "needs_human": false,
+        "provided_fields": [
+          "platform",
+          "reproduction_steps",
+          "problem_description"
+        ],
+        "request_fields": [
+          "server"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-011",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "«Боздала» серверінде қоймадағы бос ұяшық санын қай мәзірден көруге болады? Қазір ештеңе жоғалған жоқ, тек осы ақпараттың қайда көрсетілетінін білгім келеді."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "needs_human": false,
+        "provided_fields": [
+          "server"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-012",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "«Самал» серверіндегі менің никім — AspanKeme. Менің аккаунтыма қойылған сауда шектеуін қайта қарауды сұраймын. Шектеу туралы хабарламаны бүгін оқыдым, бірақ оның қашан қойылғанын білмеймін. Хабарламаның скриншоты бар."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "participant",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-013",
+      "input": {
+        "kind": "complaint",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "«Ko‘l bo‘yi» serverida QizilTaroq ismli o‘yinchi ustidan shikoyat qilaman. 30 oktabr kuni soat 14:20 da shimoliy avtovokzal oldida u avtobusim yo‘lini ataylab to‘sdi. Video yozuvim bor, yubora olaman."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "participant",
+          "event_time",
+          "location",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-014",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Salom, qo‘llab-quvvatlash xizmati kerak edi. Hali vaziyatni tushuntirib yozmadim."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "needs_human": false,
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-015",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "«Chinor» serverida velosiped uchun savat sotib oldim. 29 oktabr 2026 kuni 95 tanga to‘ladim, ammo savat inventarga kelmadi. Android orqali to‘ladim. To‘lov tranzaksiyasi identifikatori TX-CHINOR-7314."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "payment_date",
+          "amount",
+          "problem_description",
+          "platform",
+          "transaction_id"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-016",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Mening laqabim SokinJilg‘a, «Oqtepa» serverida o‘ynayman. Bugun soat 09:15 da hisobimdan men tasdiqlamagan pul o‘tkazmasi amalga oshdi. Hisobimni himoyalash uchun yordam kerak. O‘tkazma tarixining skrinshoti menda bor."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-017",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Juego en Windows, en el servidor Faro Chico. Abrí la lista de contactos, escribí un nombre y pulsé buscar. El cliente se cerró. Lo inicié de nuevo y repetí esos pasos; volvió a cerrarse en la búsqueda."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "needs_human": false,
+        "provided_fields": [
+          "platform",
+          "server",
+          "reproduction_steps",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-018",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "En el servidor Valle Claro, ¿el permiso para usar un remolque se compra una sola vez o hay que renovarlo? Quiero conocer su duración antes de adquirirlo."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "needs_human": false,
+        "provided_fields": [
+          "server"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-019",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Mi personaje es NubeDePino en el servidor Costa Serena. Quiero apelar mi bloqueo de acceso. El bloqueo empezó el 28 de octubre de 2026 a las 19:05. Estaba transportando cajas y pido que revisen lo sucedido; tengo una grabación completa disponible."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "problem_description",
+          "event_time",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-020",
+      "input": {
+        "kind": "complaint",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Quiero denunciar al jugador RiscoRojo del servidor Lago Manso. Insultó a mi grupo durante una entrega en el muelle de carga. Tengo capturas del chat guardadas. Fue el 30 de octubre a las 17:30."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "problem_description",
+          "location",
+          "evidence",
+          "event_time"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-021",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Olá, podem me ajudar por aqui? Ainda não descrevi o que aconteceu nem o que preciso."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "needs_human": false,
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-022",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "No servidor Porto Verde, paguei 22 reais por uma licença de decoração em 30 de outubro de 2026 pelo Android. A licença não foi liberada. Tenho o comprovante disponível. O número do pedido é PED-VERDE-559; ainda posso consultar o identificador da transação do pagamento."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "server",
+          "amount",
+          "payment_date",
+          "platform",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [
+          "transaction_id"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-023",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Meu personagem é RamoDeSal no servidor Vila das Águas. Alguém trocou o e-mail da minha conta sem autorização e perdi o acesso. Notei isso hoje ao tentar entrar, mas não sei quando fizeram a troca. Preciso recuperar minha conta."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "independent-plan-v12-024",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Sou o jogador CedroLento do servidor Serra Azul. Recebi uma restrição de participação em corridas e peço a revisão da minha restrição. O aviso apareceu hoje, mas não informa o horário em que ela foi aplicada. Não tenho gravação do incidente."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    }
+  ]
+}

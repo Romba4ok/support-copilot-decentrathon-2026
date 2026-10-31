@@ -1,0 +1,971 @@
+{
+  "schema_version": "authored-routing-TRAIN-v8-part",
+  "author": "beta",
+  "provenance": {
+    "type": "authored_synthetic",
+    "human_reviewed": false,
+    "contains_private_data": false
+  },
+  "scenarios": [
+    {
+      "group_id": "v8-beta-appeal-01",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Мне выдали мут за спам, хотя я отправил одно объявление. Прошу пересмотреть именно мой мут.",
+        "en": "I was muted for spam although I posted only one announcement. Please review my mute.",
+        "kk": "Бір ғана хабарландыру жіберсем де, маған спам үшін мут берілді. Менің мутымды қайта қарауды сұраймын.",
+        "uz": "Faqat bitta e'lon yuborgan bo'lsam ham, spam uchun menga mut berildi. Mutimni qayta ko'rib chiqishingizni so'rayman.",
+        "es": "Me silenciaron por spam aunque publiqué un solo anuncio. Solicito que revisen mi silencio.",
+        "pt": "Recebi um silenciamento por spam, embora tenha publicado apenas um anúncio. Peço que revisem meu silenciamento."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-02",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Мой аккаунт заблокировали за использование программ. Я играю без них и хочу обжаловать эту блокировку.",
+        "en": "My account was banned for using unauthorized software. I play without it and want to appeal this ban.",
+        "kk": "Аккаунтым бөгде бағдарламаларды қолданғаным үшін бұғатталды. Мен ондай бағдарламасыз ойнаймын және осы бұғаттауға шағымданғым келеді.",
+        "uz": "Akkauntim begona dasturlardan foydalanganim uchun bloklandi. Men ularsiz o'ynayman va bu blok ustidan shikoyat qilmoqchiman.",
+        "es": "Bloquearon mi cuenta por usar programas no autorizados. Juego sin ellos y quiero apelar este bloqueo.",
+        "pt": "Minha conta foi banida por uso de programas não autorizados. Jogo sem eles e quero recorrer desse banimento."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-03",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Я уже отбываю наказание в игровой тюрьме за нападение. На записи видно самооборону, прошу пересмотреть наказание.",
+        "en": "I am serving a game jail sentence for attacking someone. The recording shows self-defense; please review my sentence.",
+        "kk": "Шабуыл жасағаным үшін ойын түрмесінде жазамды өтеп жатырмын. Жазбада өзімді қорғағаным көрінеді, жазамды қайта қарауды сұраймын.",
+        "uz": "Hujum uchun o'yin qamoqxonasida jazoni o'tayapman. Yozuvda o'zimni himoya qilganim ko'rinadi, jazomni qayta ko'rib chiqing.",
+        "es": "Estoy cumpliendo una condena en la cárcel del juego por atacar. La grabación muestra defensa propia; solicito revisar mi castigo.",
+        "pt": "Estou cumprindo uma pena na prisão do jogo por agressão. A gravação mostra legítima defesa; peço a revisão da minha pena."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-04",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Мне запретили торговлю за подозрительные сделки. Я могу объяснить обмен и прошу проверить установленное мне ограничение.",
+        "en": "My trading was restricted over suspicious transactions. I can explain the exchange and ask you to review my restriction.",
+        "kk": "Күмәнді мәмілелер үшін маған сауда жасауға тыйым салынды. Айырбасты түсіндіре аламын, маған қойылған шектеуді тексеруді сұраймын.",
+        "uz": "Shubhali bitimlar sabab savdo qilishim cheklandi. Almashinuvni tushuntira olaman, menga qo'yilgan cheklovni tekshirishingizni so'rayman.",
+        "es": "Me restringieron el comercio por transacciones sospechosas. Puedo explicar el intercambio y solicito revisar mi restricción.",
+        "pt": "Restringiram minhas trocas por transações suspeitas. Posso explicar a troca e peço que revisem a restrição aplicada a mim."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-05",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Мой недельный бан должен был закончиться, но в решении срок продлили. Прошу проверить длительность моего наказания.",
+        "en": "My week-long ban was due to end, but the decision extended it. Please review the duration of my punishment.",
+        "kk": "Бір апталық баным аяқталуы керек еді, бірақ шешімде мерзімі ұзартылды. Маған берілген жазаның ұзақтығын тексеруді сұраймын.",
+        "uz": "Bir haftalik banim tugashi kerak edi, lekin qarorda muddati uzaytirildi. Jazomning davomiyligini tekshirishingizni so'rayman.",
+        "es": "Mi bloqueo de una semana debía terminar, pero la resolución lo amplió. Solicito revisar la duración de mi castigo.",
+        "pt": "Meu banimento de uma semana estava para terminar, mas a decisão o ampliou. Peço que revisem a duração da minha punição."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-06",
+      "focus": "appeal",
+      "texts": {
+        "ru": "За мой ник выдали принудительное ограничение входа. Я готов сменить его и прошу пересмотреть действующую санкцию.",
+        "en": "I received a login restriction because of my nickname. I am willing to change it and request review of the current sanction.",
+        "kk": "Лақап атым үшін кіруіме шектеу қойылды. Оны өзгертуге дайынмын, қолданыстағы жазаны қайта қарауды сұраймын.",
+        "uz": "Taxallusim sabab kirishim cheklandi. Uni o'zgartirishga tayyorman va amaldagi jazoni qayta ko'rib chiqishingizni so'rayman.",
+        "es": "Me restringieron el acceso por mi apodo. Estoy dispuesto a cambiarlo y solicito revisar la sanción actual.",
+        "pt": "Meu acesso foi restringido por causa do apelido. Estou disposto a alterá-lo e peço a revisão da sanção atual."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-07",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Мне запретили голосовой чат за музыку в микрофоне. Это был звук с улицы, прошу проверить мой случай.",
+        "en": "I was barred from voice chat for playing music through my microphone. It was street noise; please review my case.",
+        "kk": "Микрофонмен музыка қойғаным үшін дауыстық чатқа тыйым салынды. Ол көшеден шыққан дыбыс еді, менің жағдайымды тексеруді сұраймын.",
+        "uz": "Mikrofonda musiqa qo'yganim uchun ovozli chatim cheklandi. Bu ko'chadan kelgan tovush edi, holatimni tekshirishingizni so'rayman.",
+        "es": "Me prohibieron el chat de voz por poner música con el micrófono. Era ruido de la calle; solicito revisar mi caso.",
+        "pt": "Fui impedido de usar o chat de voz por tocar música no microfone. Era barulho da rua; peço que revisem meu caso."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-08",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Меня исключили из турниров на месяц за сговор. С командой соперника я не договаривался, хочу пересмотра моего отстранения.",
+        "en": "I was suspended from tournaments for a month for collusion. I made no agreement with the opposing team and want my suspension reviewed.",
+        "kk": "Келісіп ойнады деген себеппен мені жарыстардан бір айға шеттетті. Қарсылас командамен келіспедім, шеттетуімді қайта қарауды қалаймын.",
+        "uz": "Til biriktirish uchun meni turnirlardan bir oyga chetlatishdi. Raqib jamoa bilan kelishmaganman, chetlatishimni qayta ko'rib chiqishni xohlayman.",
+        "es": "Me suspendieron de torneos un mes por colusión. No pacté con el equipo rival y quiero que revisen mi suspensión.",
+        "pt": "Fui suspenso dos torneios por um mês por conluio. Não fiz acordo com a equipe adversária e quero uma revisão da suspensão."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-09",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Моё предупреждение за оскорбление основано на обрезанной цитате. Прошу рассмотреть весь диалог и отменить предупреждение, если оно ошибочное.",
+        "en": "My warning for an insult relies on a cropped quotation. Please review the full conversation and remove the warning if it was mistaken.",
+        "kk": "Маған қорлау үшін берілген ескерту қысқартылған дәйексөзге негізделген. Бүкіл әңгімені қарап, қате болса ескертуді алып тастауды сұраймын.",
+        "uz": "Haqorat uchun olgan ogohlantirishim kesilgan iqtibosga asoslangan. To'liq suhbatni ko'rib, xato bo'lsa ogohlantirishni olib tashlashingizni so'rayman.",
+        "es": "Mi advertencia por insultos se basa en una cita recortada. Revisen la conversación completa y retiren la advertencia si fue un error.",
+        "pt": "Minha advertência por insulto se baseia numa citação cortada. Peço que examinem a conversa completa e removam a advertência se houve erro."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-10",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Мне ограничили участие в голосованиях из-за предполагаемых дополнительных аккаунтов. У меня один аккаунт, прошу пересмотреть это ограничение.",
+        "en": "I was restricted from voting because of alleged extra accounts. I have one account; please review this restriction.",
+        "kk": "Қосымша аккаунттарым бар деген күдікпен дауыс беруге қатысуым шектелді. Менде бір аккаунт бар, осы шектеуді қайта қарауды сұраймын.",
+        "uz": "Qo'shimcha akkauntlarim bor degan gumon bilan ovoz berishim cheklandi. Menda bitta akkaunt bor, bu cheklovni qayta ko'rib chiqing.",
+        "es": "Me restringieron las votaciones por supuestas cuentas adicionales. Solo tengo una cuenta; solicito revisar esta restricción.",
+        "pt": "Fui impedido de votar por supostas contas extras. Tenho uma só conta; peço a revisão dessa restrição."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-11",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Получил бан за обход блокировки, но до этого наказаний у меня не было. Хочу проверить основание моего текущего бана.",
+        "en": "I received a ban for evading a ban, but I had no earlier punishment. I want the grounds of my current ban checked.",
+        "kk": "Банды айналып өткені үшін маған бан берілді, бірақ бұған дейін жазам болмаған. Қазіргі банымның негізін тексерткім келеді.",
+        "uz": "Bandan qochish uchun ban oldim, lekin oldin jazolanmaganman. Hozirgi banimning asosini tekshirtirmoqchiman.",
+        "es": "Me bloquearon por evadir un bloqueo, pero no tenía sanciones anteriores. Quiero que comprueben el fundamento de mi bloqueo actual.",
+        "pt": "Recebi um banimento por evasão, mas não tinha punição anterior. Quero que verifiquem o motivo do meu banimento atual."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-12",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Мне назначили долгий мут за грубость. Я признаю резкую фразу, но прошу смягчить уже назначенный срок.",
+        "en": "I received a long mute for rudeness. I acknowledge my harsh remark but ask for a shorter duration of the existing punishment.",
+        "kk": "Дөрекілік үшін маған ұзақ мут берілді. Қатты айтқанымды мойындаймын, бірақ белгіленген мерзімді қысқартуды сұраймын.",
+        "uz": "Qo'pollik uchun uzoq mut oldim. Keskin gapirganimni tan olaman, ammo belgilangan muddatni qisqartirishingizni so'rayman.",
+        "es": "Me impusieron un silencio largo por mala educación. Reconozco mi frase brusca, pero solicito reducir la duración ya establecida.",
+        "pt": "Recebi um silenciamento longo por grosseria. Reconheço minha fala ríspida, mas peço a redução do prazo já aplicado."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-13",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Меня отстранили от работы водителем за якобы намеренное столкновение. Прошу пересмотреть отстранение с учётом записи поездки.",
+        "en": "I was suspended from driving work for an allegedly deliberate collision. Please review my suspension using the trip recording.",
+        "kk": "Әдейі соқтығысты деген себеппен мені жүргізуші жұмысынан шеттетті. Сапар жазбасын ескеріп, шеттетуімді қайта қарауды сұраймын.",
+        "uz": "Go'yoki ataylab to'qnashganim uchun haydovchilik ishidan chetlatildim. Safar yozuvini hisobga olib, chetlatishimni qayta ko'rib chiqing.",
+        "es": "Me suspendieron del trabajo de conductor por un supuesto choque intencional. Solicito revisar mi suspensión con la grabación del trayecto.",
+        "pt": "Fui suspenso do trabalho de motorista por uma colisão supostamente intencional. Peço a revisão da suspensão com a gravação da viagem."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-14",
+      "focus": "appeal",
+      "texts": {
+        "ru": "У меня действующий запрет на создание объявлений за рекламу. Сообщение касалось внутриигрового события, прошу пересмотреть запрет.",
+        "en": "I currently cannot post announcements because of an advertising sanction. The message concerned an in-game event; please review the restriction.",
+        "kk": "Жарнама үшін қазір хабарландыру жариялауыма тыйым салынған. Хабарлама ойын ішіндегі шара туралы еді, тыйымды қайта қарауды сұраймын.",
+        "uz": "Reklama jazosi sabab hozir e'lon joylay olmayman. Xabar o'yin ichidagi tadbir haqida edi, cheklovni qayta ko'rib chiqing.",
+        "es": "Tengo una prohibición vigente de publicar anuncios por publicidad. El mensaje trataba de un evento del juego; solicito revisar la prohibición.",
+        "pt": "Estou proibido de publicar anúncios por uma sanção de publicidade. A mensagem era sobre um evento do jogo; peço que revisem a restrição."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-15",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Мой бан за передачу аккаунта выдали после игры с другого компьютера. Никому доступ не передавал, прошу пересмотр моего бана.",
+        "en": "My account-sharing ban followed a session on another computer. I did not share access with anyone; please review my ban.",
+        "kk": "Басқа компьютерден ойнағаннан кейін аккаунтты берді деген себеппен бан алдым. Ешкімге кіру құқығын бермедім, банымды қайта қарауды сұраймын.",
+        "uz": "Boshqa kompyuterdan o'ynaganimdan so'ng akkauntni berish uchun ban oldim. Hech kimga kirish huquqini bermaganman, banimni qayta ko'rib chiqing.",
+        "es": "Me bloquearon por compartir cuenta después de jugar en otro ordenador. No compartí el acceso con nadie; solicito revisar mi bloqueo.",
+        "pt": "Fui banido por compartilhar a conta após jogar em outro computador. Não compartilhei o acesso com ninguém; peço uma revisão do banimento."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-16",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Мне выдали предупреждение за выход из сцены. В показанном эпизоде сцена уже закончилась, прошу проверить предупреждение.",
+        "en": "I received a warning for leaving a scene. In the cited episode the scene had already ended; please review my warning.",
+        "kk": "Көріністен шығып кеткенім үшін ескерту алдым. Көрсетілген сәтте көрініс аяқталған еді, ескертуімді тексеруді сұраймын.",
+        "uz": "Sahnadan chiqib ketganim uchun ogohlantirish oldim. Ko'rsatilgan voqeada sahna allaqachon tugagan edi, ogohlantirishimni tekshiring.",
+        "es": "Recibí una advertencia por abandonar una escena. En el episodio señalado la escena ya había terminado; solicito revisar mi advertencia.",
+        "pt": "Recebi uma advertência por abandonar uma cena. No episódio citado, a cena já havia terminado; peço que revisem minha advertência."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-17",
+      "focus": "appeal",
+      "texts": {
+        "ru": "После апелляции мой бан оставили в силе. Появилась полная запись, хочу повторного рассмотрения именно этого наказания.",
+        "en": "My ban was upheld after an appeal. A complete recording is now available, and I request another review of this punishment.",
+        "kk": "Апелляциядан кейін баным күшінде қалды. Енді толық жазба бар, осы жазаны қайта қарауды сұраймын.",
+        "uz": "Apellyatsiyadan keyin banim kuchda qoldi. Endi to'liq yozuv bor, aynan shu jazoni yana ko'rib chiqishni so'rayman.",
+        "es": "Mantuvieron mi bloqueo tras la apelación. Ahora hay una grabación completa y solicito otra revisión de este castigo.",
+        "pt": "Meu banimento foi mantido após o recurso. Agora há uma gravação completa e solicito uma nova análise dessa punição."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-18",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Мой постоянный запрет на участие в аукционах считаю слишком строгим. Прошу заменить его временным ограничением после проверки обстоятельств.",
+        "en": "I consider my permanent auction participation ban too severe. Please review the circumstances and consider replacing it with a temporary restriction.",
+        "kk": "Аукциондарға қатысуыма мәңгілік тыйымды тым қатал деп санаймын. Жағдайды тексеріп, уақытша шектеуге ауыстыруды қарастыруды сұраймын.",
+        "uz": "Auksionlarda qatnashishimga doimiy taqiqni juda qattiq deb hisoblayman. Holatni tekshirib, uni vaqtinchalik cheklovga almashtirishni ko'rib chiqing.",
+        "es": "Considero demasiado severa mi prohibición permanente de participar en subastas. Solicito revisar las circunstancias y considerar una restricción temporal.",
+        "pt": "Considero muito severa minha proibição permanente de participar de leilões. Peço que analisem as circunstâncias e considerem uma restrição temporária."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-19",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Мне засчитали повторное нарушение и увеличили срок наказания. Предыдущее предупреждение отменили, прошу пересчитать мой срок.",
+        "en": "My punishment was lengthened as a repeat violation. The earlier warning was revoked; please reassess the duration of my punishment.",
+        "kk": "Қайталанған бұзушылық деп жазамның мерзімін ұзартты. Алдыңғы ескерту жойылған еді, мерзімімді қайта есептеуді сұраймын.",
+        "uz": "Takroriy qoidabuzarlik deb jazo muddatimni uzaytirishdi. Oldingi ogohlantirish bekor qilingan edi, muddatimni qayta hisoblang.",
+        "es": "Alargaron mi castigo por reincidencia. La advertencia anterior fue anulada; solicito recalcular la duración de mi sanción.",
+        "pt": "Minha punição foi ampliada por reincidência. A advertência anterior foi revogada; peço que reavaliem o prazo da minha punição."
+      }
+    },
+    {
+      "group_id": "v8-beta-appeal-20",
+      "focus": "appeal",
+      "texts": {
+        "ru": "Я получил ограничение чата за угрозу, но фраза была репликой персонажа в согласованной сцене. Прошу пересмотреть моё наказание в контексте.",
+        "en": "I received a chat restriction for a threat, but the phrase was a character's line in an agreed scene. Please review my punishment in context.",
+        "kk": "Қоқан-лоқы үшін чатым шектелді, бірақ бұл келісілген көріністегі кейіпкердің сөзі еді. Жазамды мәнмәтінмен қайта қарауды сұраймын.",
+        "uz": "Tahdid uchun chatim cheklandi, ammo bu kelishilgan sahnada qahramonning gapi edi. Jazomni vaziyatni hisobga olib qayta ko'rib chiqing.",
+        "es": "Me restringieron el chat por una amenaza, pero la frase era del personaje en una escena acordada. Solicito revisar mi castigo en contexto.",
+        "pt": "Recebi uma restrição de chat por ameaça, mas a frase era do personagem numa cena combinada. Peço que revisem minha punição no contexto."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-01",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Игрок в общем чате постоянно высмеивает мой акцент. Прошу проверить его сообщения и разобраться в поведении.",
+        "en": "A player in general chat keeps mocking my accent. Please investigate their messages and conduct.",
+        "kk": "Жалпы чаттағы ойыншы менің акцентімді үнемі мазақтайды. Оның хабарламалары мен әрекетін тексеруді сұраймын.",
+        "uz": "Umumiy chatdagi o'yinchi talaffuzimni doim masxara qiladi. Uning xabarlari va xatti-harakatini tekshirishingizni so'rayman.",
+        "es": "Un jugador del chat general se burla constantemente de mi acento. Solicito investigar sus mensajes y su conducta.",
+        "pt": "Um jogador no chat geral fica zombando do meu sotaque. Peço que investiguem as mensagens e a conduta dele."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-02",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Администратор во время консультации назвал меня глупым. Хочу, чтобы проверили запись разговора и его обращение с игроками.",
+        "en": "An administrator called me stupid during a consultation. I want the recording and their treatment of players investigated.",
+        "kk": "Кеңес беру кезінде әкімші мені ақымақ деп атады. Әңгіме жазбасы мен оның ойыншыларға қарым-қатынасын тексеруді қалаймын.",
+        "uz": "Maslahat paytida administrator meni ahmoq deb atadi. Suhbat yozuvi va uning o'yinchilarga muomalasini tekshirishingizni xohlayman.",
+        "es": "Un administrador me llamó tonto durante una consulta. Quiero que investiguen la grabación y su trato a los jugadores.",
+        "pt": "Um administrador me chamou de burro durante uma consulta. Quero que investiguem a gravação e o tratamento dado aos jogadores."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-03",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Другой игрок преграждает вход в общественное здание своим персонажем и смеётся над просьбами пройти. Прошу расследовать намеренное препятствие.",
+        "en": "Another player blocks a public building entrance with their character and laughs when asked to move. Please investigate this deliberate obstruction.",
+        "kk": "Басқа ойыншы кейіпкерімен қоғамдық ғимараттың кіреберісін жауып, өту туралы өтініштерге күледі. Қасақана кедергі жасауды тексеруді сұраймын.",
+        "uz": "Boshqa o'yinchi qahramoni bilan jamoat binosi kirishini to'sib, o'tkazish iltimoslarimiz ustidan kulyapti. Qasddan to'sqinlik qilishini tekshiring.",
+        "es": "Otro jugador bloquea la entrada de un edificio público con su personaje y se ríe cuando pedimos pasar. Solicito investigar esta obstrucción deliberada.",
+        "pt": "Outro jogador bloqueia a entrada de um prédio público com o personagem e ri quando pedimos passagem. Peço que investiguem essa obstrução deliberada."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-04",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Модератор переслал мою жалобу её адресату, после чего тот начал меня дразнить. Прошу проверить действия модератора с обращением.",
+        "en": "A moderator forwarded my complaint to the person I reported, who then began taunting me. Please investigate the moderator's handling of my report.",
+        "kk": "Модератор шағымымды мен шағымданған адамға жіберді, содан кейін ол мені келемеждей бастады. Модератордың өтінішпен жұмысын тексеруді сұраймын.",
+        "uz": "Moderator shikoyatimni men shikoyat qilgan odamga yubordi, u esa meni mazax qila boshladi. Moderator murojaatimni qanday ko'rganini tekshiring.",
+        "es": "Un moderador reenvió mi denuncia a la persona denunciada, que después empezó a burlarse de mí. Solicito investigar cómo gestionó mi denuncia.",
+        "pt": "Um moderador encaminhou minha denúncia à pessoa denunciada, que começou a me provocar. Peço que investiguem como o moderador tratou minha denúncia."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-05",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Игрок угрожает сорвать каждую нашу встречу, если мы не примем его в группу. Прошу проверить эти угрозы.",
+        "en": "A player threatens to disrupt every meeting unless we admit them to our group. Please investigate these threats.",
+        "kk": "Ойыншы оны топқа қабылдамасақ, әр кездесуімізді бұзатынын айтып қорқытады. Осы қоқан-лоқыны тексеруді сұраймын.",
+        "uz": "Bir o'yinchi uni guruhga olmasak, har uchrashuvimizni buzish bilan tahdid qilyapti. Bu tahdidlarni tekshirishingizni so'rayman.",
+        "es": "Un jugador amenaza con arruinar todas nuestras reuniones si no lo aceptamos en el grupo. Solicito investigar esas amenazas.",
+        "pt": "Um jogador ameaça atrapalhar todas as nossas reuniões se não o aceitarmos no grupo. Peço que investiguem essas ameaças."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-06",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Сотрудник поддержки закрыл обращение фразой «не мешай» после обычного уточнения. Прошу рассмотреть его грубое обращение.",
+        "en": "A support staff member closed my ticket with “stop bothering me” after a routine clarification. Please investigate their rude treatment.",
+        "kk": "Қалыпты нақтылау сұрағынан кейін қолдау қызметкері өтінішімді «мазамды алма» деп жапты. Оның дөрекі қарым-қатынасын қарауды сұраймын.",
+        "uz": "Oddiy aniqlashtirishdan keyin yordam xodimi murojaatimni «bezovta qilma» deb yopdi. Uning qo'pol muomalasini tekshirishingizni so'rayman.",
+        "es": "Un agente de soporte cerró mi consulta diciendo «no molestes» tras una aclaración normal. Solicito investigar su trato grosero.",
+        "pt": "Um atendente encerrou meu chamado dizendo “não incomode” após um esclarecimento comum. Peço que investiguem o tratamento grosseiro."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-07",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Один участник выдаёт себя за организатора и собирает обязательные взносы на выдуманный турнир. Прошу проверить предполагаемый обман.",
+        "en": "A participant is posing as an organizer and collecting mandatory contributions for an invented tournament. Please investigate the suspected deception.",
+        "kk": "Бір қатысушы өзін ұйымдастырушы деп таныстырып, ойдан шығарылған жарысқа міндетті жарна жинап жүр. Ықтимал алдауды тексеруді сұраймын.",
+        "uz": "Bir ishtirokchi o'zini tashkilotchi deb ko'rsatib, uydirma turnir uchun majburiy badal yig'yapti. Ehtimoliy aldovni tekshirishingizni so'rayman.",
+        "es": "Un participante se hace pasar por organizador y recoge cuotas obligatorias para un torneo inventado. Solicito investigar el posible engaño.",
+        "pt": "Um participante se passa por organizador e cobra contribuições obrigatórias para um torneio inventado. Peço que investiguem a possível fraude."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-08",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Администратор использует служебное перемещение, чтобы мешать нашей разрешённой сцене. Прошу проверить его поведение по записи.",
+        "en": "An administrator uses staff teleportation to interfere with our permitted scene. Please investigate their conduct using the recording.",
+        "kk": "Әкімші қызметтік телепортты қолданып, рұқсат етілген көрінісімізге кедергі келтіреді. Жазба бойынша оның әрекетін тексеруді сұраймын.",
+        "uz": "Administrator xizmat teleportidan foydalanib, ruxsat etilgan sahnamizga xalaqit beryapti. Yozuv bo'yicha uning xatti-harakatini tekshiring.",
+        "es": "Un administrador usa el teletransporte del personal para interferir en nuestra escena permitida. Solicito investigar su conducta mediante la grabación.",
+        "pt": "Um administrador usa o teletransporte da equipe para atrapalhar nossa cena permitida. Peço que investiguem a conduta dele pela gravação."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-09",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Игрок пишет оскорбления в личные сообщения каждый раз, когда проигрывает мне гонку. Прошу разобраться в этом преследовании.",
+        "en": "A player sends insulting private messages whenever they lose a race to me. Please investigate this harassment.",
+        "kk": "Ойыншы жарыста менен жеңілген сайын жеке хабарламаға балағат жазады. Осы қудалауды тексеруді сұраймын.",
+        "uz": "Bir o'yinchi poygada menga yutqazganida har safar shaxsiy xabarda haqorat yozadi. Bu ta'qibni tekshiring.",
+        "es": "Un jugador me manda insultos por privado cada vez que pierde una carrera contra mí. Solicito investigar este acoso.",
+        "pt": "Um jogador me manda insultos por mensagem privada sempre que perde uma corrida para mim. Peço que investiguem esse assédio."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-10",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Ведущий мероприятия публично унижает новичков за вопросы. Прошу проверить, как этот сотрудник проводит мероприятие.",
+        "en": "The event host publicly humiliates newcomers for asking questions. Please investigate how this staff member runs the event.",
+        "kk": "Шара жүргізушісі сұрақ қойған жаңадан келгендерді көпшілік алдында қорлайды. Осы қызметкердің шараны қалай жүргізетінін тексеруді сұраймын.",
+        "uz": "Tadbir boshlovchisi savol bergan yangi o'yinchilarni hammaning oldida kamsityapti. Bu xodimning tadbir o'tkazishini tekshiring.",
+        "es": "El responsable del evento humilla públicamente a los nuevos por hacer preguntas. Solicito investigar cómo dirige el evento este empleado.",
+        "pt": "O responsável pelo evento humilha publicamente os novatos por fazerem perguntas. Peço que investiguem como esse membro da equipe conduz o evento."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-11",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Игрок намеренно толкает участников очереди и провоцирует драку. У меня есть запись, прошу проверить его действия.",
+        "en": "A player deliberately pushes people in the queue and tries to provoke a fight. I have a recording; please investigate their actions.",
+        "kk": "Ойыншы кезектегі адамдарды әдейі итеріп, төбелес шығаруға тырысады. Менде жазба бар, оның әрекетін тексеруді сұраймын.",
+        "uz": "Bir o'yinchi navbatdagilarni ataylab turtib, janjal chiqarishga urinyapti. Menda yozuv bor, uning harakatlarini tekshiring.",
+        "es": "Un jugador empuja deliberadamente a quienes hacen cola e intenta provocar una pelea. Tengo una grabación; solicito investigar sus acciones.",
+        "pt": "Um jogador empurra de propósito quem está na fila e tenta provocar uma briga. Tenho uma gravação; peço que investiguem as ações dele."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-12",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Модератор в общем чате требует хвалить его, иначе обещает неприятности. Прошу проверить такое использование полномочий.",
+        "en": "A moderator demands praise in general chat and threatens trouble otherwise. Please investigate this use of authority.",
+        "kk": "Модератор жалпы чатта өзін мақтауды талап етіп, әйтпесе қиындық болатынын айтады. Өкілетін осылай қолдануын тексеруді сұраймын.",
+        "uz": "Moderator umumiy chatda uni maqtashni talab qilib, aks holda muammo bo'lishini aytyapti. Vakolatidan bunday foydalanishini tekshiring.",
+        "es": "Un moderador exige elogios en el chat general y amenaza con problemas si no los recibe. Solicito investigar este uso de autoridad.",
+        "pt": "Um moderador exige elogios no chat geral e ameaça causar problemas se não receber. Peço que investiguem esse uso da autoridade."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-13",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Другой участник публикует поддельные сообщения от моего имени, чтобы настроить группу против меня. Прошу расследовать его поведение.",
+        "en": "Another participant posts fabricated messages under my name to turn the group against me. Please investigate their behavior.",
+        "kk": "Басқа қатысушы топты маған қарсы қою үшін менің атымнан жалған хабарламалар жариялайды. Оның әрекетін тексеруді сұраймын.",
+        "uz": "Boshqa ishtirokchi guruhni menga qarshi qilish uchun mening nomimdan soxta xabarlar tarqatyapti. Uning xatti-harakatini tekshiring.",
+        "es": "Otro participante publica mensajes falsos en mi nombre para poner al grupo en mi contra. Solicito investigar su conducta.",
+        "pt": "Outro participante publica mensagens falsas em meu nome para colocar o grupo contra mim. Peço que investiguem a conduta dele."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-14",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Администратор перебивает свидетелей и не даёт им закончить объяснение в разборе. Жалуюсь на его поведение, прошу проверить запись.",
+        "en": "An administrator interrupts witnesses and prevents them from finishing their explanations during a review. I report their conduct and request investigation of the recording.",
+        "kk": "Әкімші талқылау кезінде куәгерлердің сөзін бөліп, түсіндіруін аяқтатпайды. Оның әрекетіне шағымданамын, жазбаны тексеруді сұраймын.",
+        "uz": "Administrator muhokamada guvohlarning gapini bo'lib, tushuntirishini tugatishga qo'ymayapti. Uning muomalasidan shikoyat qilaman, yozuvni tekshiring.",
+        "es": "Un administrador interrumpe a los testigos y no les deja terminar sus explicaciones en una revisión. Denuncio su conducta y solicito investigar la grabación.",
+        "pt": "Um administrador interrompe testemunhas e não deixa terminarem as explicações durante uma análise. Denuncio a conduta e peço que investiguem a gravação."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-15",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Игрок зазывает новичков на обучение, а затем заставляет их выполнять унизительные задания. Прошу проверить этот способ обращения с ними.",
+        "en": "A player recruits newcomers for training and then pressures them into humiliating tasks. Please investigate this treatment of them.",
+        "kk": "Ойыншы жаңадан келгендерді оқуға шақырып, кейін қорлайтын тапсырмалар жасауға мәжбүрлейді. Оларға осындай қарым-қатынасты тексеруді сұраймын.",
+        "uz": "Bir o'yinchi yangilarni o'qitishga chaqirib, keyin kamsituvchi topshiriqlarni bajarishga majburlayapti. Ularga bunday muomalani tekshiring.",
+        "es": "Un jugador invita a los nuevos a una formación y después los presiona para realizar tareas humillantes. Solicito investigar ese trato.",
+        "pt": "Um jogador convida novatos para treinamento e depois os pressiona a cumprir tarefas humilhantes. Peço que investiguem esse tratamento."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-16",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Сотрудник заявил, что рассмотрит обращение только за личную услугу в игре. Прошу расследовать это требование.",
+        "en": "A staff member said they would review a ticket only in return for a personal favor in the game. Please investigate this demand.",
+        "kk": "Қызметкер өтінішті тек ойында оған жеке қызмет көрсетсем қарайтынын айтты. Осы талапты тексеруді сұраймын.",
+        "uz": "Xodim murojaatni faqat o'yinda unga shaxsiy xizmat qilsam ko'rishini aytdi. Bu talabni tekshirishingizni so'rayman.",
+        "es": "Un empleado dijo que solo revisaría una consulta a cambio de un favor personal en el juego. Solicito investigar esta exigencia.",
+        "pt": "Um membro da equipe disse que só analisaria um chamado em troca de um favor pessoal no jogo. Peço que investiguem essa exigência."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-17",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Игрок преследует нашу группу и выкрикивает угрозы расправой вне игры. Прошу проверить его слова и поведение.",
+        "en": "A player follows our group and shouts threats of violence outside the game. Please investigate their words and conduct.",
+        "kk": "Ойыншы тобымыздың соңынан еріп, ойыннан тыс жерде күш қолданамын деп айқайлайды. Оның сөзі мен әрекетін тексеруді сұраймын.",
+        "uz": "Bir o'yinchi guruhimizni kuzatib, o'yindan tashqarida zo'ravonlik qilish bilan tahdid qilyapti. Uning so'zlari va xatti-harakatini tekshiring.",
+        "es": "Un jugador sigue a nuestro grupo y grita amenazas de violencia fuera del juego. Solicito investigar sus palabras y su conducta.",
+        "pt": "Um jogador segue nosso grupo e grita ameaças de violência fora do jogo. Peço que investiguem as palavras e a conduta dele."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-18",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Помощник администратора смеялся над моим затруднением и предложил другим тоже поиздеваться. Прошу проверить его непрофессиональное поведение.",
+        "en": "An administrator's assistant laughed at my difficulty and invited others to mock me too. Please investigate their unprofessional conduct.",
+        "kk": "Әкімшінің көмекшісі қиындығымды мазақтап, басқаларды да күлуге шақырды. Оның кәсіби емес әрекетін тексеруді сұраймын.",
+        "uz": "Administrator yordamchisi qiyinchiligim ustidan kulib, boshqalarni ham mazax qilishga chaqirdi. Uning noprofessional muomalasini tekshiring.",
+        "es": "Un ayudante de administración se rio de mi dificultad e invitó a otros a burlarse también. Solicito investigar su conducta poco profesional.",
+        "pt": "Um assistente da administração riu da minha dificuldade e convidou outros a zombarem também. Peço que investiguem essa conduta pouco profissional."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-19",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Участник обещает новичкам особый статус, притворяясь сотрудником сервера. Прошу разобраться в предполагаемом обмане и его заявлениях.",
+        "en": "A participant promises newcomers special status while pretending to be server staff. Please investigate the suspected deception and their claims.",
+        "kk": "Бір қатысушы өзін сервер қызметкері ретінде таныстырып, жаңадан келгендерге ерекше мәртебе уәде етеді. Ықтимал алдау мен оның сөздерін тексеруді сұраймын.",
+        "uz": "Bir ishtirokchi o'zini server xodimi deb tanishtirib, yangilarga maxsus maqom va'da qilyapti. Ehtimoliy aldov va uning gaplarini tekshiring.",
+        "es": "Un participante promete un estatus especial a los nuevos fingiendo ser empleado del servidor. Solicito investigar el posible engaño y sus afirmaciones.",
+        "pt": "Um participante promete status especial aos novatos fingindo ser da equipe do servidor. Peço que investiguem a possível fraude e suas alegações."
+      }
+    },
+    {
+      "group_id": "v8-beta-complaint-20",
+      "focus": "complaint",
+      "texts": {
+        "ru": "Администратор удаляет мои вежливые вопросы о его поведении и отвечает насмешками. Прошу независимой проверки его обращения со мной.",
+        "en": "An administrator deletes my polite questions about their behavior and responds with mockery. I request an independent investigation of their treatment of me.",
+        "kk": "Әкімші өзінің әрекеті туралы сыпайы сұрақтарымды өшіріп, мазақпен жауап береді. Оның маған қарым-қатынасын тәуелсіз тексеруді сұраймын.",
+        "uz": "Administrator uning xatti-harakati haqidagi muloyim savollarimni o'chirib, masxara bilan javob beryapti. Menga muomalasini mustaqil tekshirishingizni so'rayman.",
+        "es": "Un administrador borra mis preguntas respetuosas sobre su conducta y responde con burlas. Solicito una investigación independiente de su trato hacia mí.",
+        "pt": "Um administrador apaga minhas perguntas educadas sobre a conduta dele e responde com deboche. Peço uma investigação independente do tratamento que recebo."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-01",
+      "focus": "question",
+      "texts": {
+        "ru": "Я пока только изучаю игру. Как устроиться на первую работу и нужно ли заранее получать какие-нибудь разрешения?",
+        "en": "I am still learning about the game. How do I get my first job, and are any permits needed beforehand?",
+        "kk": "Әзірге ойынды зерттеп жүрмін. Алғашқы жұмысқа қалай орналасуға болады және алдын ала қандай да бір рұқсат керек пе?",
+        "uz": "Hozircha o'yinni o'rganyapman. Birinchi ishga qanday kiriladi va oldindan biror ruxsat olish kerakmi?",
+        "es": "Todavía estoy conociendo el juego. ¿Cómo consigo mi primer trabajo y hace falta algún permiso previo?",
+        "pt": "Ainda estou conhecendo o jogo. Como consigo meu primeiro emprego e preciso de alguma autorização antes?"
+      }
+    },
+    {
+      "group_id": "v8-beta-question-02",
+      "focus": "question",
+      "texts": {
+        "ru": "Что означает ролевая сцена? Хочу понять термин до того, как участвовать в таких событиях.",
+        "en": "What does a roleplay scene mean? I want to understand the term before taking part in such events.",
+        "kk": "Рөлдік көрініс деген не? Мұндай шараларға қатыспас бұрын осы ұғымды түсінгім келеді.",
+        "uz": "Rolli sahna degani nima? Bunday tadbirlarda qatnashishdan oldin bu atamani tushunmoqchiman.",
+        "es": "¿Qué significa una escena de rol? Quiero entender el término antes de participar en esos eventos.",
+        "pt": "O que significa uma cena de interpretação? Quero entender o termo antes de participar desses eventos."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-03",
+      "focus": "question",
+      "texts": {
+        "ru": "Можно ли пользоваться голосовым чатом в общественных местах? Интересуют общие ограничения на громкость и содержание разговора.",
+        "en": "May voice chat be used in public places? I am asking about general limits on volume and conversation content.",
+        "kk": "Қоғамдық орындарда дауыстық чатты қолдануға бола ма? Дыбыс деңгейі мен әңгіме мазмұнына қатысты жалпы шектеулерді білгім келеді.",
+        "uz": "Jamoat joylarida ovozli chatdan foydalanish mumkinmi? Ovoz balandligi va suhbat mazmuniga doir umumiy cheklovlar qiziqtiryapti.",
+        "es": "¿Se puede usar el chat de voz en lugares públicos? Me interesan los límites generales de volumen y contenido.",
+        "pt": "Pode usar chat de voz em locais públicos? Quero conhecer os limites gerais de volume e conteúdo da conversa."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-04",
+      "focus": "question",
+      "texts": {
+        "ru": "Как включить дополнительную защиту аккаунта? Хочу заранее обезопасить вход, никаких происшествий у меня не было.",
+        "en": "How do I enable extra account protection? I want to secure my login in advance; I have had no incidents.",
+        "kk": "Аккаунттың қосымша қорғанысын қалай қосуға болады? Кіруді алдын ала қорғағым келеді, менде ешқандай оқиға болған жоқ.",
+        "uz": "Akkauntning qo'shimcha himoyasini qanday yoqaman? Kirishni oldindan himoyalamoqchiman, menda hech qanday hodisa bo'lmagan.",
+        "es": "¿Cómo activo protección adicional para la cuenta? Quiero proteger el acceso de antemano; no he tenido ningún incidente.",
+        "pt": "Como ativo proteção extra na conta? Quero proteger meu acesso antecipadamente; não tive nenhum incidente."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-05",
+      "focus": "question",
+      "texts": {
+        "ru": "Перед первой покупкой хочу уточнить: где посмотреть доступные способы оплаты и итоговую стоимость набора?",
+        "en": "Before my first purchase, where can I see the available payment methods and the total price of a bundle?",
+        "kk": "Алғашқы сатып алудан бұрын нақтылағым келеді: төлем тәсілдері мен жинақтың толық бағасын қайдан көруге болады?",
+        "uz": "Birinchi xariddan oldin aniqlashtirmoqchiman: to'lov usullari va to'plamning yakuniy narxini qayerdan ko'rsam bo'ladi?",
+        "es": "Antes de mi primera compra, ¿dónde puedo ver los métodos de pago disponibles y el precio total de un paquete?",
+        "pt": "Antes da minha primeira compra, onde vejo as formas de pagamento disponíveis e o preço total de um pacote?"
+      }
+    },
+    {
+      "group_id": "v8-beta-question-06",
+      "focus": "question",
+      "texts": {
+        "ru": "Расскажите об общем порядке апелляции: куда её подают и какие материалы обычно прикладывают? Сейчас у меня нет наказаний.",
+        "en": "Please explain the general appeal procedure: where is an appeal submitted and what material is usually attached? I currently have no punishments.",
+        "kk": "Апелляцияның жалпы тәртібін түсіндіріңізші: оны қайда береді және қандай материал тіркейді? Қазір менде жаза жоқ.",
+        "uz": "Apellyatsiyaning umumiy tartibini tushuntiring: qayerga topshiriladi va odatda qanday material qo'shiladi? Hozir menda jazo yo'q.",
+        "es": "Expliquen el procedimiento general de apelación: ¿dónde se presenta y qué material se adjunta normalmente? Actualmente no tengo sanciones.",
+        "pt": "Expliquem o procedimento geral de recurso: onde é enviado e quais materiais costumam acompanhar? Atualmente não tenho punições."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-07",
+      "focus": "question",
+      "texts": {
+        "ru": "Какие сведения полезно указывать в жалобе на поведение игрока? Спрашиваю на будущее, конкретного случая нет.",
+        "en": "What information is useful in a report about a player's conduct? I am asking for the future, with no specific incident.",
+        "kk": "Ойыншының әрекетіне шағымда қандай мәліметтерді көрсету пайдалы? Болашаққа сұрап отырмын, нақты оқиға жоқ.",
+        "uz": "O'yinchining xatti-harakati haqida shikoyatda qanday ma'lumot foydali? Kelajak uchun so'rayapman, aniq hodisa yo'q.",
+        "es": "¿Qué datos conviene incluir en una denuncia sobre la conducta de un jugador? Pregunto para el futuro; no hay un caso concreto.",
+        "pt": "Quais informações são úteis numa denúncia sobre a conduta de um jogador? Pergunto para o futuro, sem nenhum caso específico."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-08",
+      "focus": "question",
+      "texts": {
+        "ru": "Чем обычная игровая валюта отличается от премиальных баллов? Пока ничего не покупал, хочу разобраться в назначении.",
+        "en": "How does ordinary game currency differ from premium points? I have not bought anything yet and want to understand their uses.",
+        "kk": "Қарапайым ойын валютасының премиум ұпайлардан айырмасы қандай? Әзірге ештеңе сатып алмадым, олардың мақсатын түсінгім келеді.",
+        "uz": "Oddiy o'yin valyutasi premium ballardan nimasi bilan farq qiladi? Hali hech narsa sotib olmaganman, vazifasini tushunmoqchiman.",
+        "es": "¿En qué se diferencia la moneda normal del juego de los puntos prémium? Aún no he comprado nada y quiero entender sus usos.",
+        "pt": "Qual é a diferença entre a moeda comum do jogo e os pontos premium? Ainda não comprei nada e quero entender as funções."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-09",
+      "focus": "question",
+      "texts": {
+        "ru": "Где можно прочитать требования к имени персонажа перед его созданием? Хочу выбрать подходящее имя с первого раза.",
+        "en": "Where can I read the character naming requirements before creating one? I want to choose a suitable name on my first try.",
+        "kk": "Кейіпкерді жасамас бұрын атына қойылатын талаптарды қайдан оқуға болады? Бірден жарамды ат таңдағым келеді.",
+        "uz": "Qahramon yaratishdan oldin ism talablarini qayerdan o'qisam bo'ladi? Birinchi urinishdayoq mos ism tanlamoqchiman.",
+        "es": "¿Dónde puedo leer los requisitos del nombre antes de crear un personaje? Quiero elegir un nombre adecuado a la primera.",
+        "pt": "Onde posso ler os requisitos de nome antes de criar um personagem? Quero escolher um nome adequado na primeira tentativa."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-10",
+      "focus": "question",
+      "texts": {
+        "ru": "Как обычно проходят аукционы в игре? Интересует, в какой момент ставка становится обязательной для участника.",
+        "en": "How do in-game auctions generally work? I want to know when a bid becomes binding for a participant.",
+        "kk": "Ойындағы аукциондар әдетте қалай өтеді? Қатысушы үшін ұсыныс қай сәттен бастап міндетті болатынын білгім келеді.",
+        "uz": "O'yindagi auksionlar odatda qanday o'tadi? Taklif qaysi paytdan boshlab ishtirokchi uchun majburiy bo'lishini bilmoqchiman.",
+        "es": "¿Cómo suelen funcionar las subastas del juego? Quiero saber en qué momento una puja pasa a ser vinculante para el participante.",
+        "pt": "Como funcionam normalmente os leilões do jogo? Quero saber em que momento um lance se torna obrigatório para o participante."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-11",
+      "focus": "question",
+      "texts": {
+        "ru": "Есть ли общий порядок вступления в игровую организацию? Хочу узнать про заявки и собеседования до выбора команды.",
+        "en": "Is there a general procedure for joining an in-game organization? I want to learn about applications and interviews before choosing a team.",
+        "kk": "Ойын ұйымына кірудің жалпы тәртібі бар ма? Команда таңдамас бұрын өтініш пен сұхбат туралы білгім келеді.",
+        "uz": "O'yin tashkilotiga kirishning umumiy tartibi bormi? Jamoa tanlashdan oldin ariza va suhbatlar haqida bilmoqchiman.",
+        "es": "¿Hay un procedimiento general para entrar en una organización del juego? Quiero conocer las solicitudes y entrevistas antes de elegir equipo.",
+        "pt": "Existe um procedimento geral para entrar numa organização do jogo? Quero saber sobre inscrições e entrevistas antes de escolher uma equipe."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-12",
+      "focus": "question",
+      "texts": {
+        "ru": "Для чего нужны навыки персонажа и как обычно повышается их уровень? Я только планирую развитие.",
+        "en": "What are character skills used for, and how do they normally level up? I am just planning my progression.",
+        "kk": "Кейіпкер дағдылары не үшін қажет және олардың деңгейі әдетте қалай көтеріледі? Әзірге дамуымды жоспарлап жүрмін.",
+        "uz": "Qahramon ko'nikmalari nima uchun kerak va ularning darajasi odatda qanday oshadi? Hozircha rivojlanishni rejalashtiryapman.",
+        "es": "¿Para qué sirven las habilidades del personaje y cómo suelen subir de nivel? Solo estoy planificando mi progreso.",
+        "pt": "Para que servem as habilidades do personagem e como normalmente evoluem? Estou apenas planejando meu progresso."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-13",
+      "focus": "question",
+      "texts": {
+        "ru": "Можно ли заранее выбрать язык интерфейса? Подскажите, где обычно находится эта настройка в меню.",
+        "en": "Can the interface language be selected beforehand? Please tell me where this setting is usually found in the menu.",
+        "kk": "Интерфейс тілін алдын ала таңдауға бола ма? Бұл баптау әдетте мәзірдің қай жерінде орналасады?",
+        "uz": "Interfeys tilini oldindan tanlash mumkinmi? Bu sozlama odatda menyuning qayerida joylashganini ayting.",
+        "es": "¿Se puede elegir de antemano el idioma de la interfaz? Indiquen dónde suele estar esa opción en el menú.",
+        "pt": "É possível escolher antes o idioma da interface? Digam onde essa opção costuma ficar no menu."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-14",
+      "focus": "question",
+      "texts": {
+        "ru": "Как безопасно передавать предмет другому игроку через предусмотренный обмен? Хочу знать процедуру до первой сделки.",
+        "en": "How do I safely transfer an item to another player through the intended trading feature? I want the procedure before my first trade.",
+        "kk": "Затты басқа ойыншыға арнайы айырбас арқылы қалай қауіпсіз беруге болады? Алғашқы мәміледен бұрын тәртібін білгім келеді.",
+        "uz": "Buyumni boshqa o'yinchiga belgilangan almashinuv orqali qanday xavfsiz berish mumkin? Birinchi bitimdan oldin tartibini bilmoqchiman.",
+        "es": "¿Cómo transfiero un objeto con seguridad a otro jugador mediante el intercambio previsto? Quiero conocer el procedimiento antes de mi primera operación.",
+        "pt": "Como transfiro um item com segurança para outro jogador pelo sistema de trocas? Quero saber o procedimento antes da minha primeira troca."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-15",
+      "focus": "question",
+      "texts": {
+        "ru": "Что означает временное ограничение чата и чем оно отличается от блокировки аккаунта? Это общий вопрос, меня не наказывали.",
+        "en": "What does a temporary chat restriction mean, and how does it differ from an account ban? This is a general question; I have not been punished.",
+        "kk": "Уақытша чат шектеуі нені білдіреді және оның аккаунт банынан айырмасы қандай? Бұл жалпы сұрақ, мен жазаланған жоқпын.",
+        "uz": "Vaqtinchalik chat cheklovi nimani anglatadi va akkaunt banidan nimasi bilan farq qiladi? Bu umumiy savol, men jazolanmaganman.",
+        "es": "¿Qué significa una restricción temporal del chat y en qué se diferencia de bloquear una cuenta? Es una pregunta general; no me han sancionado.",
+        "pt": "O que significa uma restrição temporária de chat e como difere de um banimento de conta? É uma pergunta geral; não fui punido."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-16",
+      "focus": "question",
+      "texts": {
+        "ru": "Каковы обычные требования к записи, которую прикладывают в обращение? Нужно ли сохранять звук и полный эпизод?",
+        "en": "What are the usual requirements for a recording attached to a support ticket? Should audio and the full episode be retained?",
+        "kk": "Өтінішке тіркелетін жазбаға әдетте қандай талап қойылады? Дыбыс пен оқиғаның толық нұсқасын сақтау керек пе?",
+        "uz": "Murojaatga qo'shiladigan yozuvga odatda qanday talablar bor? Ovoz va to'liq voqeani saqlash kerakmi?",
+        "es": "¿Cuáles son los requisitos habituales de una grabación adjunta a una consulta? ¿Hay que conservar el audio y el episodio completo?",
+        "pt": "Quais são os requisitos comuns de uma gravação anexada a um chamado? É preciso guardar o áudio e o episódio completo?"
+      }
+    },
+    {
+      "group_id": "v8-beta-question-17",
+      "focus": "question",
+      "texts": {
+        "ru": "Можно ли играть с родственником на одном домашнем подключении? Заранее хочу узнать общие условия для отдельных аккаунтов.",
+        "en": "May I play with a relative on the same home connection? I want to know the general conditions for separate accounts in advance.",
+        "kk": "Туыспен бір үй интернеті арқылы ойнауға бола ма? Бөлек аккаунттарға қатысты жалпы шарттарды алдын ала білгім келеді.",
+        "uz": "Qarindoshim bilan bitta uy internetidan o'ynash mumkinmi? Alohida akkauntlar uchun umumiy shartlarni oldindan bilmoqchiman.",
+        "es": "¿Puedo jugar con un familiar usando la misma conexión doméstica? Quiero saber de antemano las condiciones generales para cuentas separadas.",
+        "pt": "Posso jogar com um parente na mesma conexão doméstica? Quero saber antes as condições gerais para contas separadas."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-18",
+      "focus": "question",
+      "texts": {
+        "ru": "До отправки обращения хочу понять, кто может видеть приложенные материалы. Как обычно устроена их доступность для сотрудников?",
+        "en": "Before submitting a ticket, I want to understand who can see attached material. How is staff access to it generally arranged?",
+        "kk": "Өтініш жібермес бұрын тіркелген материалдарды кім көретінін түсінгім келеді. Қызметкерлердің оларға қолжетімділігі әдетте қалай ұйымдастырылған?",
+        "uz": "Murojaat yuborishdan oldin ilovalarni kim ko'rishini tushunmoqchiman. Xodimlarning ularga kirishi odatda qanday tashkil etilgan?",
+        "es": "Antes de enviar una consulta quiero entender quién puede ver los adjuntos. ¿Cómo suele organizarse el acceso del personal?",
+        "pt": "Antes de enviar um chamado, quero entender quem pode ver os anexos. Como costuma funcionar o acesso da equipe a eles?"
+      }
+    },
+    {
+      "group_id": "v8-beta-question-19",
+      "focus": "question",
+      "texts": {
+        "ru": "Где узнавать о запланированных технических работах сервера? Хочу заранее выбирать время для игры.",
+        "en": "Where can I find announcements of scheduled server maintenance? I want to plan my playing time in advance.",
+        "kk": "Сервердегі жоспарлы техникалық жұмыстар туралы қайдан білуге болады? Ойнайтын уақытымды алдын ала таңдағым келеді.",
+        "uz": "Serverdagi rejalashtirilgan texnik ishlar haqida qayerdan bilsam bo'ladi? O'ynash vaqtimni oldindan tanlamoqchiman.",
+        "es": "¿Dónde puedo informarme del mantenimiento programado del servidor? Quiero planificar de antemano mis horas de juego.",
+        "pt": "Onde posso saber das manutenções programadas do servidor? Quero planejar meus horários de jogo com antecedência."
+      }
+    },
+    {
+      "group_id": "v8-beta-question-20",
+      "focus": "question",
+      "texts": {
+        "ru": "При создании группы чем отличаются открытый и закрытый набор? Пока выбираю подходящий вариант и хочу понять условия.",
+        "en": "When creating a group, how do open and closed recruitment differ? I am choosing an option and want to understand the conditions.",
+        "kk": "Топ құру кезінде ашық және жабық қабылдаудың айырмасы қандай? Әзірге нұсқа таңдап жүрмін, шарттарын түсінгім келеді.",
+        "uz": "Guruh tuzishda ochiq va yopiq qabul nimasi bilan farq qiladi? Hozircha variant tanlayapman va shartlarini tushunmoqchiman.",
+        "es": "Al crear un grupo, ¿en qué se diferencian el reclutamiento abierto y el cerrado? Estoy eligiendo una opción y quiero entender las condiciones.",
+        "pt": "Ao criar um grupo, qual é a diferença entre recrutamento aberto e fechado? Estou escolhendo uma opção e quero entender as condições."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-01",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Здравствуйте! Я впервые пишу в поддержку и пока не знаю, с чего начать.",
+        "en": "Hello! This is my first time contacting support, and I do not yet know where to begin.",
+        "kk": "Сәлеметсіз бе! Қолдау қызметіне алғаш рет жазып отырмын, неден бастарымды әлі білмеймін.",
+        "uz": "Salom! Yordam xizmatiga birinchi marta yozyapman, hali nimadan boshlashni bilmayman.",
+        "es": "¡Hola! Es la primera vez que contacto con soporte y todavía no sé por dónde empezar.",
+        "pt": "Olá! É a primeira vez que entro em contato com o suporte e ainda não sei por onde começar."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-02",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Добрый вечер, есть кто-нибудь на связи? Хотелось бы поговорить с поддержкой.",
+        "en": "Good evening, is anyone available? I would like to talk to support.",
+        "kk": "Қайырлы кеш, байланыста біреу бар ма? Қолдау қызметімен сөйлескім келеді.",
+        "uz": "Xayrli kech, aloqada kimdir bormi? Yordam xizmati bilan gaplashmoqchiman.",
+        "es": "Buenas noches, ¿hay alguien disponible? Me gustaría hablar con soporte.",
+        "pt": "Boa noite, tem alguém disponível? Gostaria de falar com o suporte."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-03",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Спасибо за помощь! Сейчас больше ничего добавлять не хочу.",
+        "en": "Thank you for your help! I have nothing else to add right now.",
+        "kk": "Көмегіңізге рақмет! Қазір қосарым жоқ.",
+        "uz": "Yordamingiz uchun rahmat! Hozir boshqa qo'shimcham yo'q.",
+        "es": "¡Gracias por la ayuda! De momento no tengo nada más que añadir.",
+        "pt": "Obrigado pela ajuda! No momento não tenho mais nada a acrescentar."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-04",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Нужна помощь, но я пока не могу нормально сформулировать обращение.",
+        "en": "I need help, but I cannot properly put my request into words yet.",
+        "kk": "Көмек керек, бірақ өтінішімді әзірге дұрыс жеткізе алмай отырмын.",
+        "uz": "Yordam kerak, lekin hozircha murojaatimni to'g'ri ifodalay olmayapman.",
+        "es": "Necesito ayuda, pero todavía no consigo formular bien mi consulta.",
+        "pt": "Preciso de ajuda, mas ainda não consigo formular bem meu pedido."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-05",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Привет! Можно начать разговор здесь или сначала как-то представиться?",
+        "en": "Hi! Can I start talking here, or should I introduce myself first?",
+        "kk": "Сәлем! Осы жерде сөйлесе берсем бола ма, әлде алдымен өзімді таныстыруым керек пе?",
+        "uz": "Salom! Shu yerda suhbatni boshlasam bo'ladimi yoki avval o'zimni tanishtirishim kerakmi?",
+        "es": "¡Buenas! ¿Puedo empezar a hablar aquí o debería presentarme primero?",
+        "pt": "Oi! Posso começar a conversar por aqui ou devo me apresentar primeiro?"
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-06",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Извините за сумбур, собираюсь с мыслями. Побудьте, пожалуйста, на связи.",
+        "en": "Sorry for being scattered; I am gathering my thoughts. Please stay available.",
+        "kk": "Ойым шашыраңқы болғаны үшін кешіріңіз, ойымды жинақтап жатырмын. Байланыста бола тұрыңызшы.",
+        "uz": "Tartibsiz yozganim uchun uzr, fikrlarimni yig'yapman. Iltimos, aloqada bo'lib turing.",
+        "es": "Perdón por el desorden, estoy organizando mis ideas. Por favor, sigan disponibles.",
+        "pt": "Desculpem a confusão, estou organizando minhas ideias. Por favor, continuem por aqui."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-07",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Большое спасибо, вы очень понятно ответили. Просто хотел выразить благодарность.",
+        "en": "Thank you very much; your answer was very clear. I just wanted to express my appreciation.",
+        "kk": "Көп рақмет, өте түсінікті жауап бердіңіз. Тек алғысымды білдіргім келді.",
+        "uz": "Katta rahmat, juda tushunarli javob berdingiz. Faqat minnatdorchiligimni bildirmoqchi edim.",
+        "es": "Muchas gracias, la respuesta fue muy clara. Solo quería expresar mi agradecimiento.",
+        "pt": "Muito obrigado, a resposta foi bem clara. Só queria expressar minha gratidão."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-08",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Я здесь, готов продолжить беседу. Подскажите, с чего начнём.",
+        "en": "I am here and ready to continue our conversation. Please tell me where to start.",
+        "kk": "Осындамын, әңгімені жалғастыруға дайынмын. Неден бастайтынымызды айтыңызшы.",
+        "uz": "Men shu yerdaman, suhbatni davom ettirishga tayyorman. Nimadan boshlashimizni ayting.",
+        "es": "Estoy aquí y listo para continuar la conversación. Indíquenme por dónde empezamos.",
+        "pt": "Estou aqui e pronto para continuar a conversa. Digam por onde começamos."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-09",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Можно немного вашего времени? У меня есть обращение, подробности сейчас соберу.",
+        "en": "Could I have a little of your time? I have a request and will gather the details now.",
+        "kk": "Аздап уақытыңызды бөле аласыз ба? Өтінішім бар, қазір мәліметтерін жинақтаймын.",
+        "uz": "Biroz vaqtingizni olsam bo'ladimi? Murojaatim bor, hozir tafsilotlarni yig'aman.",
+        "es": "¿Pueden dedicarme un momento? Tengo una consulta y ahora reuniré los detalles.",
+        "pt": "Podem me dar um momento? Tenho um pedido e vou reunir os detalhes agora."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-10",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Доброе утро всей команде поддержки! Пока просто здороваюсь.",
+        "en": "Good morning to the whole support team! I am just saying hello for now.",
+        "kk": "Бүкіл қолдау тобына қайырлы таң! Әзірге жай ғана амандасып отырмын.",
+        "uz": "Butun yordam jamoasiga xayrli tong! Hozircha shunchaki salomlashyapman.",
+        "es": "¡Buenos días a todo el equipo de soporte! De momento solo quería saludar.",
+        "pt": "Bom dia a toda a equipe de suporte! Por enquanto só estou passando para cumprimentar."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-11",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Не уверен, правильно ли объясню, но очень рассчитываю на вашу помощь.",
+        "en": "I am not sure I will explain this well, but I am really hoping for your help.",
+        "kk": "Дұрыс түсіндіре алатыныма сенімді емеспін, бірақ көмегіңізге қатты үміттенемін.",
+        "uz": "To'g'ri tushuntira olishimga ishonchim komil emas, lekin yordamingizga juda umid qilyapman.",
+        "es": "No sé si lograré explicarme bien, pero cuento mucho con su ayuda.",
+        "pt": "Não sei se vou conseguir explicar bem, mas conto muito com a ajuda de vocês."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-12",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Спасибо, я прочитал ответ. Дайте мне немного времени всё обдумать.",
+        "en": "Thank you, I have read the reply. Please give me some time to think it over.",
+        "kk": "Рақмет, жауапты оқыдым. Бәрін ойлануға біраз уақыт беріңізші.",
+        "uz": "Rahmat, javobni o'qidim. Hammasini o'ylab olishim uchun biroz vaqt bering.",
+        "es": "Gracias, ya leí la respuesta. Denme un poco de tiempo para pensarlo.",
+        "pt": "Obrigado, li a resposta. Me deem um pouco de tempo para pensar."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-13",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Я случайно отправил пустое приветствие. Всё же хочу обратиться, скоро напишу подробнее.",
+        "en": "I accidentally sent an empty greeting. I do want to contact you and will write more shortly.",
+        "kk": "Байқаусызда тек сәлемдесу жіберіппін. Сонда да өтініш айтқым келеді, жақында толығырақ жазамын.",
+        "uz": "Tasodifan faqat salom yuboribman. Baribir murojaat qilmoqchiman, tez orada batafsil yozaman.",
+        "es": "Envié por accidente un saludo sin más. Sí quiero hacer una consulta y pronto escribiré con detalle.",
+        "pt": "Enviei sem querer apenas uma saudação. Quero mesmo fazer um pedido e vou escrever os detalhes em breve."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-14",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Можно общаться простыми словами? Я растерялся и пока не знаю, как начать.",
+        "en": "Could we use simple words? I feel overwhelmed and do not yet know how to start.",
+        "kk": "Қарапайым сөздермен сөйлессек бола ма? Абдырап қалдым, неден бастарымды әлі білмеймін.",
+        "uz": "Oddiy so'zlar bilan gaplashsak bo'ladimi? Dovdirab qoldim, hali qanday boshlashni bilmayman.",
+        "es": "¿Podemos hablar con palabras sencillas? Estoy abrumado y todavía no sé cómo empezar.",
+        "pt": "Podemos conversar com palavras simples? Estou perdido e ainda não sei como começar."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-15",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Рад, что удалось связаться. Пожалуйста, подождите, я ещё дописываю своё сообщение.",
+        "en": "I am glad I reached you. Please wait; I am still finishing my message.",
+        "kk": "Сізбен байланысқаныма қуаныштымын. Күте тұрыңызшы, хабарламамды әлі жазып жатырмын.",
+        "uz": "Siz bilan bog'langanimdan xursandman. Iltimos, kuting, xabarimni hali yozib tugatyapman.",
+        "es": "Me alegra haber podido contactar. Esperen, por favor, todavía estoy terminando mi mensaje.",
+        "pt": "Fico feliz por ter conseguido contato. Aguardem, por favor, ainda estou terminando minha mensagem."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-16",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Благодарю за терпение и спокойный разговор. Мне было важно это сказать.",
+        "en": "Thank you for your patience and the calm conversation. It was important for me to say that.",
+        "kk": "Шыдамдылығыңыз бен сабырлы әңгімеңіз үшін алғыс айтамын. Мұны айту мен үшін маңызды еді.",
+        "uz": "Sabringiz va xotirjam suhbatingiz uchun rahmat. Buni aytish men uchun muhim edi.",
+        "es": "Gracias por la paciencia y la conversación tranquila. Para mí era importante decirlo.",
+        "pt": "Agradeço pela paciência e pela conversa tranquila. Era importante para mim dizer isso."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-17",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Здравствуйте ещё раз. Я вернулся в беседу, можно продолжать.",
+        "en": "Hello again. I am back in the conversation, and we can continue.",
+        "kk": "Қайта сәлеметсіз бе. Әңгімеге оралдым, жалғастыра беруге болады.",
+        "uz": "Yana salom. Suhbatga qaytdim, davom ettirishimiz mumkin.",
+        "es": "Hola de nuevo. He vuelto a la conversación y podemos continuar.",
+        "pt": "Olá de novo. Voltei para a conversa e podemos continuar."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-18",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Не знаю, какой вопрос задать первым. Помогите начать обращение, пожалуйста.",
+        "en": "I do not know which question to ask first. Please help me get my request started.",
+        "kk": "Қай сұрақты бірінші қоярымды білмеймін. Өтінішімді бастауға көмектесіңізші.",
+        "uz": "Qaysi savolni avval berishni bilmayman. Iltimos, murojaatimni boshlashga yordam bering.",
+        "es": "No sé qué pregunta hacer primero. Ayúdenme a empezar mi consulta, por favor.",
+        "pt": "Não sei qual pergunta fazer primeiro. Ajudem a começar meu pedido, por favor."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-19",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Спасибо, что выслушали. На этом у меня пока всё, хорошего вам дня.",
+        "en": "Thank you for listening. That is all from me for now; have a good day.",
+        "kk": "Тыңдағаныңызға рақмет. Әзірге айтарым осы, күніңіз жақсы өтсін.",
+        "uz": "Tinglaganingiz uchun rahmat. Hozircha aytadiganlarim shu, kuningiz yaxshi o'tsin.",
+        "es": "Gracias por escucharme. De momento eso es todo; que tengan un buen día.",
+        "pt": "Obrigado por me ouvirem. Por enquanto é só; tenham um bom dia."
+      }
+    },
+    {
+      "group_id": "v8-beta-clarification-20",
+      "focus": "clarification",
+      "texts": {
+        "ru": "Приветствую, мне нужен совет. Пока не решил, как лучше описать свою просьбу.",
+        "en": "Greetings, I need some guidance. I have not yet decided how best to describe my request.",
+        "kk": "Сәлеметсіз бе, маған кеңес керек. Өтінішімді қалай дұрыс сипаттайтынымды әлі шешпедім.",
+        "uz": "Assalomu alaykum, menga maslahat kerak. Iltimosimni qanday yaxshiroq tasvirlashni hali hal qilmadim.",
+        "es": "Saludos, necesito orientación. Todavía no he decidido cómo describir mejor mi petición.",
+        "pt": "Saudações, preciso de orientação. Ainda não decidi como descrever melhor meu pedido."
+      }
+    }
+  ]
+}

@@ -1,0 +1,639 @@
+{
+  "schema_version": "independently-authored-plan-control-v9",
+  "provenance": "authored_synthetic independent-plan-v9",
+  "human_reviewed": false,
+  "contract_version": "support-plan-v1",
+  "cases": [
+    {
+      "id": "plan9-001",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "За расширение склада с меня списали 590 рублей 28 октября 2026 года, но вместимость осталась прежней. Идентификатор платёжной транзакции — SYN-PAY-801."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "problem_description",
+          "amount",
+          "payment_date",
+          "transaction_id"
+        ],
+        "request_fields": [
+          "participant",
+          "server",
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-002",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Я играю под ником SovaMint на сервере 23. Сегодня в 08:20 меня выбросило из аккаунта, а повторный вход сообщает, что пароль неверный, хотя я его не менял."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "problem_description"
+        ],
+        "request_fields": [
+          "platform",
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-003",
+      "input": {
+        "kind": "report",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Моему персонажу KlenBereg на сервере Восток запретили писать объявления за якобы повторные сообщения. Наказание выдали 29 октября в 16:10, прошу его пересмотреть; скриншот уведомления у меня сохранён."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-004",
+      "input": {
+        "kind": "complaint",
+        "lang": "ru",
+        "messages": [
+          {
+            "role": "player",
+            "text": "На сервере 64 игрок BublikParus сегодня в 21:05 толкнул мою машину в воду у южного причала. Прошу разобраться с его поведением, у меня есть запись момента столкновения."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "location",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-005",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "On my Windows laptop, I select the delivery job, collect the parcel, then press Start Route and the client closes. This has happened on server Cedar twice."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "needs_human": false,
+        "provided_fields": [
+          "platform",
+          "reproduction_steps",
+          "server",
+          "problem_description"
+        ],
+        "request_fields": [
+          "event_time",
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-006",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "I am planning a club for new players. How do club invitations normally work?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "needs_human": false,
+        "provided_fields": [
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-007",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Hello, could someone help me with something? I have not explained it yet."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "needs_human": false,
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-008",
+      "input": {
+        "kind": "report",
+        "lang": "en",
+        "messages": [
+          {
+            "role": "player",
+            "text": "I paid 7.50 USD for a race entry on 27 October 2026 and the game still asks me to buy it again. I have a screenshot of the bank charge, but I cannot find a payment transaction identifier."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "problem_description",
+          "amount",
+          "payment_date",
+          "evidence"
+        ],
+        "request_fields": [
+          "participant",
+          "server",
+          "transaction_id"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-009",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Өзімнің AiQadam атты аккаунтыммен Самал серверінде ойнаймын. Кеше сағат 19:40-та аккаунтыма кіре алмай қалдым. Құпиясөзімді өзгерткен жоқпын."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "problem_description"
+        ],
+        "request_fields": [
+          "platform",
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-010",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Менің никім — KokeiTas, серверім — 38. Маған жарысқа қатысуға тыйым салды, бірақ себебімен келіспеймін және өз жазамды қайта қарауды сұраймын."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "problem_description"
+        ],
+        "request_fields": [
+          "event_time",
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-011",
+      "input": {
+        "kind": "complaint",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Арман серверінде OrmanQus деген ойыншы солтүстік базарда менің заттарымды қайтарамын деп алып, кетіп қалды. Бұл 30 қазанда сағат 14:15-те болды, сөйлесудің скриншоттары менде бар; сол ойыншының әрекетін тексеріңіздерші."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "location",
+          "event_time",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-012",
+      "input": {
+        "kind": "report",
+        "lang": "kk",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Android планшетінде топ құру мәзірін ашып, жаңа топ батырмасын бассам, бос терезе шығады. Ойынның қалған бөлігі жұмыс істеп тұр, бұл мәселе Тау серверінде қайталанды."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "needs_human": false,
+        "provided_fields": [
+          "platform",
+          "reproduction_steps",
+          "problem_description",
+          "server"
+        ],
+        "request_fields": [
+          "event_time",
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-013",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Yangi mavsum boshlansa, oldingi mavsumdagi yutuq nishonlari saqlanadimi? Hozir menda nosozlik yo‘q, oldindan bilmoqchiman."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "needs_human": false,
+        "provided_fields": [
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-014",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Yordam kerak edi, murojaat qoldirmoqchiman. Hali masalani yozmadim."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "needs_human": false,
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-015",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Men 26 oktabr 2026 kuni qo‘shimcha qahramon uyasi uchun 25000 so‘m to‘ladim, ammo uyasi ochilmadi. Chekdagi buyurtma raqami SYN-ORDER-14, to‘lov tranzaksiyasi identifikatorini esa bilmayman."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "payment_date",
+          "amount",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [
+          "participant",
+          "server",
+          "transaction_id"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-016",
+      "input": {
+        "kind": "report",
+        "lang": "uz",
+        "messages": [
+          {
+            "role": "player",
+            "text": "O‘z hisobimdagi YelkanSoy qahramonining uy kaliti yo‘qolibdi va uy boshqa egada ko‘rinmoqda. Men uni sotmaganman, Oqshom serverida o‘ynayman."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "problem_description",
+          "server"
+        ],
+        "request_fields": [
+          "event_time",
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-017",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Soy LirioRoca en el servidor 52 y quiero recurrir mi expulsión del gremio por una supuesta suplantación. La sanción se aplicó el 30 de octubre a las 11:45; guardé la captura del aviso."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "problem_description",
+          "event_time",
+          "evidence"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-018",
+      "input": {
+        "kind": "complaint",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Quiero denunciar a NubeTuerca: ayer a las 18:30 estaba enviando insultos a los visitantes en la estación del oeste del servidor Brisa. No tengo grabación ni capturas."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "complaint",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "event_time",
+          "location",
+          "server",
+          "problem_description"
+        ],
+        "request_fields": [
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-019",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "En mi iPhone, abro el inventario, selecciono una chaqueta y pulso Equipar, pero aparece en el suelo y no se pone. Ocurre en el servidor Olivo; tengo un vídeo de los pasos."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "technical",
+        "needs_human": false,
+        "provided_fields": [
+          "platform",
+          "reproduction_steps",
+          "problem_description",
+          "server",
+          "evidence"
+        ],
+        "request_fields": [
+          "event_time"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-020",
+      "input": {
+        "kind": "report",
+        "lang": "es",
+        "messages": [
+          {
+            "role": "player",
+            "text": "¿Qué se necesita normalmente para organizar una carrera privada? Estoy mirando opciones para un evento futuro."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "question",
+        "needs_human": false,
+        "provided_fields": [
+          "problem_description"
+        ],
+        "request_fields": [],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-021",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Boa tarde, preciso de ajuda e não sei como explicar por aqui. Podem me orientar para começar?"
+          }
+        ]
+      },
+      "expected": {
+        "focus": "clarification",
+        "needs_human": false,
+        "provided_fields": [],
+        "request_fields": [
+          "problem_description"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-022",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Comprei o pacote de decoração por 19,90 BRL em 25 de outubro de 2026, mas só recebi metade dos itens anunciados. O identificador da transação de pagamento é SYN-TRX-903 e tenho o comprovante salvo."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "payment",
+        "needs_human": true,
+        "provided_fields": [
+          "problem_description",
+          "amount",
+          "payment_date",
+          "transaction_id",
+          "evidence"
+        ],
+        "request_fields": [
+          "participant",
+          "server"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-023",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Minha conta usa o apelido CajuVento no servidor 76. Hoje às 06:50 apareceram transferências de moedas que eu não fiz e perdi acesso logo depois; tenho capturas dos avisos."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "account",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "event_time",
+          "problem_description",
+          "evidence"
+        ],
+        "request_fields": [
+          "platform"
+        ],
+        "source_ids": null
+      }
+    },
+    {
+      "id": "plan9-024",
+      "input": {
+        "kind": "report",
+        "lang": "pt",
+        "messages": [
+          {
+            "role": "player",
+            "text": "Quero contestar o bloqueio de troca aplicado ao meu personagem FozPapel no servidor Lago. Disseram que fiz trocas combinadas, mas peço uma revisão da punição; não guardei o aviso."
+          }
+        ]
+      },
+      "expected": {
+        "focus": "appeal",
+        "needs_human": true,
+        "provided_fields": [
+          "participant",
+          "server",
+          "problem_description"
+        ],
+        "request_fields": [
+          "event_time",
+          "evidence"
+        ],
+        "source_ids": null
+      }
+    }
+  ]
+}
